@@ -66,7 +66,7 @@ const Card = ({ route }) => {
       data: {
         details,
         email: profile?.email,
-        maxCharsPerLine: Number(33),
+        maxCharsPerLine: data.maxCharsPerLine,
         userId: profile?.id,
         id: id,
       },

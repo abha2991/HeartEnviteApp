@@ -7,6 +7,7 @@
       "alignItems": "center"
     },
     "fontAwesomeIconColor": "#de8aa4",
+    "maxCharsPerLine": 21,
     "categoryId": "6",
     "backgroundImageStyle": {},
     "backgroundImage": "Congratulations_1_1.png",
@@ -55,6 +56,7 @@
       "alignItems": "center"
     },
     "fontAwesomeIconColor": "#220a0a",
+    "maxCharsPerLine": 24,
     "categoryId": "6",
     "backgroundImageStyle": {},
     "backgroundImage": "Congratulations_2_1.png",
@@ -103,6 +105,8 @@
       "alignItems": "center"
     },
     "fontAwesomeIconColor": "#000",
+    "maxCharsPerLine": 21,
+
     "categoryId": "6",
     "backgroundImageStyle": {},
     "backgroundImage": "Congratulations_3_1.png",
@@ -153,6 +157,7 @@
     },
     "fontAwesomeIconColor": "#fff",
     "categoryId": "6",
+    "maxCharsPerLine": 21,
     "backgroundImageStyle": {},
     "backgroundImage": "Congratulations_4_1.png",
     "apiUrl": "/api/card1/congratulationscard",
@@ -201,6 +206,7 @@
     },
     "fontAwesomeIconColor": "#de8aa4",
     "categoryId": "6",
+    "maxCharsPerLine": 21,
     "backgroundImageStyle": {},
     "backgroundImage": "Congratulations_5_1.png",
     "apiUrl": "/api/card1/congratulationscard",
@@ -252,6 +258,7 @@
     },
     "fontAwesomeIconColor": "#fff",
     "categoryId": "6",
+    "maxCharsPerLine": 21,
     "backgroundImageStyle": {},
     "backgroundImage": "Congratulations_6_1.png",
     "apiUrl": "/api/card1/congratulationscard",
@@ -302,6 +309,7 @@
     },
     "fontAwesomeIconColor": "#cf2250",
     "categoryId": "3",
+    "maxCharsPerLine": 44,
     "backgroundImageStyle": {},
     "backgroundImage": "ThankYou_1_1.png",
     "apiUrl": "/api/card1/thankyoucard",
@@ -361,6 +369,7 @@
     },
     "fontAwesomeIconColor": "#fff",
     "categoryId": "3",
+    "maxCharsPerLine": 44,
     "backgroundImageStyle": {},
     "backgroundImage": "ThankYou_2_1.png",
     "apiUrl": "/api/card1/thankyoucard",
@@ -416,6 +425,7 @@
     },
     "fontAwesomeIconColor": "#dd7895",
     "categoryId": "3",
+    "maxCharsPerLine": 44,
     "backgroundImageStyle": {},
     "backgroundImage": "ThankYou_3_1.png",
     "apiUrl": "/api/card1/thankyoucard",
@@ -470,6 +480,7 @@
     },
     "fontAwesomeIconColor": "#dd7895",
     "categoryId": "3",
+    "maxCharsPerLine": 34,
     "backgroundImageStyle": {},
     "backgroundImage": "ThankYou_4_1.png",
     "apiUrl": "/api/card1/thankyoucard",
@@ -530,6 +541,7 @@
     },
     "fontAwesomeIconColor": "#ee4673",
     "categoryId": "3",
+    "maxCharsPerLine": 34,
     "backgroundImageStyle": {},
     "backgroundImage": "ThankYou_5_1.png",
     "apiUrl": "/api/card1/thankyoucard",
@@ -584,6 +596,7 @@
     },
     "fontAwesomeIconColor": "#ff1314",
     "categoryId": "3",
+    "maxCharsPerLine": 44,
     "backgroundImageStyle": {},
     "backgroundImage": "ThankYou_6_1.png",
     "apiUrl": "/api/card1/thankyoucard",
@@ -642,6 +655,7 @@
     },
     "fontAwesomeIconColor": "#f82d36",
     "categoryId": "3",
+    "maxCharsPerLine": 44,
     "backgroundImageStyle": {},
     "backgroundImage": "ThankYou_7_1.png",
     "apiUrl": "/api/card1/thankyoucard",
@@ -701,6 +715,7 @@
     },
     "fontAwesomeIconColor": "#aa4564",
     "categoryId": "4",
+    "maxCharsPerLine": 19,
     "backgroundImageStyle": {},
     "backgroundImage": "MissYou_1_1.png",
     "apiUrl": "/api/card1/missyoucard",
@@ -761,6 +776,7 @@
     },
     "fontAwesomeIconColor": "#fff",
     "categoryId": "3",
+    "maxCharsPerLine": 19,
     "backgroundImageStyle": {},
     "backgroundImage": "MissYou_2_1.png",
     "apiUrl": "/api/card1/missyoucard3",
@@ -817,6 +833,7 @@
     },
     "fontAwesomeIconColor": "#fff",
     "categoryId": "3",
+    "maxCharsPerLine": 19,
     "backgroundImageStyle": {},
     "backgroundImage": "MissYou_3_1.png",
     "apiUrl": "/api/card1/missyoucard1",
@@ -873,6 +890,7 @@
     },
     "fontAwesomeIconColor": "#2e5b67",
     "categoryId": "3",
+    "maxCharsPerLine": 20,
     "backgroundImageStyle": {},
     "backgroundImage": "MissYou_4_1.png",
     "apiUrl": "/api/card1/missyoucard2",
@@ -931,6 +949,7 @@
     },
     "fontAwesomeIconColor": "#d53847",
     "categoryId": "3",
+    "maxCharsPerLine": 22,
     "backgroundImageStyle": {},
     "backgroundImage": "MissYou_5_1.png",
     "apiUrl": "/api/card1/missyoucard3",
@@ -988,6 +1007,7 @@
     },
     "fontAwesomeIconColor": "#385e63",
     "categoryId": "3",
+    "maxCharsPerLine": 17,
     "backgroundImageStyle": {},
     "backgroundImage": "MissYou_6_1.png",
     "apiUrl": "/api/card1/missyoucard3",
@@ -1048,6 +1068,7 @@
     },
     "fontAwesomeIconColor": "#84c3cf",
     "categoryId": "1",
+    "maxCharsPerLine": 33,
     "backgroundImageStyle": {},
     "backgroundImage": "GetWellSoon_1_1.png",
     "apiUrl": "/api/card1/getwellsooncard",
@@ -1096,6 +1117,7 @@
     },
     "fontAwesomeIconColor": "#000",
     "categoryId": "1",
+    "maxCharsPerLine": 36,
     "backgroundImageStyle": {},
     "backgroundImage": "GetWellSoon_2_1.png",
     "apiUrl": "/api/card1/getwellsooncard",
@@ -1144,9 +1166,10 @@
     },
     "fontAwesomeIconColor": "#e54d8d",
     "categoryId": "1",
+    "maxCharsPerLine": 33,
     "backgroundImageStyle": {},
     "backgroundImage": "GetWellSoon_3_1.png",
-    "apiUrl": "/api/card1/getwellsooncard",
+    "apiUrl": "/api/card1/getwellsooncard1",
     "commonStyle": {
       "position": "relative",
       "fontSize": 13,
@@ -1192,6 +1215,7 @@
     },
     "fontAwesomeIconColor": "#506b2d",
     "categoryId": "1",
+    "maxCharsPerLine": 33,
     "backgroundImageStyle": {},
     "backgroundImage": "GetWellSoon_4_1.png",
     "apiUrl": "/api/card1/getwellsooncard",
@@ -1241,6 +1265,7 @@
     },
     "fontAwesomeIconColor": "#ad2057",
     "categoryId": "1",
+    "maxCharsPerLine": 25,
     "backgroundImageStyle": {},
     "backgroundImage": "GetWellSoon_5_1.png",
     "apiUrl": "/api/card1/getwellsooncard",
@@ -1289,6 +1314,7 @@
     },
     "fontAwesomeIconColor": "#ffbd92",
     "categoryId": "1",
+    "maxCharsPerLine": 28,
     "backgroundImageStyle": {},
     "backgroundImage": "GetWellSoon_6_1.png",
     "apiUrl": "/api/card1/getwellsooncard",
@@ -1337,6 +1363,7 @@
     },
     "fontAwesomeIconColor": "#4db4e3",
     "categoryId": "1",
+    "maxCharsPerLine": 30,
     "backgroundImageStyle": {},
     "backgroundImage": "GetWellSoon_7_1.png",
     "apiUrl": "/api/card1/getwellsooncard",
@@ -1375,6 +1402,7 @@
     },
     "fontAwesomeIconColor": "#004a74",
     "categoryId": "1",
+    "maxCharsPerLine": 30,
     "backgroundImageStyle": {},
     "backgroundImage": "GetWellSoon_8_1.png",
     "apiUrl": "/api/card1/getwellsooncard",
@@ -1413,9 +1441,10 @@
     },
     "fontAwesomeIconColor": "#f24375",
     "categoryId": "1",
+    "maxCharsPerLine": 30,
     "backgroundImageStyle": {},
     "backgroundImage": "GetWellSoon_9_1.png",
-    "apiUrl": "/api/card1/getwellsooncard",
+    "apiUrl": "/api/card1/getwellsooncard2",
     "commonStyle": {
       "position": "relative",
       "fontSize": 16,
@@ -1452,6 +1481,7 @@
     },
     "categoryId": "9",
     "backgroundImageStyle": {},
+    "maxCharsPerLine": 33,
     "backgroundImage": "Engagement_1_1.png",
     "commonStyle": {
       "position": "relative",
@@ -1547,6 +1577,7 @@
     },
     "fontAwesomeIconColor": "#fff",
     "categoryId": "9",
+    "maxCharsPerLine": 33,
     "backgroundImageStyle": {},
     "backgroundImage": "Engagement_2_1.png",
     "apiUrl": "/api/card1/engagementcard",
@@ -1642,6 +1673,7 @@
     },
     "fontAwesomeIconColor": "#f8b308",
     "categoryId": "9",
+    "maxCharsPerLine": 33,
     "backgroundImageStyle": {},
     "backgroundImage": "Engagement_3_1.png",
     "apiUrl": "/api/card1/engagementcard",
@@ -1734,6 +1766,7 @@
     },
     "fontAwesomeIconColor": "#f60331",
     "categoryId": "9",
+    "maxCharsPerLine": 33,
     "backgroundImageStyle": {},
     "backgroundImage": "Engagement_4_1.png",
     "apiUrl": "/api/card1/engagementcard1",
@@ -1818,8 +1851,9 @@
       "justifyContent": "center",
       "alignItems": "center"
     },
-    "fontAwesomeIconColor": "#f60331",
+    "fontAwesomeIconColor": "#323d43",
     "categoryId": "9",
+    "maxCharsPerLine": 33,
     "backgroundImageStyle": {},
     "backgroundImage": "Engagement_5_1.png",
     "apiUrl": "/api/card1/engagementcard",
@@ -1828,49 +1862,56 @@
       "fontSize": 18,
       "textAlign": "center",
       "color": "#f60331",
-      "lineHeight": 20,
+
       "width": "100%"
     },
     "contentStyle": {
       "maxWidth": "67%",
       "alignItems": "center",
       "alignSelf": "center",
-      "marginTop": 200
+      "marginTop": 160
     },
     "content": [
       {
         "key": "groomName",
         "style": {
-          "fontFamily": "NirmalaB",
-          "marginTop": 40
+          "marginTop": 40,
+          "color": "#323d43",
+          "fontSize": "24",
+          "fontFamily": "GreatVibes-Regular"
         },
         "editable": true,
-        "defaultValue": "ANDREA CAMPBELL"
+        "defaultValue": "Andrea Campbell"
       },
       {
         "key": "and",
         "style": {
-          "fontFamily": "NirmalaB",
-          "marginTop": 10
+          "fontFamily": "GreatVibes-Regular",
+
+          "color": "#323d43",
+          "fontSize": "24"
         },
         "editable": false,
-        "defaultValue": "AND"
+        "defaultValue": "and"
       },
       {
         "key": "groomOrBrideName",
         "style": {
-          "fontFamily": "NirmalaB",
-          "marginTop": 10
+          "fontFamily": "GreatVibes-Regular",
+
+          "color": "#323d43",
+          "fontSize": "24"
         },
         "editable": true,
-        "defaultValue": "JACOB HENDERSON"
+        "defaultValue": "Jacob Henderson"
       },
       {
         "key": "date",
         "style": {
           "fontSize": 14,
-          "fontFamily": "Nirmala",
-          "marginTop": 50
+          "fontFamily": "NirmalaB",
+          "marginTop": 20,
+          "color": "#323d43"
         },
         "editable": true,
         "defaultValue": "June 29 2022"
@@ -1879,7 +1920,8 @@
         "key": "time",
         "style": {
           "fontSize": 14,
-          "fontFamily": "Nirmala"
+          "fontFamily": "NirmalaB",
+          "color": "#323d43"
         },
         "editable": true,
         "defaultValue": "7:00 PM EVENING"
@@ -1888,9 +1930,10 @@
         "key": "venue",
         "style": {
           "fontSize": 14,
-          "width": 500,
-
-          "fontFamily": "gadugib"
+          "width": 300,
+          "color": "#323d43",
+          "fontWeight": "bold",
+          "fontFamily": "Franklin-Gothic-Medium-Regular"
         },
         "editable": true,
         "defaultValue": "MAJESTIC BALL ROOM 1152-DARK STAR LANE"
@@ -1906,6 +1949,7 @@
     },
     "fontAwesomeIconColor": "#f60331",
     "categoryId": "9",
+    "maxCharsPerLine": 33,
     "backgroundImageStyle": {},
     "backgroundImage": "Engagement_6_1.png",
     "apiUrl": "/api/card1/engagementcard",
@@ -1914,49 +1958,56 @@
       "fontSize": 18,
       "textAlign": "center",
       "color": "#f60331",
-      "lineHeight": 20,
+      "lineHeight": 24,
       "width": "100%"
     },
     "contentStyle": {
       "maxWidth": "67%",
       "alignItems": "center",
       "alignSelf": "center",
-      "marginTop": 200
+      "marginTop": 260
     },
     "content": [
       {
         "key": "groomName",
         "style": {
-          "fontFamily": "NirmalaB",
-          "marginTop": 40
+          "fontFamily": "GreatVibes-Regular",
+          "marginTop": 40,
+          "fontSize": 24,
+          "color": "#323d43"
         },
         "editable": true,
-        "defaultValue": "ANDREA CAMPBELL"
+        "defaultValue": "Andrea Campbell"
       },
       {
         "key": "and",
         "style": {
-          "fontFamily": "NirmalaB",
-          "marginTop": 10
+          "fontFamily": "GreatVibes-Regular",
+          "fontSize": 24,
+          "marginTop": 10,
+          "color": "#7d8195"
         },
         "editable": false,
-        "defaultValue": "AND"
+        "defaultValue": "and"
       },
       {
         "key": "groomOrBrideName",
         "style": {
-          "fontFamily": "NirmalaB",
-          "marginTop": 10
+          "fontFamily": "GreatVibes-Regular",
+          "fontSize": 24,
+
+          "color": "#323d43"
         },
         "editable": true,
-        "defaultValue": "JACOB HENDERSON"
+        "defaultValue": "Jacob Henderson"
       },
       {
         "key": "date",
         "style": {
           "fontSize": 14,
-          "fontFamily": "Nirmala",
-          "marginTop": 50
+          "fontFamily": "NirmalaB",
+          "marginTop": 30,
+          "color": "#38444c"
         },
         "editable": true,
         "defaultValue": "June 29 2022"
@@ -1965,7 +2016,8 @@
         "key": "time",
         "style": {
           "fontSize": 14,
-          "fontFamily": "Nirmala"
+          "fontFamily": "NirmalaB",
+          "color": "#303a42"
         },
         "editable": true,
         "defaultValue": "7:00 PM EVENING"
@@ -1974,9 +2026,10 @@
         "key": "venue",
         "style": {
           "fontSize": 14,
-          "width": 500,
-
-          "fontFamily": "gadugib"
+          "width": 290,
+          "color": "#293439",
+          "fontWeight": "bold",
+          "fontFamily": "Franklin-Gothic-Medium-Regular"
         },
         "editable": true,
         "defaultValue": "MAJESTIC BALL ROOM 1152-DARK STAR LANE"
@@ -1992,6 +2045,7 @@
     },
     "fontAwesomeIconColor": "#fff",
     "categoryId": "9",
+    "maxCharsPerLine": 30,
     "backgroundImageStyle": {},
     "backgroundImage": "BabyShower_1_1.png",
     "apiUrl": "/api/card1/babyshower1",
@@ -2072,6 +2126,7 @@
     },
     "fontAwesomeIconColor": "#8d8cab",
     "categoryId": "9",
+    "maxCharsPerLine": 34,
     "backgroundImageStyle": {},
     "backgroundImage": "BabyShower_2_1.png",
     "apiUrl": "/api/card1/babyshower3",
@@ -2156,9 +2211,10 @@
     },
     "fontAwesomeIconColor": "#000",
     "categoryId": "9",
+    "maxCharsPerLine": 40,
     "backgroundImageStyle": {},
     "backgroundImage": "BabyShower_3_1.png",
-    "apiUrl": "/api/card1/babyshower1",
+    "apiUrl": "/api/card1/babyshower2",
     "commonStyle": {
       "position": "relative",
       "fontSize": 20,
@@ -2238,6 +2294,7 @@
     },
     "fontAwesomeIconColor": "#455381",
     "categoryId": "9",
+    "maxCharsPerLine": 30,
     "backgroundImageStyle": {},
     "backgroundImage": "BabyShower_4_1.png",
     "apiUrl": "/api/card1/babyshower",
@@ -2322,9 +2379,10 @@
     },
     "fontAwesomeIconColor": "#fff",
     "categoryId": "9",
+    "maxCharsPerLine": 34,
     "backgroundImageStyle": {},
     "backgroundImage": "BabyShower_5_1.png",
-    "apiUrl": "/api/card1/babyshower1",
+    "apiUrl": "/api/card1/babyshower3",
     "commonStyle": {
       "position": "relative",
       "fontSize": 20,
@@ -2402,9 +2460,10 @@
     },
     "fontAwesomeIconColor": "#82d3f2",
     "categoryId": "9",
+    "maxCharsPerLine": 34,
     "backgroundImageStyle": {},
     "backgroundImage": "BabyShower_6_1.png",
-    "apiUrl": "/api/card1/babyshower1",
+    "apiUrl": "/api/card1/babyshower3",
     "commonStyle": {
       "position": "relative",
       "fontSize": 20,
