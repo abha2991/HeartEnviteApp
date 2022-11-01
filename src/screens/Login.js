@@ -154,7 +154,7 @@ const Login = () => {
       });
 
       await AsyncStorage.setItem("token", res.accessToken);
-      navigation.navigate("Categories");
+      navigation.navigate("Dashboard");
     } catch (e) {
       alert("Either email or password is incorrect");
     }

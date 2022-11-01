@@ -5,6 +5,7 @@ import React from "react";
 export const CategoryImage = (props) => {
   return (
     <View
+      onPress={props.onPress}
       style={{
         margin: 10,
         alignItems: "center",
@@ -40,6 +41,32 @@ export const DataCellImage = (props) => {
       }}
     >
       <Image style={{ width: 160, height: 220 }} source={props.source} />
+      <View
+        style={{
+          flexDirection: "row",
+
+          justifyContent: "center",
+        }}
+      >
+        <Text
+          style={{
+            margin: 5,
+            fontWeight: "bold",
+          }}
+        >
+          ₹{props.cardSalePrice}
+        </Text>
+        <Text
+          style={{
+            textDecorationLine: "line-through",
+            textDecorationStyle: "solid",
+            margin: 5,
+            fontWeight: "bold",
+          }}
+        >
+          ₹{props.cardTotalPrice}
+        </Text>
+      </View>
     </Card>
   );
 };

@@ -3,7 +3,7 @@ import { useFonts } from "expo-font";
 export const useFontsLoaded = () => {
   let [fontsLoaded] = useFonts({
     "AGaramondPro-Bold": require("./font/AGaramondPro-Bold.ttf"),
-    "Ananda-Black-Personal-Use": require("./font/Ananda-Black-Personal-Use.ttf"),
+    "Ananda-Black": require("./font/Ananda-Black-Personal-Use.ttf"),
     "arial-mt-bold": require("./font/arial-mt-bold.ttf"),
     ArialMT: require("./font/ArialMT.ttf"),
     "ArimaMadurai-Bold": require("./font/ArimaMadurai-Bold.ttf"),

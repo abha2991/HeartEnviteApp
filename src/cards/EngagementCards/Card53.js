@@ -5,6 +5,8 @@ import {
   StyleSheet,
   Button,
   SafeAreaView,
+  useWindowDimensions,
+  Dimensions,
 } from "react-native";
 
 import React, { useCallback, useEffect, useState } from "react";
@@ -13,6 +15,8 @@ import { useForm } from "react-hook-form";
 import { Form } from "../../utils/Form";
 import { Button as PaperButton } from "react-native-paper";
 import { cardControllerEngagementCard } from "../../api";
+
+const { width } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   container: {
@@ -23,14 +27,13 @@ const styles = StyleSheet.create({
   },
   backgroundImage: {
     flex: 1,
-
     height: "100%",
-    width: "95%",
-    marginLeft: "5%",
+    width: width - 32,
   },
   sectionContainer: {
-    marginTop: 380,
-    paddingHorizontal: 24,
+    position: "absolute",
+    // marginTop: 380,
+    // paddingHorizontal: 24,
   },
 
   sectionContainer1: {
@@ -86,15 +89,11 @@ const styles = StyleSheet.create({
   },
 });
 const Card82 = () => {
-  const {
-    control,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
+  const { control, handleSubmit } = useForm({
     defaultValues: {
-      brideOrGroomName: "Andrea Campbell",
-      and: "And",
-      groomOrBrideName: "Jacob Henderson",
+      brideOrGroomName: "ANDREA CAMPBELL",
+      and: "AND",
+      groomOrBrideName: "JACOB HENDERSON",
       date: "June 29 2022",
       time: "7:00 PM EVENING",
       venue: "MAJESTIC BALL ROOM 1152-DARK STAR LANE",
@@ -118,24 +117,101 @@ const Card82 = () => {
             <Form
               control={control}
               name={"brideOrGroomName"}
-              style={styles.name1}
+              style={{
+                position: "relative",
+                top: 300,
+                left: (width - 32 - 200) * 0.5,
+                width: 200,
+                lineHeight: 20,
+                textAlign: "center",
+                fontFamily: "NirmalaB",
+                fontSize: 18,
+                color: "#f60331",
+              }}
+              // style={styles.name1}
             />
             <Form
               control={control}
               name={"and"}
               editable={false}
-              style={styles.and}
+              // style={styles.and}
+
+              style={{
+                position: "relative",
+                top: 310,
+                left: (width - 32 - 200) * 0.5,
+                width: 200,
+                lineHeight: 20,
+                textAlign: "center",
+                fontFamily: "NirmalaB",
+                fontSize: 18,
+                color: "#f60331",
+              }}
             />
             <Form
               control={control}
               name={"groomOrBrideName"}
-              style={styles.name2}
-            />
-            <Form control={control} name={"date"} style={styles.date} />
-            <Form control={control} name={"time"} style={styles.time} />
-            <Form control={control} name={"venue"} style={styles.venue} />
+              // style={styles.name2}
 
-            <Button title="Submit" onPress={handleSubmit(onSubmit)} />
+              style={{
+                position: "relative",
+                top: 320,
+                left: (width - 32 - 200) * 0.5,
+                width: 200,
+                lineHeight: 20,
+                textAlign: "center",
+                fontFamily: "NirmalaB",
+                fontSize: 18,
+                color: "#f60331",
+              }}
+            />
+            <Form
+              control={control}
+              name={"date"}
+              //style={styles.date}
+              //
+              style={{
+                position: "relative",
+                top: 380,
+                left: (width - 32 - 200) * 0.5,
+                width: 200,
+                lineHeight: 20,
+                textAlign: "center",
+                fontFamily: "Nirmala",
+                fontSize: 14,
+                color: "#f60331",
+              }}
+            />
+            <Form
+              control={control}
+              name={"time"}
+              style={{
+                position: "relative",
+                top: 380,
+                left: (width - 32 - 200) * 0.5,
+                width: 200,
+                lineHeight: 20,
+                textAlign: "center",
+                fontFamily: "Nirmala",
+                fontSize: 14,
+                color: "#f60331",
+              }}
+            />
+            <Form
+              control={control}
+              name={"venue"}
+              style={{
+                position: "relative",
+                top: 380,
+                left: (width - 32 - 380) * 0.5,
+                width: 380,
+                lineHeight: 20,
+                textAlign: "center",
+                fontFamily: "gadugib",
+                fontSize: 14,
+                color: "#f60331",
+              }}
+            />
           </View>
         </ImageBackground>
       </View>

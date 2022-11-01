@@ -10,36 +10,37 @@ import { CardImage, DataCellImage } from "../Style";
 import { Button, Card } from "react-native-paper";
 // import RazorpayCheckout from "react-native-razorpay";
 import logo from "../images/logo.png";
-import RazorpayCheckout from "react-native-razorpay";
+import { useNavigation } from "@react-navigation/core";
 
 const Preview = ({ route }) => {
   const { id } = route.params;
 
   const { data: cardData1 } = useCardControllerFindOne(id);
+  const navigation = useNavigation();
 
-  const options = {
-    description: "HeartEnvite",
-    image: { logo },
-    currency: "INR",
-    key: "rzp_test_g5mVREbtx16Zdy",
-    amount: "5000",
-    name: "HeartEnvite",
-    prefill: {
-      name: "Ezea group",
-      email: "Ezea@zeabros.com",
-      contact: "9999999999",
-    },
-  };
-
-  const onPayment = () => {
-    RazorpayCheckout.open(options)
-      .then((data) => {
-        alert("Success");
-      })
-      .catch((e) => {
-        alert(e);
-      });
-  };
+  // const options = {
+  //   description: "HeartEnvite",
+  //   image: { logo },
+  //   currency: "INR",
+  //   key: "rzp_test_g5mVREbtx16Zdy",
+  //   amount: "5000",
+  //   name: "HeartEnvite",
+  //   prefill: {
+  //     name: "Ezea group",
+  //     email: "Ezea@zeabros.com",
+  //     contact: "9999999999",
+  //   },
+  // };
+  //
+  // const onPayment = () => {
+  //   RazorpayCheckout.open(options)
+  //     .then((data) => {
+  //       alert("Success");
+  //     })
+  //     .catch((e) => {
+  //       alert(e);
+  //     });
+  // };
 
   if (cardData1) {
     return (
@@ -67,6 +68,7 @@ const Preview = ({ route }) => {
             {cardData1?.previewCardNames?.map((value, index) => {
               return (
                 <CardImage
+                  key={index}
                   source={{
                     uri:
                       "http://localhost:3001/generated/" +
@@ -90,14 +92,18 @@ const Preview = ({ route }) => {
                 alignItems: "center",
               }}
             >
-              <Button buttonColor="#ff3162" textColor="white">
-                Edit This Card
-              </Button>
               <Button
                 buttonColor="#ff3162"
                 textColor="white"
-                //onPress={() => onPayment()}
+                onPress={() => {
+                  navigation.navigate("EditCard", {
+                    id: cardData1.id,
+                  });
+                }}
               >
+                Edit This Card
+              </Button>
+              <Button buttonColor="#ff3162" textColor="white">
                 Pay And Download
               </Button>
             </Card.Content>

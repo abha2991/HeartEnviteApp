@@ -1,9 +1,20 @@
-import React, { useEffect } from "react";
-import { Image, ScrollView, Text, View } from "react-native";
+import React, { useEffect, useState } from "react";
+import {
+  Image,
+  ScrollView,
+  Text,
+  View,
+  Modal,
+  StyleSheet,
+  SafeAreaView,
+} from "react-native";
 import wedding from "../images/image2.png";
 import birthday from "../images/image3.png";
 import engagement from "../images/Engagement.png";
 import { CardComponent, CategoryImage, DataCellImage } from "../Style";
+import CategoryList from "../CategoryList";
+import CustomizedCardModal from "../utils/CustomizedCardModal";
+
 import {
   Text as PaperText,
   Card,
@@ -22,12 +33,32 @@ import {
 import logo from "../images/logo.png";
 import { useNavigation } from "@react-navigation/core";
 
-const Categories = () => {
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#ecf0f1",
+    marginTop: 30,
+  },
+  modal: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "#00ff00",
+    padding: 100,
+  },
+  text: {
+    color: "#3f2949",
+    marginTop: 10,
+  },
+});
+
+const Dashboard = () => {
   const navigation = useNavigation();
   const { mutate } = useAuthControllerLogin({});
   const { data } = useUsersControllerFindAll();
   const { data: cardData } = useCardetailsControllerFindAll({});
-
+  const [showModal, setShowModal] = useState(false);
   const getWellSoonCards = cardData?.filter(
     (val) => val.cardCategory === "GetWellInvitation"
   );
@@ -66,79 +97,18 @@ const Categories = () => {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{ flexDirection: "row" }}
         >
-          <CategoryImage
-            source={wedding}
-            text={"Wedding"}
-            onPress={() => {
-              navigation.navigate("WeddingCards");
-            }}
-          />
-
-          <CategoryImage
-            source={birthday}
-            text={"Birthday"}
-            onPress={() => {
-              navigation.navigate("BirthdayCards");
-            }}
-          />
-          <CategoryImage
-            source={engagement}
-            text={"Engagement"}
-            onPress={() => {
-              navigation.navigate("EngagementCards");
-            }}
-          />
-          <CategoryImage
-            source={wedding}
-            text={"Anniversary"}
-            onPress={() => {
-              navigation.navigate("AnniversaryCards");
-            }}
-          />
-
-          <CategoryImage
-            source={birthday}
-            text={"Baby Shower"}
-            onPress={() => {
-              navigation.navigate("BabyShowerCards");
-            }}
-          />
-          <CategoryImage
-            source={engagement}
-            text={"Congratulations"}
-            onPress={() => {
-              navigation.navigate("CongratulationCards");
-            }}
-          />
-          <CategoryImage
-            source={wedding}
-            text={"Get Well Soon"}
-            onPress={() => {
-              navigation.navigate("GetWellSoonCards");
-            }}
-          />
-          <CategoryImage
-            source={birthday}
-            text={"Miss You"}
-            onPress={() => {
-              navigation.navigate("MissYouCards");
-            }}
-          />
-          <CategoryImage
-            source={engagement}
-            text={"Reception"}
-            onPress={() => {
-              navigation.navigate("ReceptionCards");
-            }}
-          />
-
-          <CategoryImage
-            source={wedding}
-            text={"Thank You"}
-            onPress={() => {
-              navigation.navigate("ThankYouCards");
-            }}
-          />
+          {CategoryList?.map((value, index) => {
+            return (
+              <CategoryImage
+                key={index}
+                source={value.image}
+                text={value.text}
+                onPress={() => {
+                  navigation.navigate(value.url);
+                }}
+              />
+            );
+          })}
         </ScrollView>
       </View>
       {/*<Card>*/}
@@ -168,7 +138,7 @@ const Categories = () => {
             flexDirection: "row",
             justifyContent: "center",
             marginTop: 20,
-
+            marginBottom: 20,
             flexWrap: "wrap",
             display: "flex",
           }}
@@ -177,6 +147,8 @@ const Categories = () => {
             return (
               <DataCellImage
                 key={index}
+                cardSalePrice={value.cardSalePrice}
+                cardTotalPrice={value.cardTotalPrice}
                 source={{
                   uri:
                     "http://localhost:3001/assets/" +
@@ -193,16 +165,6 @@ const Categories = () => {
             );
           })}
         </View>
-        {/*<View*/}
-        {/*  style={{*/}
-        {/*    flexDirection: "row",*/}
-        {/*    justifyContent: "center",*/}
-        {/*    marginTop: 20,*/}
-        {/*  }}*/}
-        {/*>*/}
-        {/*  <DataCellImage source={wedding}></DataCellImage>*/}
-        {/*  <DataCellImage source={wedding}></DataCellImage>*/}
-        {/*</View>*/}
 
         <CardComponent
           title={"Engagement Cards"}
@@ -217,7 +179,7 @@ const Categories = () => {
             flexDirection: "row",
             justifyContent: "center",
             marginTop: 20,
-
+            marginBottom: 20,
             flexWrap: "wrap",
             display: "flex",
           }}
@@ -225,6 +187,8 @@ const Categories = () => {
           {engagementCards?.slice(0, 4)?.map((value, index) => {
             return (
               <DataCellImage
+                cardSalePrice={value.cardSalePrice}
+                cardTotalPrice={value.cardTotalPrice}
                 source={{
                   uri:
                     "http://localhost:3001/assets/" +
@@ -255,7 +219,7 @@ const Categories = () => {
             flexDirection: "row",
             justifyContent: "center",
             marginTop: 20,
-
+            marginBottom: 20,
             flexWrap: "wrap",
             display: "flex",
           }}
@@ -263,6 +227,8 @@ const Categories = () => {
           {getWellSoonCards?.slice(0, 4)?.map((value, index) => {
             return (
               <DataCellImage
+                cardSalePrice={value.cardSalePrice}
+                cardTotalPrice={value.cardTotalPrice}
                 source={{
                   uri:
                     "http://localhost:3001/assets/" +
@@ -311,15 +277,6 @@ const Categories = () => {
             <Text
               style={{ fontSize: 12, marginTop: 3 }}
             >{`\u2022 Flexible editing & customer support`}</Text>
-
-            {/*<Button*/}
-            {/*  style={{ marginTop: 15, width: 120 }}*/}
-            {/*  mode="contained"*/}
-            {/*  buttonColor="#ff3162"*/}
-            {/*  onPress={() => console.log("Pressed")}*/}
-            {/*>*/}
-            {/*  Buy Now*/}
-            {/*</Button>*/}
           </Card.Content>
 
           <Card.Content style={{ alignItems: "center" }}>
@@ -327,10 +284,17 @@ const Categories = () => {
               style={{ marginTop: 20, width: 120 }}
               mode="contained"
               buttonColor="#ff3162"
-              onPress={() => console.log("Pressed")}
+              // onPress={CustomizedCardModal}
             >
               Buy Now
             </Button>
+
+            {/*<CustomizedCardModal*/}
+            {/*  name={Button}*/}
+            {/*  placeholder={Button}*/}
+            {/*  label={"Name"}*/}
+            {/*  value={"name"}*/}
+            {/*></CustomizedCardModal>*/}
           </Card.Content>
         </Card>
       </ScrollView>
@@ -338,4 +302,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default Dashboard;

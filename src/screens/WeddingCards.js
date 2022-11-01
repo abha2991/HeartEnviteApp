@@ -39,6 +39,9 @@ const WeddingCards = () => {
               <>
                 <View>
                   <DataCellImage
+                    key={index}
+                    cardSalePrice={value.cardSalePrice}
+                    cardTotalPrice={value.cardTotalPrice}
                     source={{
                       uri:
                         "http://localhost:3001/assets/" +

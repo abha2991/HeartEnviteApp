@@ -14,6 +14,11 @@ import {
 } from "react-native";
 
 import { SocialIcon } from "react-native-elements";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import {
+  useAuthControllerFacebookAuth,
+  useAuthControllerRegister,
+} from "../api";
 
 const styles = StyleSheet.create({
   mainBody: {
@@ -89,12 +94,51 @@ const Register = () => {
   const navigation = useNavigation();
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
-  const [firstname, setFirstName] = useState("");
+
+  const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [loading, setLoading] = useState(false);
   const [errortext, setErrortext] = useState("");
 
   const passwordInputRef = createRef();
+  const { mutateAsync } = useAuthControllerRegister({});
+
+  const handleSubmitPress = async () => {
+    setErrortext("");
+    if (!userEmail) {
+      alert("Please fill Email");
+      return;
+    }
+    if (!userPassword) {
+      alert("Please fill Password");
+      return;
+    }
+    setLoading(true);
+    try {
+      const res = await mutateAsync({
+        data: {
+          firstName: firstName,
+          lastName: lastName,
+          email: userEmail,
+          password: userPassword,
+        },
+      });
+      alert("Registered Successfully");
+      navigation.navigate("Dashboard");
+    } catch (e) {
+      alert("Please fill details properly");
+    }
+  };
+
+  const handleFacebook = async () => {
+    try {
+      const res = await fetch("api/auth/facebook");
+      // await AsyncStorage.setItem("token", res.accessToken);
+      // navigation.navigate("Dashboard");
+    } catch (e) {
+      alert("Either email or password is incorrect");
+    }
+  };
 
   // const handleSubmitPress = () => {
   //   setErrortext("");
@@ -167,6 +211,8 @@ const Register = () => {
                 onPress={() => {
                   alert("facebook");
                 }}
+
+                // onPress={handleFacebook}
               />
 
               <SocialIcon
@@ -197,15 +243,11 @@ const Register = () => {
             <View style={styles.SectionStyle}>
               <TextInput
                 style={styles.inputStyle}
-                onChangeText={(UserEmail) => setFirstName(UserEmail)}
+                onChangeText={(firstName) => setFirstName(firstName)}
                 placeholder="Enter First Name"
                 placeholderTextColor="#8b9cb5"
                 autoCapitalize="none"
-                keyboardType="email-address"
                 returnKeyType="next"
-                onSubmitEditing={() =>
-                  passwordInputRef.current && passwordInputRef.current.focus()
-                }
                 underlineColorAndroid="#f000"
                 blurOnSubmit={false}
               />
@@ -213,15 +255,11 @@ const Register = () => {
             <View style={styles.SectionStyle}>
               <TextInput
                 style={styles.inputStyle}
-                onChangeText={(UserEmail) => setLastName(UserEmail)}
+                onChangeText={(lastName) => setLastName(lastName)}
                 placeholder="Enter Last name"
                 placeholderTextColor="#8b9cb5"
                 autoCapitalize="none"
-                keyboardType="email-address"
                 returnKeyType="next"
-                onSubmitEditing={() =>
-                  passwordInputRef.current && passwordInputRef.current.focus()
-                }
                 underlineColorAndroid="#f000"
                 blurOnSubmit={false}
               />
@@ -263,7 +301,7 @@ const Register = () => {
             <TouchableOpacity
               style={styles.buttonStyle}
               activeOpacity={0.5}
-              //onPress={handleSubmitPress}
+              onPress={handleSubmitPress}
             >
               <Text style={styles.buttonTextStyle}>REGISTER</Text>
             </TouchableOpacity>

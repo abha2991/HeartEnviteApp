@@ -25,6 +25,7 @@ const CardDetailPages = ({ route }) => {
           return (
             <>
               <CardImage
+                key={index}
                 source={{
                   uri: "http://localhost:3001/assets/" + category + "/" + value,
                 }}
@@ -34,7 +35,7 @@ const CardDetailPages = ({ route }) => {
         })}
         <View style={{ alignItems: "center" }}></View>
       </ScrollView>
-      <SafeAreaView style={{ alignItems: "center", fontWeight: "bolder" }}>
+      <SafeAreaView style={{ alignItems: "center" }}>
         <Button
           style={{
             marginTop: 20,
@@ -44,7 +45,11 @@ const CardDetailPages = ({ route }) => {
           mode="contained"
           buttonColor="#ff3162"
           onPress={() => {
-            navigation.navigate(`Card${id}`);
+            // navigation.navigate(`Card${id}`);
+            navigation.navigate("Card", {
+              id: id,
+              category: category,
+            });
           }}
         >
           Try This Card

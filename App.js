@@ -5,9 +5,11 @@ import { useNavigation, DrawerActions } from "@react-navigation/core";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import logo from "./src/images/logo.png";
-import Categories from "./src/screens/Categories";
+import Dashboard from "./src/screens/Dashboard";
 import { Appbar, List, Provider as ThemeProvider } from "react-native-paper";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import Card from "./src/components/Card";
 
 import Login from "./src/screens/Login";
 import Register from "./src/screens/Register";
@@ -24,6 +26,9 @@ import ThankYouCards from "./src/screens/ThankYouCards";
 import WeddingCards from "./src/screens/WeddingCards";
 import CustomizedCardsQuery from "./src/screens/CustomizedCardsQuery";
 import Preview from "./src/screens/Preview";
+import EditCard from "./src/components/EditCard";
+import Drafts from "./src/screens/Drafts";
+import DraftsDetailPages from "./src/screens/DraftsDetailPages";
 
 import Card50 from "./src/cards/EngagementCards/Card50";
 import Card51 from "./src/cards/EngagementCards/Card51";
@@ -44,6 +49,7 @@ import {
 } from "@react-navigation/drawer";
 import { useEffect, useState } from "react";
 import { useFontsLoaded } from "./src/fonts";
+import { useAuthControllerLogout, useAuthControllerViewer } from "./src/api";
 
 if (__DEV__) {
   import("./ReactotronConfig").then(() => console.log("Reactotron Configured"));
@@ -62,7 +68,7 @@ function Header() {
           style={{ width: 120, height: 50, margin: 10 }}
           source={logo}
           onPress={() => {
-            navigation.navigate("Categories");
+            navigation.navigate("Dashboard");
           }}
         />
       </View>
@@ -81,28 +87,51 @@ function CustomDrawerContent(props) {
 
   const [expanded, setExpanded] = useState(false);
 
+  const handleSubmitPress = async () => {
+    const token = await AsyncStorage.getItem("token");
+    await AsyncStorage.removeItem("token");
+  };
+
+  const { data: profile } = useAuthControllerViewer({});
+
+  console.log({ profile });
+
   return (
     <DrawerContentScrollView>
       <DrawerItem
-        labelStyle={{ fontSize: 18 }}
+        labelStyle={{ fontSize: 18, fontWeight: "bold" }}
         label="Home"
         onPress={() => {
-          navigation.navigate("Categories");
+          navigation.navigate("Dashboard");
         }}
       />
+
       <DrawerItem
-        labelStyle={{ fontSize: 18 }}
+        labelStyle={{ fontSize: 18, fontWeight: "bold" }}
         label="Login"
         onPress={() => {
           navigation.navigate("Login");
         }}
       />
 
+      {/*<DrawerItem*/}
+      {/*  labelStyle={{ fontSize: 18, fontWeight: "bold" }}*/}
+      {/*  label="Logout"*/}
+      {/*  onPress={handleSubmitPress}*/}
+      {/*/>*/}
+
       <ListItem.Accordion
         content={
           <>
             <ListItem.Content>
-              <ListItem.Title style={{ fontSize: 18, marginLeft: 4 }}>
+              <ListItem.Title
+                style={{
+                  fontSize: 18,
+                  marginLeft: 4,
+                  color: "rgba(28, 28, 30, 0.68)",
+                  fontWeight: "bold",
+                }}
+              >
                 Categories
               </ListItem.Title>
             </ListItem.Content>
@@ -128,6 +157,14 @@ function CustomDrawerContent(props) {
           </ListItem>
         ))}
       </ListItem.Accordion>
+
+      <DrawerItem
+        labelStyle={{ fontSize: 18, fontWeight: "bold" }}
+        label="Drafts"
+        onPress={() => {
+          navigation.navigate("Drafts");
+        }}
+      />
 
       {/*<View>*/}
       {/*  {CategoryList.map((item, i) => (*/}
@@ -159,8 +196,12 @@ function HomeScreen({}) {
       }}
       drawerContent={(props) => <CustomDrawerContent {...props} />}
     >
-      <Drawer.Screen name="Categories" component={Categories} />
+      <Drawer.Screen name="Dashboard" component={Dashboard} />
 
+      <Drawer.Screen name="Card" component={Card} />
+      <Drawer.Screen name="EditCard" component={EditCard} />
+      <Drawer.Screen name="Drafts" component={Drafts} />
+      <Drawer.Screen name="DraftsDetailPages" component={DraftsDetailPages} />
       <Drawer.Screen name="AnniversaryCards" component={AnniversaryCards} />
       <Drawer.Screen name="BabyShowerCards" component={BabyShowerCards} />
       <Drawer.Screen name="BirthdayCards" component={BirthdayCards} />
@@ -197,6 +238,7 @@ function App() {
   if (!fontsLoaded) {
     return null;
   }
+
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
