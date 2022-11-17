@@ -1,31 +1,34 @@
 import { Image, Text, View } from "react-native";
 import { Button, Card, Text as PaperText } from "react-native-paper";
 import React from "react";
+import TouchableRippleNative from "react-native-paper/src/components/TouchableRipple/TouchableRipple.native";
+import { TouchableRipple } from "react-native-paper";
 
 export const CategoryImage = (props) => {
   return (
-    <View
-      onPress={props.onPress}
-      style={{
-        margin: 10,
-        alignItems: "center",
-      }}
-    >
-      <Image
-        style={{ width: 70, height: 70, borderRadius: 40 }}
-        source={props.source}
-      />
-
-      <Text
-        onPress={props.onPress}
+    <TouchableRipple onPress={props.onPress}>
+      <View
         style={{
-          marginTop: 5,
-          fontSize: 14,
+          margin: 10,
+          alignItems: "center",
         }}
       >
-        {props.text}
-      </Text>
-    </View>
+        <Image
+          style={{ width: 70, height: 70, borderRadius: 40 }}
+          source={props.source}
+        />
+
+        <Text
+          onPress={props.onPress}
+          style={{
+            marginTop: 5,
+            fontSize: 14,
+          }}
+        >
+          {props.text}
+        </Text>
+      </View>
+    </TouchableRipple>
   );
 };
 
@@ -73,16 +76,18 @@ export const DataCellImage = (props) => {
 
 export const CardImage = (props) => {
   return (
-    <Image
-      style={{
-        width: "80%",
-        height: 500,
-        marginTop: 40,
+    <View elevation={10}>
+      <Image
+        style={{
+          width: "80%",
+          height: 500,
+          marginTop: 40,
 
-        marginHorizontal: "10%",
-      }}
-      source={props.source}
-    />
+          marginHorizontal: "10%",
+        }}
+        source={props.source}
+      />
+    </View>
   );
 };
 

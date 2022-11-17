@@ -62,7 +62,7 @@ const DraftsDetailPages = ({ route }) => {
               Edit This Card
             </Button>
             <Button buttonColor="#ff3162" textColor="white">
-              Pay And draft Download
+              Pay And Download
             </Button>
           </Card.Content>
         </Card>

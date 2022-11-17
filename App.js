@@ -1,12 +1,26 @@
 import "expo-dev-client";
 import * as React from "react";
-import { View, Text, Button, TextInput, Image } from "react-native";
+import {
+  View,
+  Text,
+  Button,
+  TextInput,
+  Image,
+  TouchableHighlight,
+  TouchableOpacity,
+  TouchableWithoutFeedback,
+} from "react-native";
 import { useNavigation, DrawerActions } from "@react-navigation/core";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import logo from "./src/images/logo.png";
 import Dashboard from "./src/screens/Dashboard";
-import { Appbar, List, Provider as ThemeProvider } from "react-native-paper";
+import {
+  Appbar,
+  List,
+  Provider as ThemeProvider,
+  Avatar,
+} from "react-native-paper";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Card from "./src/components/Card";
@@ -14,31 +28,30 @@ import Card from "./src/components/Card";
 import Login from "./src/screens/Login";
 import Register from "./src/screens/Register";
 import CardDetailPages from "./src/screens/CardDetailPages";
-import BirthdayCards from "./src/screens/BirthdayCards";
-import AnniversaryCards from "./src/screens/AnniversaryCards";
-import BabyShowerCards from "./src/screens/BabyShowerCards";
-import CongratulationCards from "./src/screens/CongratulationCards";
-import EngagementCards from "./src/screens/EngagementCards";
-import GetWellSoonCards from "./src/screens/GetWellSoonCards";
-import MissYouCards from "./src/screens/MissYouCards";
-import ReceptionCards from "./src/screens/ReceptionCards";
-import ThankYouCards from "./src/screens/ThankYouCards";
-import WeddingCards from "./src/screens/WeddingCards";
-import CustomizedCardsQuery from "./src/screens/CustomizedCardsQuery";
+
 import Preview from "./src/screens/Preview";
 import EditCard from "./src/components/EditCard";
 import Drafts from "./src/screens/Drafts";
 import DraftsDetailPages from "./src/screens/DraftsDetailPages";
+import PurchasedCardDetailsPages from "./src/screens/PurchasedCardDetailsPages";
+import CustomizedCardModal from "./src/utils/CustomizedCardModal";
+import {
+  Entypo,
+  AntDesign,
+  FontAwesome,
+  MaterialIcons,
+  Ionicons,
+  MaterialCommunityIcons,
+} from "@expo/vector-icons";
 
-import Card50 from "./src/cards/EngagementCards/Card50";
-import Card51 from "./src/cards/EngagementCards/Card51";
-import Card52 from "./src/cards/EngagementCards/Card52";
-import Card53 from "./src/cards/EngagementCards/Card53";
-import Card81 from "./src/cards/EngagementCards/Card81";
-import Card82 from "./src/cards/EngagementCards/Card82";
+import Profile from "./src/screens/Profile";
+import ProfileScreen from "./src/screens/ProfileScreen";
+import Purchased from "./src/screens/Purchased";
+import EditProfileScreen from "./src/screens/EditProfileScreen";
 
 import CategoryList from "./src/CategoryList";
 import { ListItem } from "@rneui/themed";
+import CategoryCards from "./src/screens/CategoryCards";
 
 import {
   createDrawerNavigator,
@@ -50,6 +63,7 @@ import {
 import { useEffect, useState } from "react";
 import { useFontsLoaded } from "./src/fonts";
 import { useAuthControllerLogout, useAuthControllerViewer } from "./src/api";
+import { Divider } from "@rneui/base";
 
 if (__DEV__) {
   import("./ReactotronConfig").then(() => console.log("Reactotron Configured"));
@@ -61,20 +75,37 @@ function Header() {
 
   return (
     <Appbar.Header
-      style={{ justifyContent: "space-between", backgroundColor: "white" }}
+    // style={{ justifyContent: "space-evenly", backgroundColor: "white" }}
     >
-      <View>
-        <Image
-          style={{ width: 120, height: 50, margin: 10 }}
-          source={logo}
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <TouchableWithoutFeedback
           onPress={() => {
             navigation.navigate("Dashboard");
           }}
-        />
+        >
+          <Image
+            style={{
+              width: 120,
+              height: 50,
+              margin: 10,
+            }}
+            source={logo}
+            onPress={() => {
+              navigation.navigate("Dashboard");
+            }}
+          />
+        </TouchableWithoutFeedback>
       </View>
 
       <Appbar.Action
-        icon="dots-vertical"
+        //icon="dots-vertical"
+        icon="menu"
         onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
       />
     </Appbar.Header>
@@ -83,6 +114,8 @@ function Header() {
 
 function CustomDrawerContent(props) {
   const navigation = useNavigation();
+  const { data: profile } = useAuthControllerViewer({});
+
   const [selected, setSelected] = React.useState("");
 
   const [expanded, setExpanded] = useState(false);
@@ -92,96 +125,393 @@ function CustomDrawerContent(props) {
     await AsyncStorage.removeItem("token");
   };
 
-  const { data: profile } = useAuthControllerViewer({});
+  if (profile) {
+    return (
+      <DrawerContentScrollView>
+        <DrawerItem
+          labelStyle={{
+            fontSize: 18,
+            height: 100,
+            fontWeight: "bold",
 
-  console.log({ profile });
+            width: 500,
+          }}
+          style={{
+            flex: 1,
 
-  return (
-    <DrawerContentScrollView>
-      <DrawerItem
-        labelStyle={{ fontSize: 18, fontWeight: "bold" }}
-        label="Home"
-        onPress={() => {
-          navigation.navigate("Dashboard");
-        }}
-      />
+            justifyContent: "center",
+            alignSelf: "center",
+            marginLeft: 80,
+          }}
+          icon={({ focused, color, size }) => {
+            if (profile) {
+              if (profile?.profileImage) {
+                return (
+                  <Image
+                    source={{
+                      uri: `http://localhost:3001/ProfilePic/${profile?.profileImage}`,
+                    }}
+                    style={{ height: 100, width: 200 }}
+                    resizeMode="contain"
+                  />
+                );
+              } else if (!profile?.profileImage) {
+                return (
+                  <Ionicons
+                    style={{ textAlign: "center" }}
+                    color="black"
+                    size={60}
+                    name="person"
+                  />
+                );
+              }
+            } else {
+              return (
+                <Ionicons
+                  style={{ textAlign: "center" }}
+                  color="black"
+                  size={60}
+                  name="person"
+                />
+              );
+            }
+          }}
+          label=""
+        />
+        <View
+          style={{
+            flex: 1,
+            flexDirection: "row",
+            marginLeft: 20,
+          }}
+        >
+          <Text style={{ fontSize: 18 }}>
+            {profile
+              ? `${profile?.firstName} ${profile?.lastName}`
+              : "Test test"}
+          </Text>
+        </View>
+        <View
+          style={{
+            flex: 1,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            marginBottom: 20,
+            marginLeft: 20,
+          }}
+        >
+          <Text style={{ fontSize: 18 }}>
+            {profile ? profile?.email : "Test@gmail.com"}
+          </Text>
 
-      <DrawerItem
-        labelStyle={{ fontSize: 18, fontWeight: "bold" }}
-        label="Login"
-        onPress={() => {
-          navigation.navigate("Login");
-        }}
-      />
+          {profile ? (
+            <Entypo
+              name="edit"
+              size="20"
+              color="rgba(28, 28, 30, 0.68)"
+              onPress={() => {
+                navigation.navigate("EditProfileScreen");
+              }}
+            />
+          ) : (
+            <Entypo
+              name="edit"
+              size="20"
+              color="rgba(28, 28, 30, 0.68)"
+              onPress={() => {
+                navigation.navigate("Login");
+              }}
+            />
+          )}
+        </View>
 
-      {/*<DrawerItem*/}
-      {/*  labelStyle={{ fontSize: 18, fontWeight: "bold" }}*/}
-      {/*  label="Logout"*/}
-      {/*  onPress={handleSubmitPress}*/}
-      {/*/>*/}
+        <Divider />
 
-      <ListItem.Accordion
-        content={
-          <>
-            <ListItem.Content>
-              <ListItem.Title
-                style={{
-                  fontSize: 18,
-                  marginLeft: 4,
-                  color: "rgba(28, 28, 30, 0.68)",
-                  fontWeight: "bold",
-                }}
-              >
-                Categories
-              </ListItem.Title>
-            </ListItem.Content>
-          </>
-        }
-        isExpanded={expanded}
-        onPress={() => {
-          setExpanded(!expanded);
-        }}
-      >
-        {CategoryList.map((l, i) => (
-          <ListItem key={i} bottomDivider>
-            <ListItem.Content>
-              <ListItem.Title
-                onPress={() => {
-                  navigation.navigate(l.url);
-                }}
-              >
-                {l.value}
-              </ListItem.Title>
-            </ListItem.Content>
-            <ListItem.Chevron />
-          </ListItem>
-        ))}
-      </ListItem.Accordion>
+        <DrawerItem
+          labelStyle={{
+            fontSize: 18,
+            fontWeight: "bold",
+          }}
+          icon={({ focused, color, size }) => (
+            <Ionicons color={color} size={28} name="home" />
+          )}
+          label="Home"
+          onPress={() => {
+            navigation.navigate("Dashboard");
+          }}
+        />
 
-      <DrawerItem
-        labelStyle={{ fontSize: 18, fontWeight: "bold" }}
-        label="Drafts"
-        onPress={() => {
-          navigation.navigate("Drafts");
-        }}
-      />
+        <ListItem.Accordion
+          content={
+            <>
+              <MaterialIcons
+                color="rgba(28, 28, 30, 0.68)"
+                size={28}
+                name="category"
+              />
+              <ListItem.Content>
+                <ListItem.Title
+                  style={{
+                    fontSize: 18,
+                    marginLeft: 32,
+                    color: "rgba(28, 28, 30, 0.68)",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Categories
+                </ListItem.Title>
+              </ListItem.Content>
+            </>
+          }
+          isExpanded={expanded}
+          onPress={() => {
+            setExpanded(!expanded);
+          }}
+        >
+          {CategoryList.map((l, i) => (
+            <ListItem key={i} bottomDivider>
+              <ListItem.Content>
+                <ListItem.Title
+                  onPress={() => {
+                    navigation.navigate("CategoryCards", {
+                      category: l.category,
+                      name: l.value,
+                    });
+                  }}
+                >
+                  {l.value}
+                </ListItem.Title>
+              </ListItem.Content>
+              <ListItem.Chevron />
+            </ListItem>
+          ))}
+        </ListItem.Accordion>
+        <DrawerItem
+          labelStyle={{ fontSize: 18, fontWeight: "bold" }}
+          icon={({ focused, color, size }) => (
+            <Entypo name="shopping-cart" color={color} size={28} />
+          )}
+          label="Drafts"
+          onPress={() => {
+            navigation.navigate("Drafts");
+          }}
+        />
 
-      {/*<View>*/}
-      {/*  {CategoryList.map((item, i) => (*/}
-      {/*    <ListItem key={i} title={item.title} bottomDivider chevron />*/}
-      {/*  ))}*/}
-      {/*</View>*/}
-      {/*<DrawerItemList {...props} />*/}
-      {/*<DrawerItem*/}
-      {/*  label="Close drawer"*/}
-      {/*  onPress={() => props.navigation.dispatch(DrawerActions.closeDrawer())}*/}
-      {/*/>*/}
-      {/*<DrawerItem*/}
-      {/*  label="Toggle drawer"*/}
-      {/*  onPress={() => props.navigation.dispatch(DrawerActions.toggleDrawer())}*/}
-      {/*/>*/}
-    </DrawerContentScrollView>
-  );
+        <DrawerItem
+          labelStyle={{ fontSize: 18, fontWeight: "bold" }}
+          icon={({ focused, color, size }) => (
+            <MaterialCommunityIcons
+              name="cart-check"
+              color="rgba(28, 28, 30, 0.68)"
+              size={28}
+            />
+          )}
+          label="Purchased"
+          onPress={() => {
+            navigation.navigate("Purchased");
+          }}
+        />
+
+        <DrawerItem
+          labelStyle={{ fontSize: 18, fontWeight: "bold" }}
+          icon={({ focused, color, size }) => (
+            <FontAwesome color={color} size={28} name="sign-out" />
+          )}
+          label="Logout"
+          onPress={handleSubmitPress}
+        />
+
+        {/*<View>*/}
+        {/*  {CategoryList.map((item, i) => (*/}
+        {/*    <ListItem key={i} title={item.title} bottomDivider chevron />*/}
+        {/*  ))}*/}
+        {/*</View>*/}
+        {/*<DrawerItemList {...props} />*/}
+        {/*<DrawerItem*/}
+        {/*  label="Close drawer"*/}
+        {/*  onPress={() => props.navigation.dispatch(DrawerActions.closeDrawer())}*/}
+        {/*/>*/}
+        {/*<DrawerItem*/}
+        {/*  label="Toggle drawer"*/}
+        {/*  onPress={() => props.navigation.dispatch(DrawerActions.toggleDrawer())}*/}
+        {/*/>*/}
+      </DrawerContentScrollView>
+    );
+  } else {
+    return (
+      <DrawerContentScrollView>
+        <DrawerItem
+          labelStyle={{
+            fontSize: 18,
+            height: 100,
+            fontWeight: "bold",
+
+            width: 500,
+          }}
+          style={{
+            flex: 1,
+
+            justifyContent: "center",
+            alignSelf: "center",
+            marginLeft: 80,
+          }}
+          icon={({ focused, color, size }) => {
+            if (profile) {
+              if (profile?.profileImage) {
+                return (
+                  <Image
+                    source={{
+                      uri: `http://localhost:3001/ProfilePic/${profile?.profileImage}`,
+                    }}
+                    style={{ height: 100, width: 200 }}
+                    resizeMode="contain"
+                  />
+                );
+              } else if (!profile?.profileImage) {
+                return (
+                  <Ionicons
+                    style={{ textAlign: "center" }}
+                    color="black"
+                    size={60}
+                    name="person"
+                  />
+                );
+              }
+            } else {
+              return (
+                <Ionicons
+                  style={{ textAlign: "center" }}
+                  color="black"
+                  size={60}
+                  name="person"
+                />
+              );
+            }
+          }}
+          label=""
+        />
+        <View
+          style={{
+            flex: 1,
+            flexDirection: "row",
+            marginLeft: 20,
+          }}
+        >
+          <Text style={{ fontSize: 18 }}>
+            {profile
+              ? `${profile?.firstName} ${profile?.lastName}`
+              : "Test test"}
+          </Text>
+        </View>
+        <View
+          style={{
+            flex: 1,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            marginBottom: 20,
+            marginLeft: 20,
+          }}
+        >
+          <Text style={{ fontSize: 18 }}>
+            {profile ? profile?.email : "Test@gmail.com"}
+          </Text>
+
+          {profile ? (
+            <Entypo
+              name="edit"
+              size="20"
+              color="rgba(28, 28, 30, 0.68)"
+              onPress={() => {
+                navigation.navigate("EditProfileScreen");
+              }}
+            />
+          ) : (
+            <Entypo
+              name="edit"
+              size="20"
+              color="rgba(28, 28, 30, 0.68)"
+              onPress={() => {
+                navigation.navigate("Login");
+              }}
+            />
+          )}
+        </View>
+
+        <Divider />
+
+        <DrawerItem
+          labelStyle={{
+            fontSize: 18,
+            fontWeight: "bold",
+          }}
+          icon={({ focused, color, size }) => (
+            <Ionicons color={color} size={28} name="home" />
+          )}
+          label="Home"
+          onPress={() => {
+            navigation.navigate("Dashboard");
+          }}
+        />
+
+        <ListItem.Accordion
+          content={
+            <>
+              <MaterialIcons
+                color="rgba(28, 28, 30, 0.68)"
+                size={28}
+                name="category"
+              />
+              <ListItem.Content>
+                <ListItem.Title
+                  style={{
+                    fontSize: 18,
+                    marginLeft: 32,
+                    color: "rgba(28, 28, 30, 0.68)",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Categories
+                </ListItem.Title>
+              </ListItem.Content>
+            </>
+          }
+          isExpanded={expanded}
+          onPress={() => {
+            setExpanded(!expanded);
+          }}
+        >
+          {CategoryList.map((l, i) => (
+            <ListItem key={i} bottomDivider>
+              <ListItem.Content>
+                <ListItem.Title
+                  onPress={() => {
+                    navigation.navigate("CategoryCards", {
+                      category: l.category,
+                      name: l.value,
+                    });
+                  }}
+                >
+                  {l.value}
+                </ListItem.Title>
+              </ListItem.Content>
+              <ListItem.Chevron />
+            </ListItem>
+          ))}
+        </ListItem.Accordion>
+
+        <DrawerItem
+          labelStyle={{ fontSize: 18, fontWeight: "bold" }}
+          icon={({ focused, color, size }) => (
+            <FontAwesome color={color} size={28} name="sign-in" />
+          )}
+          label="Login"
+          onPress={() => {
+            navigation.navigate("Login");
+          }}
+        />
+      </DrawerContentScrollView>
+    );
+  }
 }
 
 const Drawer = createDrawerNavigator();
@@ -202,29 +532,27 @@ function HomeScreen({}) {
       <Drawer.Screen name="EditCard" component={EditCard} />
       <Drawer.Screen name="Drafts" component={Drafts} />
       <Drawer.Screen name="DraftsDetailPages" component={DraftsDetailPages} />
-      <Drawer.Screen name="AnniversaryCards" component={AnniversaryCards} />
-      <Drawer.Screen name="BabyShowerCards" component={BabyShowerCards} />
-      <Drawer.Screen name="BirthdayCards" component={BirthdayCards} />
-      <Drawer.Screen
-        name="CongratulationCards"
-        component={CongratulationCards}
-      />
-      <Drawer.Screen name="EngagementCards" component={EngagementCards} />
-      <Drawer.Screen name="GetWellSoonCards" component={GetWellSoonCards} />
-      <Drawer.Screen name="MissYouCards" component={MissYouCards} />
-      <Drawer.Screen name="ReceptionCards" component={ReceptionCards} />
-      <Drawer.Screen name="ThankYouCards" component={ThankYouCards} />
-      <Drawer.Screen name="WeddingCards" component={WeddingCards} />
+      <Drawer.Screen name="MultiPagesCard" component={Card} />
+
       <Drawer.Screen name="Login" component={Login} />
       <Drawer.Screen name="Register" component={Register} />
       <Drawer.Screen name="CardDetailPages" component={CardDetailPages} />
-      <Drawer.Screen name="Card50" component={Card50} />
-      <Drawer.Screen name="Card51" component={Card51} />
-      <Drawer.Screen name="Card52" component={Card52} />
-      <Drawer.Screen name="Card53" component={Card53} />
-      <Drawer.Screen name="Card81" component={Card81} />
-      <Drawer.Screen name="Card82" component={Card82} />
+
       <Drawer.Screen name="Preview" component={Preview} />
+      <Drawer.Screen name="Profile" component={Profile} />
+      <Drawer.Screen name="ProfileScreen" component={ProfileScreen} />
+      <Drawer.Screen name="Purchased" component={Purchased} />
+      <Drawer.Screen name="EditProfileScreen" component={EditProfileScreen} />
+      <Drawer.Screen name="CategoryCards" component={CategoryCards} />
+      <Drawer.Screen
+        name="CustomizedCardModal"
+        component={CustomizedCardModal}
+      />
+
+      <Drawer.Screen
+        name="PurchasedCardDetailsPages"
+        component={PurchasedCardDetailsPages}
+      />
     </Drawer.Navigator>
   );
 }

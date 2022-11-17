@@ -15,6 +15,7 @@ import {
 import { SocialIcon } from "react-native-elements";
 import { useAuthControllerLogin } from "../api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import Footer from "./Footer";
 
 const styles = StyleSheet.create({
   mainBody: {
@@ -161,109 +162,114 @@ const Login = () => {
   };
 
   return (
-    <View style={styles.mainBody}>
-      <ScrollView
-        keyboardShouldPersistTaps="handled"
-        contentContainerStyle={{
-          flex: 1,
-          justifyContent: "center",
-          alignContent: "center",
-        }}
-      >
-        <View>
-          <KeyboardAvoidingView enabled>
-            <View style={{ alignItems: "center" }}>
-              <SocialIcon
-                style={styles.socialIcon}
-                button
-                title="Sign In With Facebook"
-                type="facebook"
-                onPress={() => {
-                  alert("facebook");
-                }}
-              />
+    <>
+      <View style={[styles.mainBody, { flex: 0.9 }]}>
+        <ScrollView
+          keyboardShouldPersistTaps="handled"
+          contentContainerStyle={{
+            flex: 1,
+            justifyContent: "center",
+            alignContent: "center",
+          }}
+        >
+          <View>
+            <KeyboardAvoidingView enabled>
+              <View style={{ alignItems: "center" }}>
+                <SocialIcon
+                  style={styles.socialIcon}
+                  button
+                  title="Sign In With Facebook"
+                  type="facebook"
+                  onPress={() => {
+                    alert("facebook");
+                  }}
+                />
 
-              <SocialIcon
-                style={styles.socialIcon}
-                button
-                title="Sign In With Google"
-                type="google"
-                onPress={() => {
-                  alert("google");
-                }}
-              />
+                <SocialIcon
+                  style={styles.socialIcon}
+                  button
+                  title="Sign In With Google"
+                  type="google"
+                  onPress={() => {
+                    alert("google");
+                  }}
+                />
 
-              {/*<Image*/}
-              {/*  source={require("../images/image2.png")}*/}
-              {/*  style={{*/}
-              {/*    width: "50%",*/}
-              {/*    height: 100,*/}
-              {/*    resizeMode: "contain",*/}
-              {/*    margin: 30,*/}
-              {/*  }}*/}
-              {/*/>*/}
-            </View>
-            <Text style={styles.textRegister}>
-              {" "}
-              ─────────── OR ────────────
-            </Text>
-            <View style={styles.SectionStyle}>
-              <TextInput
-                style={styles.inputStyle}
-                onChangeText={(UserEmail) => setUserEmail(UserEmail)}
-                placeholder="Enter Email"
-                placeholderTextColor="#8b9cb5"
-                autoCapitalize="none"
-                keyboardType="email-address"
-                returnKeyType="next"
-                onSubmitEditing={() =>
-                  passwordInputRef.current && passwordInputRef.current.focus()
-                }
-                underlineColorAndroid="#f000"
-                blurOnSubmit={false}
-              />
-            </View>
-            <View style={styles.SectionStyle}>
-              <TextInput
-                style={styles.inputStyle}
-                onChangeText={(UserPassword) => setUserPassword(UserPassword)}
-                placeholder="Enter Password"
-                placeholderTextColor="#8b9cb5"
-                keyboardType="default"
-                ref={passwordInputRef}
-                onSubmitEditing={Keyboard.dismiss}
-                blurOnSubmit={false}
-                secureTextEntry={true}
-                underlineColorAndroid="#f000"
-                returnKeyType="next"
-              />
-            </View>
-            {errortext !== "" ? (
-              <Text style={styles.errorTextStyle}>{errortext}</Text>
-            ) : null}
-            <TouchableOpacity
-              style={styles.buttonStyle}
-              activeOpacity={0.5}
-              onPress={handleSubmitPress}
-            >
-              <Text style={styles.buttonTextStyle}>LOGIN</Text>
-            </TouchableOpacity>
-
-            <Text style={styles.registerTextStyle}>
-              New Here ?{" "}
-              <Text
-                style={{ textDecorationLine: "underline", color: "#0d6efd" }}
-                onPress={() => {
-                  navigation.navigate("Register");
-                }}
-              >
-                Register
+                {/*<Image*/}
+                {/*  source={require("../images/image2.png")}*/}
+                {/*  style={{*/}
+                {/*    width: "50%",*/}
+                {/*    height: 100,*/}
+                {/*    resizeMode: "contain",*/}
+                {/*    margin: 30,*/}
+                {/*  }}*/}
+                {/*/>*/}
+              </View>
+              <Text style={styles.textRegister}>
+                {" "}
+                ─────────── OR ────────────
               </Text>
-            </Text>
-          </KeyboardAvoidingView>
-        </View>
-      </ScrollView>
-    </View>
+              <View style={styles.SectionStyle}>
+                <TextInput
+                  style={styles.inputStyle}
+                  onChangeText={(UserEmail) => setUserEmail(UserEmail)}
+                  placeholder="Enter Email"
+                  placeholderTextColor="#8b9cb5"
+                  autoCapitalize="none"
+                  keyboardType="email-address"
+                  returnKeyType="next"
+                  onSubmitEditing={() =>
+                    passwordInputRef.current && passwordInputRef.current.focus()
+                  }
+                  underlineColorAndroid="#f000"
+                  blurOnSubmit={false}
+                />
+              </View>
+              <View style={styles.SectionStyle}>
+                <TextInput
+                  style={styles.inputStyle}
+                  onChangeText={(UserPassword) => setUserPassword(UserPassword)}
+                  placeholder="Enter Password"
+                  placeholderTextColor="#8b9cb5"
+                  keyboardType="default"
+                  ref={passwordInputRef}
+                  onSubmitEditing={Keyboard.dismiss}
+                  blurOnSubmit={false}
+                  secureTextEntry={true}
+                  underlineColorAndroid="#f000"
+                  returnKeyType="next"
+                />
+              </View>
+              {errortext !== "" ? (
+                <Text style={styles.errorTextStyle}>{errortext}</Text>
+              ) : null}
+              <TouchableOpacity
+                style={styles.buttonStyle}
+                activeOpacity={0.5}
+                onPress={handleSubmitPress}
+              >
+                <Text style={styles.buttonTextStyle}>LOGIN</Text>
+              </TouchableOpacity>
+
+              <Text style={styles.registerTextStyle}>
+                New Here ?{" "}
+                <Text
+                  style={{ textDecorationLine: "underline", color: "#0d6efd" }}
+                  onPress={() => {
+                    navigation.navigate("Register");
+                  }}
+                >
+                  Register
+                </Text>
+              </Text>
+            </KeyboardAvoidingView>
+          </View>
+        </ScrollView>
+      </View>
+      <View style={{ flex: 0.1 }}>
+        <Footer />
+      </View>
+    </>
   );
 };
 export default Login;

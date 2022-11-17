@@ -17,7 +17,12 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.HeartEnviteApp"
+      "bundleIdentifier": "com.HeartEnviteApp",
+      "buildNumber": "2.0.0",
+      "bitcode": "Debug",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "This app uses the photo library to be converted to pdf"
+      }
     },
     "android": {
       "adaptiveIcon": {

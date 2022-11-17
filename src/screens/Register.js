@@ -15,6 +15,7 @@ import {
 
 import { SocialIcon } from "react-native-elements";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import * as WebBrowser from "expo-web-browser";
 import {
   useAuthControllerFacebookAuth,
   useAuthControllerRegister,
@@ -124,15 +125,32 @@ const Register = () => {
         },
       });
       alert("Registered Successfully");
-      navigation.navigate("Dashboard");
+      navigation.navigate("Login");
     } catch (e) {
-      alert("Please fill details properly");
+      alert("Please fill details properly Or Email is already present");
     }
   };
 
   const handleFacebook = async () => {
     try {
-      const res = await fetch("api/auth/facebook");
+      //const res = await fetch("api/auth/facebook");
+      await WebBrowser.openBrowserAsync(
+        "http://localhost:3001/api/auth/facebook"
+      );
+      // await AsyncStorage.setItem("token", res.accessToken);
+      // navigation.navigate("Dashboard");
+    } catch (e) {
+      alert("Either email or password is incorrect");
+    }
+  };
+
+  const handleGoogle = async () => {
+    try {
+      //const res = await fetch("api/auth/facebook");
+      let result = await WebBrowser.openBrowserAsync(
+        "http://localhost:3001/api/auth/google"
+      );
+      console.log({ result });
       // await AsyncStorage.setItem("token", res.accessToken);
       // navigation.navigate("Dashboard");
     } catch (e) {
@@ -208,11 +226,11 @@ const Register = () => {
                 button
                 title="Sign In With Facebook"
                 type="facebook"
-                onPress={() => {
-                  alert("facebook");
-                }}
+                // onPress={() => {
+                //   alert("facebook");
+                // }}
 
-                // onPress={handleFacebook}
+                onPress={handleFacebook}
               />
 
               <SocialIcon
@@ -220,9 +238,11 @@ const Register = () => {
                 button
                 title="Sign In With Google"
                 type="google"
-                onPress={() => {
-                  alert("google");
-                }}
+                // onPress={() => {
+                //   alert("google");
+                // }}
+
+                onPress={handleGoogle}
               />
 
               {/*<Image*/}
