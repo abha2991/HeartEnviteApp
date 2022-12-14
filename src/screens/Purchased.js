@@ -5,6 +5,7 @@ import { DataCellImage } from "../Style";
 import React from "react";
 import { useNavigation } from "@react-navigation/core";
 import Footer from "./Footer";
+import * as FileSystem from "expo-file-system";
 // import RNImageToPdf from "react-native-image-to-pdf";
 const { width } = Dimensions.get("window");
 const { height } = Dimensions.get("window");

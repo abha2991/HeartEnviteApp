@@ -6,8 +6,10 @@ import {
 import { Image, SafeAreaView, ScrollView, Text, View } from "react-native";
 import { CardImage } from "../Style";
 import { Button, Card } from "react-native-paper";
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigation } from "@react-navigation/core";
+import * as FileSystem from "expo-file-system";
+
 // import RNFetchBlob from "rn-fetch-blob";
 
 const PurchasedCardDetailsPages = ({ route }) => {
@@ -86,6 +88,16 @@ const PurchasedCardDetailsPages = ({ route }) => {
   //   return /[.]/.exec(filename) ? /[^.]+$/.exec(filename) : undefined;
   // };
 
+  const downloadFile = async (uri) => {
+    const filename = "src/downloads";
+    const fileUri = `${FileSystem.documentDirectory}`;
+
+    console.log({ fileUri, uri });
+
+    const downloadedFile = await FileSystem.downloadAsync(uri, fileUri);
+    console.log({ downloadedFile });
+  };
+
   return (
     <>
       <ScrollView>
@@ -118,7 +130,11 @@ const PurchasedCardDetailsPages = ({ route }) => {
             <Button
               buttonColor="#ff3162"
               textColor="white"
-              //onPress={() => checkPermission}
+              onPress={() =>
+                downloadFile(
+                  "http://localhost:3001/generated/GetWellInvitation/GetWellSoon_5_1-1667399575047.png"
+                )
+              }
             >
               Download
             </Button>
