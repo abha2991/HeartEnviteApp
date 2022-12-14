@@ -928,14 +928,14 @@
       "textAlign": "center",
       "color": "#fff",
       "fontFamily": "NirmalaB",
-      "lineHeight": 16,
+      "lineHeight": 22,
       "width": "100%"
     },
     "contentStyle": {
       "maxWidth": "67%",
       "alignItems": "center",
       "alignSelf": "center",
-      "marginTop": 220
+      "marginTop": 200
     },
 
     "pages": [
@@ -945,7 +945,7 @@
           {
             "key": "receiverName",
             "style": {
-              "width": 150,
+              "width": 160,
               "fontSize": 12
             },
             "editable": true,
@@ -1011,6 +1011,7 @@
             "style": {
               "width": 200,
               "fontSize": 14,
+              "marginLeft": 50,
               "margin": 6
             },
             "editable": true,
@@ -1019,7 +1020,8 @@
           {
             "key": "message_1",
             "style": {
-              "width": 200
+              "marginLeft": 50,
+              "width": 220
             },
             "editable": true,
             "defaultValue": "I MISS YOU A LITTLE TOO MUCH A LITTLE TOO AFTER AND A LITTLE MORE EVERYDAY"
@@ -1028,6 +1030,7 @@
             "key": "senderName",
             "style": {
               "width": 200,
+              "marginLeft": 50,
               "fontSize": 14
             },
             "editable": true,
@@ -1056,7 +1059,7 @@
       "textAlign": "center",
       "color": "#d53847",
       "fontFamily": "NirmalaB",
-      "lineHeight": 16,
+      "lineHeight": 22,
       "width": "100%"
     },
     "contentStyle": {
@@ -1082,7 +1085,7 @@
           {
             "key": "message_1",
             "style": {
-              "width": 200,
+              "width": 240,
               "color": "#ff5a69"
             },
             "editable": true,
@@ -2297,11 +2300,12 @@
           {
             "key": "_venue",
             "style": {
-              "fontSize": 24,
+              "fontSize": 28,
+
               "fontFamily": "Myriad-Pro-Bold",
               "width": 100,
               "color": "yellow",
-              "marginTop": 50
+              "marginTop": 40
             },
             "editable": false,
             "defaultValue": "VENUE"
@@ -2310,8 +2314,9 @@
             "key": "venue",
             "style": {
               "fontSize": 16,
+              "lineHeight": 14,
               "fontFamily": "Myriad-Pro-Regular",
-              "width": 250
+              "width": 150
             },
             "editable": true,
             "defaultValue": "7 Circle Street, Milton Delhi"
@@ -3020,9 +3025,9 @@
           {
             "key": "date",
             "style": {
-              "marginTop": 120,
+              "marginTop": 270,
               "fontFamily": "Segoe-UI-Bold",
-              "width": 230,
+              "width": 250,
               "color": "#e2ba8f"
             },
             "editable": true,
@@ -3036,7 +3041,7 @@
           {
             "key": "name",
             "style": {
-              "marginTop": 80,
+              "marginTop": 170,
               "fontFamily": "Myriad-Pro-Bold-Italic",
               "width": 230,
               "color": "#813d14"
@@ -3310,7 +3315,7 @@
             "style": {
               "width": 220,
               "color": "#fff",
-              "fontFamily": "Myriad-Pro"
+              "fontFamily": "Myriad-Pro-Regular"
             },
             "editable": false,
             "defaultValue": "See you there!"
@@ -5370,6 +5375,2232 @@
       "lineHeight": 20,
       "width": "100%",
       "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 12,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/anniversarycard1",
+    "pages": [
+      {
+        "page": "Anniversary_2_1.png",
+        "content": [
+          {
+            "key": "message",
+            "style": {
+              "marginTop": 200,
+
+              "color": "#fff",
+              "width": 350,
+              "fontSize": 13
+            },
+            "editable": true,
+            "defaultValue": "JOIN US AS WE CELEBRATE OUR 25th ANNIVERSARY"
+          },
+
+          {
+            "key": "name",
+            "style": {
+              "marginTop": 110,
+
+              "color": "#ebd0ab",
+              "fontWeight": "900",
+              "fontSize": 22,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "JOSH AND SMITH"
+          },
+          {
+            "key": "date",
+            "style": {
+              "lineHeight": 10,
+              "fontSize": 14,
+              "color": "#ebd0ab",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "25 June 2022"
+          }
+        ]
+      },
+      {
+        "page": "Anniversary_2_2.png",
+        "content": [
+          {
+            "key": "anniversaryYear",
+            "style": {
+              "marginTop": 185,
+              "color": "#fff3a5",
+
+              "fontSize": 36,
+              "lineHeight": 50,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "25th"
+          },
+
+          {
+            "key": "day",
+            "style": {
+              "marginTop": 40,
+              "fontSize": 18,
+              "width": 340,
+
+              "color": "#fff"
+            },
+            "editable": true,
+            "defaultValue": "On June 25 Sunday Night"
+          },
+          {
+            "key": "time",
+            "style": {
+              "width": 300,
+              "fontSize": 14,
+
+              "lineHeight": 14,
+              "fontStyle": "italic"
+            },
+            "editable": true,
+            "defaultValue": "7:00 PM"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "width": 300,
+              "fontSize": 14,
+              "lineHeight": 14
+            },
+            "editable": true,
+            "defaultValue": "AVENUE STREET CITY"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 14,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/anniversarycard2",
+    "pages": [
+      {
+        "page": "Anniversary_1_1.png",
+        "content": [
+          {
+            "key": "name",
+            "style": {
+              "marginTop": 350,
+              "fontFamily": "LSANSD",
+              "color": "#c99230",
+
+              "fontWeight": "900",
+              "fontSize": 22,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "JOSH AND SMITH"
+          },
+
+          {
+            "key": "message",
+            "style": {
+              "fontFamily": "LSANSD",
+              "color": "#ebd0ab",
+              "width": 350,
+              "fontSize": 13
+            },
+            "editable": true,
+            "defaultValue": "JOIN US AS WE CELEBRATE OUR 25th ANNIVERSARY"
+          },
+          {
+            "key": "date",
+            "style": {
+              "lineHeight": 14,
+              "fontSize": 14,
+              "fontFamily": "LSANSD",
+              "color": "#ebd0ab",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "25 June 2022"
+          }
+        ]
+      },
+      {
+        "page": "Anniversary_1_2.png",
+        "content": [
+          {
+            "key": "anniversaryYear",
+            "style": {
+              "marginTop": 85,
+              "fontFamily": "NirmalaB",
+              "color": "#e9d7b5",
+
+              "fontSize": 32,
+              "lineHeight": 50,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "25th"
+          },
+
+          {
+            "key": "day",
+            "style": {
+              "marginTop": 140,
+              "fontSize": 18,
+              "width": 340,
+              "fontFamily": "LSANSD",
+              "color": "#cda036"
+            },
+            "editable": true,
+            "defaultValue": "On June 25 Sunday Night"
+          },
+          {
+            "key": "time",
+            "style": {
+              "width": 300,
+              "fontSize": 18,
+              "fontFamily": "Myriad-Pro-Semibold",
+              "color": "#fff",
+              "lineHeight": 18,
+              "fontStyle": "italic"
+            },
+            "editable": true,
+            "defaultValue": "7:00 PM"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "width": 300,
+              "fontSize": 18,
+              "lineHeight": 18,
+              "fontFamily": "Myriad-Pro-Regular",
+              "color": "#e9d7b5"
+            },
+            "editable": true,
+            "defaultValue": "AVENUE STREET CITY"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 16,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#e22d54",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/anniversarycard",
+    "pages": [
+      {
+        "page": "Anniversary_5_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 30,
+
+              "color": "#e22d54",
+              "fontWeight": "900",
+              "fontSize": 28,
+              "lineHeight": 28,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "JOSH"
+          },
+          {
+            "key": "and",
+            "style": {
+              "color": "#e22d54",
+              "fontWeight": "900",
+              "fontSize": 28,
+              "lineHeight": 28,
+
+              "width": 350
+            },
+            "editable": false,
+            "defaultValue": "AND"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "color": "#e22d54",
+              "fontWeight": "900",
+              "fontSize": 28,
+              "lineHeight": 28,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "SMITH"
+          },
+          {
+            "key": "message",
+            "style": {
+              "marginTop": 150,
+              "fontWeight": 2000,
+              "width": 350,
+              "fontSize": 13
+            },
+            "editable": true,
+            "defaultValue": "INVITE YOU TO CELEBRATE OUR 25th ANNIVERSARY"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "lineHeight": 16,
+              "fontSize": 16,
+              "fontFamily": "Lora",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "27 June 2022"
+          },
+          {
+            "key": "time",
+            "style": {
+              "width": 300,
+              "fontSize": 16,
+              "fontFamily": "Lora",
+              "lineHeight": 16
+            },
+            "editable": true,
+            "defaultValue": "7:00 PM"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "width": 300,
+              "fontFamily": "Lora",
+              "fontSize": 16,
+              "lineHeight": 16
+            },
+            "editable": true,
+            "defaultValue": "Hotel Brooklyn, Delhi"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#e22d54",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Bold"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 96,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/anniversarycard2",
+    "pages": [
+      {
+        "page": "Anniversary_6_1.png",
+        "content": [
+          {
+            "key": "name",
+            "style": {
+              "marginTop": 300,
+              "fontFamily": "GreatVibes-Regular",
+              "fontWeight": "900",
+              "fontSize": 24,
+              "lineHeight": 24,
+              "color": "#ff1440",
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Josh and Smith"
+          },
+          {
+            "key": "message",
+            "style": {
+              "margin": 4,
+              "width": 350,
+              "fontfamily": "ntailub",
+              "lineHeight": 14,
+              "fontSize": 12,
+              "color": "#e22d54"
+            },
+            "editable": true,
+            "defaultValue": "INVITE YOU TO CELEBRATE OUR 25th ANNIVERSARY"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 4,
+              "lineHeight": 10,
+              "fontSize": 16,
+              "color": "#e22d54",
+              "fontFamily": "MinionPro-Regular",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "25 June 2022"
+          }
+        ]
+      },
+      {
+        "page": "Anniversary_6_2.png",
+        "content": [
+          {
+            "key": "anniversaryYear",
+            "style": {
+              "marginTop": 185,
+              "color": "#fff",
+
+              "fontSize": 28,
+              "lineHeight": 50,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "25th"
+          },
+
+          {
+            "key": "day",
+            "style": {
+              "marginTop": 60,
+              "fontSize": 18,
+              "width": 340,
+              "fontFamily": "MinionPro-Regular",
+              "color": "#e22d54"
+            },
+            "editable": true,
+            "defaultValue": "On June 25 Sunday Night"
+          },
+          {
+            "key": "time",
+            "style": {
+              "width": 300,
+              "fontSize": 14,
+
+              "lineHeight": 14,
+              "color": "#fff",
+              "fontFamily": "Myriad-Pro-Semibold"
+            },
+            "editable": true,
+            "defaultValue": "7:00 PM"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "width": 300,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "fontFamily": "Myriad-Pro-Regular",
+              "color": "#f50b4d"
+            },
+            "editable": true,
+            "defaultValue": "AVENUE STREET CITY"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 40,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#000",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/receptioncard2",
+    "pages": [
+      {
+        "page": "Reception_1_1.png",
+        "content": [
+          {
+            "key": "brideAndGroomName",
+            "style": {
+              "marginTop": 195,
+              "fontFamily": "palab",
+              "color": "#000",
+              "width": 300,
+              "fontSize": 26
+            },
+            "editable": true,
+            "defaultValue": "DIANA & JACK"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 60,
+
+              "color": "#fff",
+              "fontWeight": "900",
+              "fontSize": 20,
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "27 JUNE 2022"
+          }
+        ]
+      },
+      {
+        "page": "Reception_1_2.png",
+        "content": [
+          {
+            "key": "brideAndGroomName",
+            "style": {
+              "marginTop": 100,
+              "fontFamily": "palab",
+              "color": "#d99d6a",
+              "width": 300,
+              "fontSize": 22
+            },
+            "editable": true,
+            "defaultValue": "DIANA & JACK"
+          },
+          {
+            "key": "dateAndTime",
+            "style": {
+              "color": "#fff",
+              "fontFamily": "NirmalaB",
+              "fontSize": 14,
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "27 JUNE 2022 (8:30 PM)"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "color": "#fff",
+              "fontFamily": "NirmalaB",
+              "fontSize": 13,
+
+              "width": 360
+            },
+            "editable": true,
+            "defaultValue": "DURBAR HALL TAJ DIPLOMATIC ENCLAVE ( SP MAGE ) NEW DELHI"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 41,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#000",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/receptioncard",
+    "pages": [
+      {
+        "page": "Reception_2_1.png",
+        "content": [
+          {
+            "key": "brideAndGroomName",
+            "style": {
+              "marginTop": 185,
+              "fontFamily": "palab",
+
+              "color": "#ff3c68",
+              "width": 300,
+              "fontSize": 26
+            },
+            "editable": true,
+            "defaultValue": "DIANA & JACK"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "color": "#e1ac81",
+              "fontFamily": "Myriad-Pro-Bold",
+              "lineHeight": 12,
+              "fontSize": 18,
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "27 JUNE 2022"
+          }
+        ]
+      },
+      {
+        "page": "Reception_2_2.png",
+        "content": [
+          {
+            "key": "brideAndGroomName",
+            "style": {
+              "marginTop": 130,
+              "fontFamily": "palab",
+              "color": "#fff",
+              "width": 300,
+              "fontSize": 22
+            },
+            "editable": true,
+            "defaultValue": "DIANA & JACK"
+          },
+          {
+            "key": "dateAndTime",
+            "style": {
+              "marginTop": 10,
+              "color": "#fff",
+              "fontFamily": "Nirmala",
+              "fontSize": 13,
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "27 JUNE 2022 (8:30 PM)"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "color": "#fff",
+              "fontFamily": "Nirmala",
+              "fontSize": 13,
+
+              "width": 320
+            },
+            "editable": true,
+            "defaultValue": "DURBAR HALL TAJ DIPLOMATIC ENCLAVE ( SP MAGE ) NEW DELHI"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 42,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#45072c",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/receptioncard1",
+    "pages": [
+      {
+        "page": "Reception_3_1.png",
+        "content": [
+          {
+            "key": "brideAndGroomName",
+            "style": {
+              "marginTop": 220,
+              "fontFamily": "palab",
+
+              "color": "#45072c",
+              "width": 300,
+              "fontSize": 26
+            },
+            "editable": true,
+            "defaultValue": "DIANA & JACK"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 10,
+              "color": "#e0a21a",
+              "fontFamily": "Myriad-Pro-Regular",
+              "lineHeight": 12,
+              "fontSize": 18,
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "27 JUNE 2022"
+          }
+        ]
+      },
+      {
+        "page": "Reception_3_2.png",
+        "content": [
+          {
+            "key": "brideAndGroomName",
+            "style": {
+              "marginTop": 100,
+              "fontFamily": "palab",
+              "color": "#fff",
+              "width": 300,
+              "fontSize": 26
+            },
+            "editable": true,
+            "defaultValue": "DIANA & JACK"
+          },
+          {
+            "key": "dateAndTime",
+            "style": {
+              "marginTop": 120,
+              "color": "#45072c",
+              "fontFamily": "Nirmala",
+              "fontSize": 13,
+
+              "width": 320
+            },
+            "editable": true,
+            "defaultValue": "27 JUNE 2022 (8:30 PM)"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "color": "#45072c",
+              "fontFamily": "NirmalaB",
+              "fontSize": 13,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "DURBAR HALL TAJ DIPLOMATIC ENCLAVE ( SP MAGE ) NEW DELHI"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 43,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fa7658",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/receptioncard3",
+    "pages": [
+      {
+        "page": "Reception_4_1.png",
+        "content": [
+          {
+            "key": "brideAndGroomName",
+            "style": {
+              "marginTop": 200,
+              "fontFamily": "palab",
+
+              "color": "#fa7658",
+              "width": 270,
+              "fontSize": 26
+            },
+            "editable": true,
+            "defaultValue": "DIANA & JACK"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 10,
+              "color": "#f66b50",
+              "fontFamily": "Myriad-Pro-Semibold",
+              "lineHeight": 12,
+              "fontSize": 18,
+
+              "width": 270
+            },
+            "editable": true,
+            "defaultValue": "27 JUNE 2022"
+          }
+        ]
+      },
+      {
+        "page": "Reception_4_2.png",
+        "content": [
+          {
+            "key": "brideAndGroomName",
+            "style": {
+              "marginTop": 170,
+              "fontFamily": "palab",
+              "color": "#ff8d6a",
+              "width": 280,
+              "fontSize": 26
+            },
+            "editable": true,
+            "defaultValue": "DIANA & JACK"
+          },
+          {
+            "key": "dateAndTime",
+            "style": {
+              "marginTop": 20,
+              "color": "#fe7055",
+              "fontFamily": "NirmalaB",
+              "fontSize": 14,
+
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "27 JUNE 2022 (8:30 PM)"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "color": "#fe7055",
+              "fontFamily": "NirmalaB",
+              "fontSize": 11,
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "DURBAR HALL TAJ DIPLOMATIC ENCLAVE ( SP MAGE ) NEW DELHI"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 98,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#ffb470",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/receptioncard4",
+    "pages": [
+      {
+        "page": "Reception_6_1.jpg",
+        "content": [
+          {
+            "key": "brideAndGroomName",
+            "style": {
+              "marginTop": 140,
+              "fontFamily": "LCALLIG",
+              "lineHeight": 24,
+              "width": 350,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "VALERIE ANDERSON"
+          },
+
+          {
+            "key": "and",
+            "style": {
+              "marginTop": 12,
+              "fontFamily": "LCALLIG",
+              "lineHeight": 24,
+              "width": 270,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "&"
+          },
+          {
+            "key": "groomOrBrideName",
+            "style": {
+              "marginTop": 12,
+              "fontFamily": "LCALLIG",
+              "lineHeight": 24,
+              "width": 320,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "RICHARD TAYLOR"
+          },
+          {
+            "key": "dateAndTime",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "Montserrat-Bold",
+
+              "width": 270,
+              "fontSize": 16
+            },
+            "editable": true,
+            "defaultValue": "27 JUNE 2022 (8:30 PM)"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 5,
+
+              "fontFamily": "Montserrat-Bold",
+              "lineHeight": 16,
+              "fontSize": 14,
+
+              "width": 320
+            },
+            "editable": true,
+            "defaultValue": "DURBAR HALL TAJ DIPLOMATIC ENCLAVE NEW DELHI"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#ffb470",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 66,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard5",
+    "pages": [
+      {
+        "page": "Wedding_9_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 110,
+              "color": "#981c3c",
+              "width": 350,
+              "lineHeight": 24,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "SIMARPREET"
+          },
+
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 25,
+
+              "lineHeight": 22,
+              "fontFamily": "GreatVibes-Regular",
+              "color": "#b17520",
+
+              "fontSize": 22,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "With"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 25,
+              "lineHeight": 24,
+
+              "fontSize": 24,
+              "color": "#981c3c",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "MANDEEP"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 140,
+              "lineHeight": 10,
+              "fontSize": 14,
+              "fontFamily": "AGaramondPro-Bold",
+              "fontWeight": "900",
+              "color": "#b17520",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_9_2.png",
+        "content": [
+          {
+            "key": "grandParents",
+            "style": {
+              "marginTop": 25,
+              "fontFamily": "georgia-bold",
+              "color": "#b2893b",
+              "fontSize": 13,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "MR. JASBIR KAUR  &  MRS. SURJEET KAUR"
+          },
+
+          {
+            "key": "message",
+            "style": {
+              "fontSize": 13,
+              "lineHeight": 15,
+              "color": "#e0c264",
+              "width": 370,
+              "fontFamily": "georgia-bold"
+            },
+            "editable": true,
+            "defaultValue": "Request The Honor Of  Your Presence  At The Wedding Ceremony Of Their Grand Daughter"
+          },
+          {
+            "key": "brideOrGroomName",
+            "style": {
+              "marginTop": 30,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#ad8336",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "SIMARPREET KAUR"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 350,
+              "color": "#b48b3c",
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "D /O  Mr Harpreet Kaur  &  Mrs Sunpreet Kaur"
+          },
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#e1c266",
+              "fontFamily": "GreatVibes-Regular",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "With"
+          },
+          {
+            "key": "groomOrBrideName",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#ad8336",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "Mandeep Kaur"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "width": 380,
+              "color": "#b48b3c",
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "S/O MR. AMARJEET KAUR & MRS. KAMALJEET AHLUWALIA"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#a1742c",
+              "fontFamily": "AGaramondPro-Bold"
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "width": 350,
+              "fontSize": 13,
+              "lineHeight": 15,
+              "color": "#af8943",
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT HOTEL BROOKLYN  MALVIYA NAGAR  SOUTH ROAD NEW DELHI"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_9_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "marginTop": 20,
+              "color": "#84551b",
+              "width": 350,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Shagun ( At Home)"
+          },
+
+          {
+            "key": "date1",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "15 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#84551b",
+              "width": 350,
+              "marginTop": 5,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Reception Of Baraat"
+          },
+
+          {
+            "key": "date2",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "color": "#84551b",
+              "width": 350,
+              "marginTop": 5,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Anand Karaj"
+          },
+
+          {
+            "key": "date3",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 11:30 AM"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "color": "#84551b",
+              "width": 350,
+              "marginTop": 5,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Wedding Lunch On"
+          },
+
+          {
+            "key": "date4",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 1: 00 PM"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 5,
+              "fontSize": 18,
+
+              "color": "#84551b",
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Doli"
+          },
+
+          {
+            "key": "date5",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 5:00PM"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 5,
+              "color": "#93540c",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "width": 350,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "lineHeight": 14,
+              "fontSize": 14,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. Gurdyal Singh"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr.  Simerjeet Singh"
+          },
+          {
+            "key": "name3",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. KamalJeet Singh"
+          },
+          {
+            "key": "name4",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. Mandeep Singh"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#cba751",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Franklin-Gothic-Medium-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 69,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard6",
+    "pages": [
+      {
+        "page": "Wedding_11_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 110,
+              "color": "#981c3c",
+              "width": 350,
+              "lineHeight": 24,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "SIMARPREET"
+          },
+
+          {
+            "key": "_weds",
+            "style": {
+              "marginTop": 25,
+
+              "lineHeight": 22,
+              "fontFamily": "GreatVibes-Regular",
+              "color": "#b17520",
+
+              "fontSize": 22,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Weds"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 25,
+              "lineHeight": 24,
+
+              "fontSize": 24,
+              "color": "#981c3c",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "MANDEEP"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 140,
+              "lineHeight": 10,
+              "fontSize": 14,
+              "fontFamily": "AGaramondPro-Bold",
+              "fontWeight": "900",
+              "color": "#b17520",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_11_2.png",
+        "content": [
+          {
+            "key": "grandParents",
+            "style": {
+              "marginTop": 25,
+              "fontFamily": "georgia-bold",
+              "color": "#b2893b",
+              "fontSize": 13,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "MR. JASBIR KAUR  &  MRS. SURJEET KAUR"
+          },
+
+          {
+            "key": "message",
+            "style": {
+              "fontSize": 13,
+              "lineHeight": 15,
+              "color": "#e0c264",
+              "width": 370,
+              "fontFamily": "georgia-bold"
+            },
+            "editable": true,
+            "defaultValue": "Request The Honor Of  Your Presence  At The Wedding Ceremony Of Their Grand Daughter"
+          },
+          {
+            "key": "brideOrGroomName",
+            "style": {
+              "marginTop": 30,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#ad8336",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "SIMARPREET KAUR"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 350,
+              "color": "#b48b3c",
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "D /O  Mr Harpreet Kaur  &  Mrs Sunpreet Kaur"
+          },
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#e1c266",
+              "fontFamily": "GreatVibes-Regular",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "With"
+          },
+          {
+            "key": "groomOrBrideName",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#ad8336",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "Mandeep Kaur"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "width": 380,
+              "color": "#b48b3c",
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "S/O MR. AMARJEET KAUR & MRS. KAMALJEET AHLUWALIA"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#a1742c",
+              "fontFamily": "AGaramondPro-Bold"
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "width": 350,
+              "fontSize": 13,
+              "lineHeight": 15,
+              "color": "#af8943",
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT HOTEL BROOKLYN  MALVIYA NAGAR  SOUTH ROAD NEW DELHI"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_11_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "marginTop": 20,
+              "color": "#84551b",
+              "width": 350,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Shagun ( At Home)"
+          },
+
+          {
+            "key": "date1",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "15 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#84551b",
+              "width": 350,
+              "marginTop": 5,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Reception Of Baraat"
+          },
+
+          {
+            "key": "date2",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "color": "#84551b",
+              "width": 350,
+              "marginTop": 5,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Anand Karaj"
+          },
+
+          {
+            "key": "date3",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 11:30 AM"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "color": "#84551b",
+              "width": 350,
+              "marginTop": 5,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Wedding Lunch On"
+          },
+
+          {
+            "key": "date4",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 1: 00 PM"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 5,
+              "fontSize": 18,
+
+              "color": "#84551b",
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Doli"
+          },
+
+          {
+            "key": "date5",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 5:00PM"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 5,
+              "color": "#93540c",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "width": 350,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "lineHeight": 14,
+              "fontSize": 14,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. Gurdyal Singh"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr.  Simerjeet Singh"
+          },
+          {
+            "key": "name3",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. KamalJeet Singh"
+          },
+          {
+            "key": "name4",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. Mandeep Singh"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#cba751",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Franklin-Gothic-Medium-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 79,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard5",
+    "pages": [
+      {
+        "page": "Wedding_20_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 200,
+
+              "width": 350,
+              "lineHeight": 24,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "Simarpreet"
+          },
+
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 15,
+              "lineHeight": 22,
+
+              "color": "#a1742c",
+              "fontWeight": "900",
+              "fontSize": 22,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "With"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "lineHeight": 24,
+              "marginTop": 15,
+              "fontSize": 24,
+
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Mandeep"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "lineHeight": 10,
+              "fontSize": 14,
+              "fontFamily": "AGaramondPro-Bold",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_20_2.png",
+        "content": [
+          {
+            "key": "grandParents",
+            "style": {
+              "marginTop": 25,
+              "fontFamily": "georgia-bold",
+              "color": "#1d302a",
+              "fontSize": 13,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "MR. JASBIR KAUR  &  MRS. SURJEET KAUR"
+          },
+
+          {
+            "key": "message",
+            "style": {
+              "fontSize": 13,
+              "lineHeight": 15,
+              "width": 370,
+              "fontFamily": "georgia-bold"
+            },
+            "editable": true,
+            "defaultValue": "Request The Honor Of  Your Presence  At The Wedding Ceremony Of Their Grand Daughter"
+          },
+          {
+            "key": "brideOrGroomName",
+            "style": {
+              "marginTop": 30,
+              "width": 300,
+              "fontSize": 18,
+
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "Simarpreet  Kaur"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 350,
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "D /O  Mr Harpreet Kaur  &  Mrs Sunpreet Kaur"
+          },
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 18,
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "With"
+          },
+          {
+            "key": "groomOrBrideName",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 18,
+
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "Mandeep Kaur"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "width": 380,
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "S/O MR. AMARJEET KAUR & MRS. KAMALJEET AHLUWALIA"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "fontFamily": "AGaramondPro-Bold"
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "width": 350,
+              "fontSize": 13,
+              "lineHeight": 15,
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT HOTEL BROOKLYN  MALVIYA NAGAR  SOUTH ROAD NEW DELHI"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_20_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "marginTop": 65,
+              "color": "#193c32",
+              "width": 350,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Shagun ( At Home)"
+          },
+
+          {
+            "key": "date1",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "15 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#193c32",
+              "width": 350,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Reception Of Baraat"
+          },
+
+          {
+            "key": "date2",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "color": "#193c32",
+              "width": 350,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Anand Karaj"
+          },
+
+          {
+            "key": "date3",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 11:30 AM"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "color": "#193c32",
+              "width": 350,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Wedding Lunch On"
+          },
+
+          {
+            "key": "date4",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 1: 00 PM"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 10,
+              "fontSize": 18,
+
+              "color": "#193c32",
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Doli"
+          },
+
+          {
+            "key": "date5",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 5:00PM"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 5,
+              "color": "#93540c",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "width": 350,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "lineHeight": 14,
+              "fontSize": 14,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. Gurdyal Singh"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr.  Simerjeet Singh"
+          },
+          {
+            "key": "name3",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. KamalJeet Singh"
+          },
+          {
+            "key": "name4",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. Mandeep Singh"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#243330",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "GreatVibes-Regular"
     },
     "contentStyle": {
       "maxWidth": "67%",

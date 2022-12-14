@@ -135,7 +135,7 @@ const Register = () => {
     try {
       //const res = await fetch("api/auth/facebook");
       await WebBrowser.openBrowserAsync(
-        "http://localhost:3001/api/auth/facebook"
+        "http://192.168.1.3:3001/api/auth/facebook"
       );
       // await AsyncStorage.setItem("token", res.accessToken);
       // navigation.navigate("Dashboard");
@@ -148,7 +148,7 @@ const Register = () => {
     try {
       //const res = await fetch("api/auth/facebook");
       let result = await WebBrowser.openBrowserAsync(
-        "http://localhost:3001/api/auth/google"
+        "http://192.168.1.3:3001/api/auth/google"
       );
       console.log({ result });
       // await AsyncStorage.setItem("token", res.accessToken);

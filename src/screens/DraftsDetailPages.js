@@ -6,8 +6,9 @@ import {
 import { Image, SafeAreaView, ScrollView, Text, View } from "react-native";
 import { CardImage } from "../Style";
 import { Button, Card } from "react-native-paper";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/core";
+import * as FileSystem from "expo-file-system";
 
 const DraftsDetailPages = ({ route }) => {
   const navigation = useNavigation();
@@ -19,7 +20,16 @@ const DraftsDetailPages = ({ route }) => {
   const cardDetails = draftData?.filter((val) => val.id === id);
 
   const category = cardDetails[0]?.cardCategory;
-  console.log(cardDetails[0].id);
+  //console.log(cardDetails[0].id);
+
+  const fun = () => {
+    try {
+      const fileUri = `http://localhost:3001/generated/CongratulationsInvitation/Congratulations_1_1-1667396694455.png`;
+      const downloadedFile = FileSystem.downloadAsync(fileUri, "fileUri");
+    } catch (e) {
+      console.log({ e });
+    }
+  };
 
   return (
     <>
@@ -66,6 +76,9 @@ const DraftsDetailPages = ({ route }) => {
             </Button>
           </Card.Content>
         </Card>
+        {/*<Button buttonColor="#ff3162" textColor="white" onPress={fun}>*/}
+        {/*  download*/}
+        {/*</Button>*/}
       </SafeAreaView>
     </>
   );

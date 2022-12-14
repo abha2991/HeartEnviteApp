@@ -67,7 +67,7 @@ const Dashboard = () => {
   const { mutate } = useAuthControllerLogin({});
   const { data } = useUsersControllerFindAll();
   const { data: cardData } = useCardetailsControllerFindAll({});
-  const [showModal, setShowModal] = useState(false);
+
   const getWellSoonCards = cardData?.filter(
     (val) => val.cardCategory === "GetWellInvitation"
   );

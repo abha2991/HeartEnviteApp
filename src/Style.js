@@ -79,7 +79,7 @@ export const CardImage = (props) => {
     <View elevation={10}>
       <Image
         style={{
-          width: "80%",
+          //width: "100%",
           height: 500,
           marginTop: 40,
 

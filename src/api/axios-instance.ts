@@ -2,6 +2,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import Axios, { AxiosError, AxiosRequestConfig } from "axios";
 
 export const AXIOS_INSTANCE = Axios.create({
+  // baseURL: "http://192.168.1.3:3001",
+
   baseURL: "http://localhost:3001",
 });
 

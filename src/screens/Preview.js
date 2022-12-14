@@ -3,13 +3,13 @@ import {
   useCardControllerFindById,
   useCardControllerFindOne,
 } from "../api";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+
 import React, { useEffect, useState } from "react";
 import { SafeAreaView, ScrollView, Text, View } from "react-native";
 import { CardImage, DataCellImage } from "../Style";
 import { Button, Card } from "react-native-paper";
 // import RazorpayCheckout from "react-native-razorpay";
-import logo from "../images/logo.png";
+
 import { useNavigation } from "@react-navigation/core";
 
 const Preview = ({ route }) => {
@@ -41,7 +41,7 @@ const Preview = ({ route }) => {
   //       alert(e);
   //     });
   // };
-
+  console.log(cardData1?.previewCardNames);
   if (cardData1) {
     return (
       <>
@@ -57,13 +57,13 @@ const Preview = ({ route }) => {
         </Text>
         <ScrollView>
           <View
-            style={{
-              flexDirection: "row",
-              justifyContent: "center",
-
-              flexWrap: "wrap",
-              display: "flex",
-            }}
+          // style={{
+          //   flexDirection: "row",
+          //   justifyContent: "center",
+          //
+          //   flexWrap: "wrap",
+          //   display: "flex",
+          // }}
           >
             {cardData1?.previewCardNames?.map((value, index) => {
               return (

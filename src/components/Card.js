@@ -84,9 +84,9 @@ const Card = ({ route }) => {
   const { control, handleSubmit, reset } = useForm();
   const { data: profile } = useAuthControllerViewer({});
   const data = useMemo(() => cardData.find((data) => data.id === id), [id]);
-  let maxCharsPerLine = data.maxCharsPerLine;
+  let maxCharsPerLine = data?.maxCharsPerLine;
 
-  const { mutateAsync } = useCardApi(data.apiUrl);
+  const { mutateAsync } = useCardApi(data?.apiUrl);
 
   useEffect(() => {
     if (data) {
