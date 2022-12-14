@@ -88,15 +88,15 @@ const PurchasedCardDetailsPages = ({ route }) => {
   //   return /[.]/.exec(filename) ? /[^.]+$/.exec(filename) : undefined;
   // };
 
-  const downloadFile = async (uri) => {
-    const filename = "src/downloads";
-    const fileUri = `${FileSystem.documentDirectory}`;
-
-    console.log({ fileUri, uri });
-
-    const downloadedFile = await FileSystem.downloadAsync(uri, fileUri);
-    console.log({ downloadedFile });
-  };
+  // const downloadFile = async (uri) => {
+  //   const filename = "src/downloads";
+  //   const fileUri = `${FileSystem.documentDirectory}`;
+  //
+  //   console.log({ fileUri, uri });
+  //
+  //   const downloadedFile = await FileSystem.downloadAsync(uri, fileUri);
+  //   console.log({ downloadedFile });
+  // };
 
   return (
     <>
