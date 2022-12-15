@@ -29,7 +29,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.abhasharma2991.HeartEnviteApp"
+      "package": "com.HeartEnviteApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
