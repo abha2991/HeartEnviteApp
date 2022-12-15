@@ -14,7 +14,7 @@ import {
 } from "react-native";
 
 import { SocialIcon } from "react-native-elements";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+
 import * as WebBrowser from "expo-web-browser";
 import {
   useAuthControllerFacebookAuth,

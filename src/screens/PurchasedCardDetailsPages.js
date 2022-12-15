@@ -8,7 +8,7 @@ import { CardImage } from "../Style";
 import { Button, Card } from "react-native-paper";
 import React, { useEffect } from "react";
 import { useNavigation } from "@react-navigation/core";
-import * as FileSystem from "expo-file-system";
+// import * as FileSystem from "expo-file-system";
 
 // import RNFetchBlob from "rn-fetch-blob";
 
@@ -130,11 +130,11 @@ const PurchasedCardDetailsPages = ({ route }) => {
             <Button
               buttonColor="#ff3162"
               textColor="white"
-              onPress={() =>
-                downloadFile(
-                  "http://localhost:3001/generated/GetWellInvitation/GetWellSoon_5_1-1667399575047.png"
-                )
-              }
+              // onPress={() =>
+              //   downloadFile(
+              //     "http://localhost:3001/generated/GetWellInvitation/GetWellSoon_5_1-1667399575047.png"
+              //   )
+              // }
             >
               Download
             </Button>
