@@ -35,7 +35,6 @@ import { useNavigation } from "@react-navigation/core";
 import Footer from "./Footer";
 import { ListItem } from "@rneui/themed";
 import { Entypo, MaterialIcons } from "@expo/vector-icons";
-import { downloadFile } from "../utils/downloadFile";
 
 const styles = StyleSheet.create({
   container: {
@@ -88,20 +87,9 @@ const Dashboard = () => {
     });
   }, []);
 
-  const onProgress = (progress) => {
-    console.log(progress);
-  };
-
   return (
     <>
       <View style={{ flex: 0.9 }}>
-        <Button
-          onPress={() =>
-            downloadFile("http://212.183.159.230/5MB.zip", onProgress)
-          }
-        >
-          Download File
-        </Button>
         <View style={{ margin: 10 }}>
           <Text
             style={{

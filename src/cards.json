@@ -7608,5 +7608,404 @@
       "alignSelf": "center",
       "marginTop": 100
     }
+  },
+  {
+    "id": 79,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard5",
+    "pages": [
+      {
+        "page": "Wedding_20_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 200,
+
+              "width": 350,
+              "lineHeight": 24,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "Simarpreet"
+          },
+
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 15,
+              "lineHeight": 22,
+
+              "color": "#a1742c",
+              "fontWeight": "900",
+              "fontSize": 22,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "With"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "lineHeight": 24,
+              "marginTop": 15,
+              "fontSize": 24,
+
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Mandeep"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "lineHeight": 10,
+              "fontSize": 14,
+              "fontFamily": "AGaramondPro-Bold",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_20_2.png",
+        "content": [
+          {
+            "key": "grandParents",
+            "style": {
+              "marginTop": 25,
+              "fontFamily": "georgia-bold",
+              "color": "#1d302a",
+              "fontSize": 13,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "MR. JASBIR KAUR  &  MRS. SURJEET KAUR"
+          },
+
+          {
+            "key": "message",
+            "style": {
+              "fontSize": 13,
+              "lineHeight": 15,
+              "width": 370,
+              "fontFamily": "georgia-bold"
+            },
+            "editable": true,
+            "defaultValue": "Request The Honor Of  Your Presence  At The Wedding Ceremony Of Their Grand Daughter"
+          },
+          {
+            "key": "brideOrGroomName",
+            "style": {
+              "marginTop": 30,
+              "width": 300,
+              "fontSize": 18,
+
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "Simarpreet  Kaur"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 350,
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "D /O  Mr Harpreet Kaur  &  Mrs Sunpreet Kaur"
+          },
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 18,
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "With"
+          },
+          {
+            "key": "groomOrBrideName",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 18,
+
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "Mandeep Kaur"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "width": 380,
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "S/O MR. AMARJEET KAUR & MRS. KAMALJEET AHLUWALIA"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "fontFamily": "AGaramondPro-Bold"
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "width": 350,
+              "fontSize": 13,
+              "lineHeight": 15,
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT HOTEL BROOKLYN  MALVIYA NAGAR  SOUTH ROAD NEW DELHI"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_20_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "marginTop": 65,
+              "color": "#193c32",
+              "width": 350,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Shagun ( At Home)"
+          },
+
+          {
+            "key": "date1",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "15 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#193c32",
+              "width": 350,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Reception Of Baraat"
+          },
+
+          {
+            "key": "date2",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "color": "#193c32",
+              "width": 350,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Anand Karaj"
+          },
+
+          {
+            "key": "date3",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 11:30 AM"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "color": "#193c32",
+              "width": 350,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Wedding Lunch On"
+          },
+
+          {
+            "key": "date4",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 1: 00 PM"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 10,
+              "fontSize": 18,
+
+              "color": "#193c32",
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Doli"
+          },
+
+          {
+            "key": "date5",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 5:00PM"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 5,
+              "color": "#93540c",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "width": 350,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "lineHeight": 14,
+              "fontSize": 14,
+
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. Gurdyal Singh"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr.  Simerjeet Singh"
+          },
+          {
+            "key": "name3",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. KamalJeet Singh"
+          },
+          {
+            "key": "name4",
+            "style": {
+              "fontFamily": "gadugib",
+              "color": "#193c32",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Mr. Mandeep Singh"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#243330",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "GreatVibes-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
   }
 ]

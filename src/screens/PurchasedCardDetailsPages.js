@@ -8,7 +8,10 @@ import { CardImage } from "../Style";
 import { Button, Card } from "react-native-paper";
 import React, { useEffect } from "react";
 import { useNavigation } from "@react-navigation/core";
-// import * as FileSystem from "expo-file-system";
+import * as FileSystem from "expo-file-system";
+import { downloadFile } from "../utils/downloadFile";
+import * as Print from "expo-print";
+import { shareAsync } from "expo-sharing";
 
 // import RNFetchBlob from "rn-fetch-blob";
 
@@ -89,14 +92,76 @@ const PurchasedCardDetailsPages = ({ route }) => {
   // };
 
   // const downloadFile = async (uri) => {
-  //   const filename = "src/downloads";
-  //   const fileUri = `${FileSystem.documentDirectory}`;
+  //   const filename = "download.png";
+  //   const fileUri = `${FileSystem.documentDirectory}${filename}`;
   //
   //   console.log({ fileUri, uri });
   //
   //   const downloadedFile = await FileSystem.downloadAsync(uri, fileUri);
   //   console.log({ downloadedFile });
   // };
+
+  const onProgress = (progress) => {
+    console.log(progress);
+  };
+
+  // const downloadFile = async (url) => {
+  //   let path = url.split("/");
+  //   const file_name = path[path.length - 1];
+  //   FileSystem.downloadAsync(url, FileSystem.documentDirectory + file_name)
+  //     .then(({ uri }) => {
+  //       console.log("Finished downloading to ", uri);
+  //       MediaLibrary.createAssetAsync(uri).then((asset) => {
+  //         console.log("asset", asset);
+  //         MediaLibrary.createAlbumAsync("myfolder", asset)
+  //           .then(() => {
+  //             console.log("download.success");
+  //             // showMessage({
+  //             //   message: t("general.success"),
+  //             //   description: t("download.success"),
+  //             //   type: "success",
+  //             // });
+  //           })
+  //           .catch((error) => {
+  //             console.log(error);
+  //             // showMessage({
+  //             //   message: t("general.success"),
+  //             //   description: t("download.failed"),
+  //             //   type: "danger",
+  //             // });
+  //           });
+  //       });
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+  // };
+
+  const printToFile = async (html) => {
+    // On iOS/android prints the given html. On web prints the HTML from the current page.
+    const { uri } = await Print.printToFileAsync({ html });
+    console.log("File has been saved to:", uri);
+    await shareAsync(uri, { UTI: ".pdf", mimeType: "application/pdf" });
+  };
+
+  const createPdf = async () => {
+    const res = await fetch(`http://localhost:3001/api/card1/pdf`, {
+      method: "POST",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: JSON.stringify({
+        id: id,
+      }),
+    });
+
+    await downloadFile(
+      `http://localhost:3001/pdf/1671211949335.pdf`,
+      onProgress
+    );
+  };
 
   return (
     <>
@@ -132,9 +197,12 @@ const PurchasedCardDetailsPages = ({ route }) => {
               textColor="white"
               // onPress={() =>
               //   downloadFile(
-              //     "http://localhost:3001/generated/GetWellInvitation/GetWellSoon_5_1-1667399575047.png"
+              //     "http://localhost:3001/generated/GetWellInvitation/GetWellSoon_5_1-1667399575047.png",
+              //     onProgress
               //   )
               // }
+
+              onPress={() => createPdf()}
             >
               Download
             </Button>

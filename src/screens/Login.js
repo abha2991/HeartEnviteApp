@@ -107,6 +107,7 @@ const Login = () => {
       alert("Please fill Password");
       return;
     }
+
     setLoading(true);
     //let dataToSend = { email: userEmail, password: userPassword };
     // let formBody = [];
@@ -157,7 +158,8 @@ const Login = () => {
       await AsyncStorage.setItem("token", res.accessToken);
       navigation.navigate("Dashboard");
     } catch (e) {
-      alert("Either email or password is incorrect");
+      //alert("Either email or password is incorrect");
+      alert(e);
     }
   };
 
