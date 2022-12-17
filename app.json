@@ -21,7 +21,8 @@
       "buildNumber": "2.0.0",
       "bitcode": "Debug",
       "infoPlist": {
-        "NSPhotoLibraryUsageDescription": "This app uses the photo library to be converted to pdf"
+        "NSPhotoLibraryUsageDescription": "This app uses the photo library to be converted to pdf",
+        "LSApplicationQueriesSchemes": ["tez", "phonepe", "paytmmp"]
       }
     },
     "android": {

@@ -207,7 +207,7 @@ function CustomDrawerContent(props) {
           {profile ? (
             <Entypo
               name="edit"
-              size="20"
+              size={20}
               color="rgba(28, 28, 30, 0.68)"
               onPress={() => {
                 navigation.navigate("EditProfileScreen");
@@ -216,7 +216,7 @@ function CustomDrawerContent(props) {
           ) : (
             <Entypo
               name="edit"
-              size="20"
+              size={20}
               color="rgba(28, 28, 30, 0.68)"
               onPress={() => {
                 navigation.navigate("Login");
@@ -333,7 +333,9 @@ function CustomDrawerContent(props) {
         {/*/>*/}
         {/*<DrawerItem*/}
         {/*  label="Toggle drawer"*/}
-        {/*  onPress={() => props.navigation.dispatch(DrawerActions.toggleDrawer())}*/}
+        {/*  onPress={() =>*/}
+        {/*    props.navigation.dispatch(DrawerActions.toggleDrawer())*/}
+        {/*  }*/}
         {/*/>*/}
       </DrawerContentScrollView>
     );
@@ -419,7 +421,7 @@ function CustomDrawerContent(props) {
           {profile ? (
             <Entypo
               name="edit"
-              size="20"
+              size={20}
               color="rgba(28, 28, 30, 0.68)"
               onPress={() => {
                 navigation.navigate("EditProfileScreen");
@@ -428,7 +430,7 @@ function CustomDrawerContent(props) {
           ) : (
             <Entypo
               name="edit"
-              size="20"
+              size={20}
               color="rgba(28, 28, 30, 0.68)"
               onPress={() => {
                 navigation.navigate("Login");
