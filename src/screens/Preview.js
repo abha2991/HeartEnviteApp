@@ -1,4 +1,5 @@
 import {
+  useAuthControllerViewer,
   useCardControllerFind,
   useCardControllerFindById,
   useCardControllerFindOne,
@@ -11,12 +12,15 @@ import { Button, Card } from "react-native-paper";
 // import RazorpayCheckout from "react-native-razorpay";
 
 import { useNavigation } from "@react-navigation/core";
+import RazorpayCheckout from "react-native-razorpay";
+import { payment } from "../utils/Payment";
 
 const Preview = ({ route }) => {
   const { id } = route.params;
 
   const { data: cardData1 } = useCardControllerFindOne(id);
   const navigation = useNavigation();
+  const { data: profile } = useAuthControllerViewer({});
 
   // const options = {
   //   description: "HeartEnvite",
@@ -41,7 +45,68 @@ const Preview = ({ route }) => {
   //       alert(e);
   //     });
   // };
-  console.log(cardData1?.previewCardNames);
+  const [orderId, setOrderId] = useState();
+  const createOrderId = async () => {
+    console.log("create");
+    const res = await fetch(
+      `http://localhost:3001/api/paymentgateway/orderId`,
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    //.then((data) => data.json());
+
+    const orderDetails = await res.json();
+
+    setOrderId(orderDetails?.createdOrdetDetails?.orderId);
+
+    const options = {
+      description: "Credits towards consultation",
+      image: "https://i.imgur.com/3g7nmJC.jpg",
+      currency: "INR",
+      key: "rzp_test_g5mVREbtx16Zdy",
+      amount: "5000",
+      name: "Acme Corp",
+      order_id: orderId, //Replace this with an order_id created using Orders API.
+      prefill: {
+        email: "gaurav.kumar@example.com",
+        contact: "9191919191",
+        name: "Gaurav Kumar",
+      },
+      theme: { color: "#53a20e" },
+    };
+    RazorpayCheckout.open(options)
+      .then((data) => {
+        // handle success
+
+        // console.log({ data });
+        const successData = {
+          cardId: id,
+          orderCreationId: orderId,
+          razorpayPaymentId: data.razorpay_payment_id,
+          razorpayOrderId: data.razorpay_order_id,
+          razorpaySignature: data.razorpay_signature,
+        };
+        const result = fetch(
+          "http://localhost:3001/api/paymentgateway/success",
+          {
+            method: "POST",
+            body: JSON.stringify(successData),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+      })
+      .catch((error) => {
+        // handle failure
+        alert(`Error: ${error.code} | ${error.description}`);
+      });
+  };
   if (cardData1) {
     return (
       <>
@@ -103,7 +168,17 @@ const Preview = ({ route }) => {
               >
                 Edit This Card
               </Button>
-              <Button buttonColor="#ff3162" textColor="white">
+              <Button
+                buttonColor="#ff3162"
+                textColor="white"
+                onPress={() =>
+                  payment(
+                    cardData1?.cardSalePrice,
+                    profile?.firstName,
+                    cardData1.id
+                  )
+                }
+              >
                 Pay And Download
               </Button>
             </Card.Content>

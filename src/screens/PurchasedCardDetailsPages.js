@@ -137,13 +137,6 @@ const PurchasedCardDetailsPages = ({ route }) => {
   //     });
   // };
 
-  const printToFile = async (html) => {
-    // On iOS/android prints the given html. On web prints the HTML from the current page.
-    const { uri } = await Print.printToFileAsync({ html });
-    console.log("File has been saved to:", uri);
-    await shareAsync(uri, { UTI: ".pdf", mimeType: "application/pdf" });
-  };
-
   const createPdf = async () => {
     const res = await fetch(`http://localhost:3001/api/card1/pdf`, {
       method: "POST",
@@ -155,12 +148,9 @@ const PurchasedCardDetailsPages = ({ route }) => {
       body: JSON.stringify({
         id: id,
       }),
-    });
+    }).then((data) => data.json());
 
-    await downloadFile(
-      `http://localhost:3001/pdf/1671211949335.pdf`,
-      onProgress
-    );
+    await downloadFile(`http://localhost:3001/pdf/${res?.pdfName}`, onProgress);
   };
 
   return (

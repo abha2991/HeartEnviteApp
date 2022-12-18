@@ -236,9 +236,10 @@ const EditCard = ({ route }) => {
   const { data: cardDetails } = useCardControllerFindOne(id);
   const { data: profile } = useAuthControllerViewer({});
   const card = cardData?.find((value) => value.id === cardDetails?.cardId);
+  console.log(card?.text);
   let category = cardDetails?.cardCategory;
   const data = useMemo(() => cardDetails?.text);
-  console.log(card?.apiUrl);
+
   let maxCharsPerLine = card?.maxCharsPerLine;
 
   const { mutateAsync } = useCardApi(card?.apiUrl);
@@ -251,9 +252,9 @@ const EditCard = ({ route }) => {
   }, [reset, data]);
 
   const onSubmit = async (data) => {
-    console.log(data);
+    // console.log(data);
     let details = Object.values(data);
-    console.log({ details });
+    // console.log({ details });
 
     const res = await mutateAsync({
       data: {

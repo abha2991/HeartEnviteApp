@@ -36,6 +36,7 @@ import { useNavigation } from "@react-navigation/core";
 import Footer from "./Footer";
 import { ListItem } from "@rneui/themed";
 import { Entypo, MaterialIcons } from "@expo/vector-icons";
+import { downloadFile } from "../utils/downloadFile";
 
 const styles = StyleSheet.create({
   container: {
@@ -87,27 +88,121 @@ const Dashboard = () => {
       password: "",
     });
   }, []);
+  const [orderId, setOrderId] = useState();
+  const createOrderId = async () => {
+    const res = await fetch(
+      `http://localhost:3001/api/paymentgateway/orderId`,
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    //.then((data) => data.json());
+
+    const orderDetails = await res.json();
+    console.log(orderDetails);
+
+    setOrderId(orderDetails?.createdOrdetDetails?.orderId);
+    console.log(orderDetails.createdOrdetDetails?.orderId);
+
+    const options = {
+      description: "Credits towards consultation",
+      image: "https://i.imgur.com/3g7nmJC.jpg",
+      currency: "INR",
+      key: "rzp_test_g5mVREbtx16Zdy",
+      amount: "5000",
+      name: "Acme Corp",
+      order_id: orderId, //Replace this with an order_id created using Orders API.
+      prefill: {
+        email: "gaurav.kumar@example.com",
+        contact: "9191919191",
+        name: "Gaurav Kumar",
+      },
+      theme: { color: "#53a20e" },
+    };
+    RazorpayCheckout.open(options)
+      .then((data) => {
+        // handle success
+
+        console.log({ data });
+        const successData = {
+          orderCreationId: orderId,
+          razorpayPaymentId: data.razorpay_payment_id,
+          razorpayOrderId: data.razorpay_order_id,
+          razorpaySignature: data.razorpay_signature,
+        };
+        const result = fetch(
+          "http://localhost:3001/api/paymentgateway/paymentSuccess",
+          {
+            method: "POST",
+            body: JSON.stringify(successData),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+
+        console.log({ result });
+      })
+      .catch((error) => {
+        // handle failure
+        alert(`Error: ${error.code} | ${error.description}`);
+      });
+  };
 
   return (
     <>
       <View style={{ flex: 0.9 }}>
         <View style={{ margin: 10 }}>
+          {/*<Button*/}
+          {/*  onPress={() => {*/}
+          {/*    const options = {*/}
+          {/*      description: "Credits towards consultation",*/}
+          {/*      image: "https://i.imgur.com/3g7nmJC.jpg",*/}
+          {/*      currency: "INR",*/}
+          {/*      key: "rzp_test_g5mVREbtx16Zdy",*/}
+          {/*      amount: "5000",*/}
+          {/*      name: "Acme Corp",*/}
+          {/*      order_id: "order_DslnoIgkIDL8Zt", //Replace this with an order_id created using Orders API.*/}
+          {/*      prefill: {*/}
+          {/*        email: "gaurav.kumar@example.com",*/}
+          {/*        contact: "9191919191",*/}
+          {/*        name: "Gaurav Kumar",*/}
+          {/*      },*/}
+          {/*      theme: { color: "#53a20e" },*/}
+          {/*    };*/}
+          {/*    RazorpayCheckout.open(options)*/}
+          {/*      .then((data) => {*/}
+          {/*        // handle success*/}
+          {/*        alert(`Success: ${data.razorpay_payment_id}`);*/}
+          {/*      })*/}
+          {/*      .catch((error) => {*/}
+          {/*        // handle failure*/}
+          {/*        alert(`Error: ${error.code} | ${error.description}`);*/}
+          {/*      });*/}
+          {/*  }}*/}
+          {/*>*/}
+          {/*  Open*/}
+          {/*</Button>*/}
+
           <Button
             onPress={() => {
-              const options = {
+              var options = {
                 description: "Credits towards consultation",
-                image: "https://i.imgur.com/3g7nmJC.jpg",
+                image: "https://i.imgur.com/3g7nmJC.png",
                 currency: "INR",
-                key: "<YOUR_KEY_ID>",
+                key: "rzp_test_g5mVREbtx16Zdy", // Your api key
                 amount: "5000",
-                name: "Acme Corp",
-                order_id: "order_DslnoIgkIDL8Zt", //Replace this with an order_id created using Orders API.
+                name: "foo",
                 prefill: {
-                  email: "gaurav.kumar@example.com",
+                  email: "void@razorpay.com",
                   contact: "9191919191",
-                  name: "Gaurav Kumar",
+                  name: "Razorpay Software",
                 },
-                theme: { color: "#53a20e" },
+                theme: { color: "#F37254" },
               };
               RazorpayCheckout.open(options)
                 .then((data) => {
@@ -122,6 +217,8 @@ const Dashboard = () => {
           >
             Open
           </Button>
+
+          <Button onPress={() => createOrderId()}>Order</Button>
           <Text
             style={{
               fontSize: 16,

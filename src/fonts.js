@@ -17,6 +17,7 @@ export const useFontsLoaded = () => {
     Gabriola: require("./font/Gabriola.ttf"),
     gadugi: require("./font/gadugi.ttf"),
     gadugib: require("./font/gadugib.ttf"),
+    MvBoli: require("./font/mvboli.ttf"),
     Georgia: require("./font/Georgia.ttf"),
     "georgia-bold": require("./font/georgia-bold.ttf"),
     "GreatVibes-Regular": require("./font/GreatVibes-Regular.ttf"),

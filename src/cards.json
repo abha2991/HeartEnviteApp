@@ -3906,9 +3906,21 @@
           },
 
           {
+            "key": "weds",
+            "style": {
+              "marginTop": 30,
+              "fontFamily": "BodoniMT",
+              "color": "#d5bf6c",
+              "width": 350,
+              "fontSize": 22
+            },
+            "editable": false,
+            "defaultValue": "Weds"
+          },
+          {
             "key": "name2",
             "style": {
-              "marginTop": 60,
+              "marginTop": 25,
               "fontFamily": "Myriad-Pro-Bold",
               "color": "#fff",
               "fontSize": 22,
@@ -4259,7 +4271,7 @@
       "justifyContent": "center",
       "alignItems": "center"
     },
-    "fontAwesomeIconColor": "#fff",
+    "fontAwesomeIconColor": "#ffc601",
     "categoryId": "8",
     "maxCharsPerLine": 40,
     "backgroundImageStyle": {},
@@ -4272,9 +4284,9 @@
           {
             "key": "name1",
             "style": {
-              "marginTop": 180,
+              "marginTop": 160,
               "fontFamily": "Myriad-Pro-Bold",
-              "color": "#fff",
+              "color": "#091e09",
               "width": 350,
               "fontSize": 22
             },
@@ -4283,11 +4295,24 @@
           },
 
           {
+            "key": "weds",
+            "style": {
+              "marginTop": 40,
+              "fontFamily": "MvBoli",
+              "color": "#091e09",
+              "width": 350,
+              "fontSize": 22
+            },
+            "editable": true,
+            "defaultValue": "Weds"
+          },
+
+          {
             "key": "name2",
             "style": {
-              "marginTop": 60,
+              "marginTop": 20,
               "fontFamily": "Myriad-Pro-Bold",
-              "color": "#fff",
+              "color": "#091e09",
               "fontSize": 22,
               "width": 350
             },
@@ -4298,7 +4323,8 @@
             "key": "date",
             "style": {
               "marginTop": 20,
-              "fontFamily": "Myriad-Pro-Regular",
+              "fontFamily": "Myriad-Pro-Bold",
+              "color": "#091e09",
               "fontSize": 18,
               "width": 300
             },
@@ -4313,7 +4339,7 @@
           {
             "key": "sonOrDaughter",
             "style": {
-              "marginTop": 60,
+              "marginTop": -10,
               "fontSize": 10,
               "fontFamily": "Myriad-Pro-Bold",
               "width": 300
@@ -4325,10 +4351,11 @@
           {
             "key": "name1",
             "style": {
-              "marginTop": 40,
+              "marginTop": 140,
 
               "width": 340,
-              "color": "#d5bf6c"
+              "fontFamily": "Myriad-Pro-Bold",
+              "color": "#091e09"
             },
             "editable": true,
             "defaultValue": "EMRAAN KHAN"
@@ -4338,6 +4365,7 @@
             "style": {
               "width": 300,
               "fontSize": 12,
+              "color": "#091e09",
               "lineHeight": 12
             },
             "editable": true,
@@ -4349,28 +4377,20 @@
             "style": {
               "width": 300,
               "fontSize": 12,
+              "color": "#091e09",
               "lineHeight": 12
             },
             "editable": true,
             "defaultValue": "GS/O Mr Eqbal Khan & Mrs Aarifa Khan"
           },
-          {
-            "key": "weds",
-            "style": {
-              "marginTop": 25,
-              "width": 230,
-              "fontFamily": "Lucida-Handwriting-Italic"
-            },
-            "editable": false,
-            "defaultValue": "Weds"
-          },
+
           {
             "key": "name2",
             "style": {
-              "marginTop": 20,
-
+              "marginTop": 40,
+              "fontFamily": "Myriad-Pro-Bold",
               "width": 340,
-              "color": "#d5bf6c"
+              "color": "#091e09"
             },
             "editable": true,
             "defaultValue": "AAISHA KHAN"
@@ -4380,6 +4400,7 @@
             "style": {
               "fontSize": 12,
               "width": 300,
+              "color": "#091e09",
               "lineHeight": 12
             },
             "editable": true,
@@ -4391,6 +4412,7 @@
             "style": {
               "width": 300,
               "fontSize": 12,
+              "color": "#091e09",
               "lineHeight": 12
             },
             "editable": true,
@@ -4404,8 +4426,8 @@
           {
             "key": "function1",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 80,
+              "color": "#ffc601",
+              "marginTop": 30,
               "fontFamily": "Myriad-Pro-Semibold",
               "width": 250
             },
@@ -4415,6 +4437,7 @@
           {
             "key": "date1",
             "style": {
+              "marginTop": 4,
               "width": 250,
               "fontSize": 12,
               "lineHeight": 8
@@ -4425,6 +4448,7 @@
           {
             "key": "venue1",
             "style": {
+              "marginTop": 4,
               "width": 250,
               "fontSize": 12,
               "lineHeight": 8
@@ -4435,8 +4459,8 @@
           {
             "key": "function2",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 10,
+              "color": "#ffc601",
+              "marginTop": 7,
               "fontFamily": "Myriad-Pro-Semibold",
               "width": 250
             },
@@ -4446,6 +4470,7 @@
           {
             "key": "date2",
             "style": {
+              "marginTop": 4,
               "width": 250,
               "fontSize": 12,
               "lineHeight": 8
@@ -4456,6 +4481,7 @@
           {
             "key": "venue2",
             "style": {
+              "marginTop": 4,
               "width": 250,
               "fontSize": 12,
               "lineHeight": 8
@@ -4466,8 +4492,8 @@
           {
             "key": "function3",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 10,
+              "color": "#ffc601",
+              "marginTop": 7,
               "fontFamily": "Myriad-Pro-Semibold",
               "width": 250
             },
@@ -4477,6 +4503,7 @@
           {
             "key": "date3",
             "style": {
+              "marginTop": 4,
               "width": 250,
               "fontSize": 12,
               "lineHeight": 8
@@ -4488,6 +4515,7 @@
             "key": "venue3",
             "style": {
               "width": 250,
+              "marginTop": 4,
               "fontSize": 12,
               "lineHeight": 8
             },
@@ -4497,8 +4525,8 @@
           {
             "key": "function4",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 10,
+              "color": "#ffc601",
+              "marginTop": 7,
               "fontFamily": "Myriad-Pro-Semibold",
               "width": 250
             },
@@ -4509,6 +4537,8 @@
             "key": "date4",
             "style": {
               "width": 250,
+              "marginTop": 4,
+
               "fontSize": 12,
               "lineHeight": 8
             },
@@ -4518,6 +4548,7 @@
           {
             "key": "venue4",
             "style": {
+              "marginTop": 4,
               "width": 250,
               "fontSize": 12,
               "lineHeight": 8
@@ -4528,8 +4559,8 @@
           {
             "key": "function5",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 10,
+              "color": "#ffc601",
+              "marginTop": 7,
               "fontFamily": "Myriad-Pro-Semibold",
               "width": 250
             },
@@ -4539,6 +4570,7 @@
           {
             "key": "date5",
             "style": {
+              "marginTop": 4,
               "width": 250,
               "fontSize": 12,
               "lineHeight": 8
@@ -4549,6 +4581,7 @@
           {
             "key": "venue5",
             "style": {
+              "marginTop": 4,
               "width": 250,
               "fontSize": 12,
               "lineHeight": 8
@@ -4581,10 +4614,20 @@
             "defaultValue": "8:00 PM ONWARDS"
           },
           {
+            "key": "_venue",
+            "style": {
+              "marginTop": 30,
+              "width": 300,
+              "fontSize": 22,
+              "fontFamily": "Myriad-Pro-Bold",
+              "lineHeight": 22
+            },
+            "editable": true,
+            "defaultValue": "VENUE"
+          },
+          {
             "key": "venue",
             "style": {
-              "marginTop": 50,
-
               "width": 300
             },
             "editable": true,
@@ -4595,7 +4638,7 @@
             "style": {
               "marginTop": 20,
               "fontSize": 22,
-              "color": "#f0e595",
+
               "fontFamily": "Myriad-Pro-Bold",
               "width": 230
             },
@@ -4641,7 +4684,7 @@
     "maxCharsPerLine": 40,
     "backgroundImageStyle": {},
 
-    "apiUrl": "/api/card1/weddingcard1",
+    "apiUrl": "/api/card1/weddingcard10",
     "pages": [
       {
         "page": "Wedding_3_1.png",
@@ -4649,10 +4692,10 @@
           {
             "key": "name1",
             "style": {
-              "marginTop": 180,
+              "marginTop": 120,
               "fontFamily": "Myriad-Pro-Bold",
-              "color": "#fff",
-              "width": 350,
+              "color": "#f1ca88",
+              "width": 300,
               "fontSize": 22
             },
             "editable": true,
@@ -4660,13 +4703,26 @@
           },
 
           {
+            "key": "weds",
+            "style": {
+              "marginTop": 30,
+              "fontFamily": "BodoniMT",
+              "color": "#fff",
+              "width": 350,
+              "fontSize": 22
+            },
+            "editable": false,
+            "defaultValue": "Weds"
+          },
+
+          {
             "key": "name2",
             "style": {
-              "marginTop": 60,
+              "marginTop": 28,
               "fontFamily": "Myriad-Pro-Bold",
-              "color": "#fff",
+              "color": "#f1ca88",
               "fontSize": 22,
-              "width": 350
+              "width": 300
             },
             "editable": true,
             "defaultValue": "AAISHA KHAN"
@@ -4690,7 +4746,7 @@
           {
             "key": "sonOrDaughter",
             "style": {
-              "marginTop": 60,
+              "marginTop": 0,
               "fontSize": 10,
               "fontFamily": "Myriad-Pro-Bold",
               "width": 300
@@ -4704,8 +4760,9 @@
             "style": {
               "marginTop": 40,
 
-              "width": 340,
-              "color": "#d5bf6c"
+              "width": 300,
+              "fontFamily": "Myriad-Pro-Bold",
+              "color": "#ffce0a"
             },
             "editable": true,
             "defaultValue": "EMRAAN KHAN"
@@ -4713,6 +4770,7 @@
           {
             "key": "parents1",
             "style": {
+              "marginTop": 7,
               "width": 300,
               "fontSize": 12,
               "lineHeight": 12
@@ -4724,6 +4782,7 @@
           {
             "key": "grandParents1",
             "style": {
+              "marginTop": 7,
               "width": 300,
               "fontSize": 12,
               "lineHeight": 12
@@ -4746,8 +4805,9 @@
             "style": {
               "marginTop": 20,
 
-              "width": 340,
-              "color": "#d5bf6c"
+              "width": 300,
+              "fontFamily": "Myriad-Pro-Bold",
+              "color": "#ffce0a"
             },
             "editable": true,
             "defaultValue": "AAISHA KHAN"
@@ -4755,6 +4815,7 @@
           {
             "key": "parents2",
             "style": {
+              "marginTop": 7,
               "fontSize": 12,
               "width": 300,
               "lineHeight": 12
@@ -4766,6 +4827,7 @@
           {
             "key": "grandParents2",
             "style": {
+              "marginTop": 7,
               "width": 300,
               "fontSize": 12,
               "lineHeight": 12
@@ -4781,8 +4843,9 @@
           {
             "key": "function1",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 80,
+              "marginTop": 25,
+              "fontSize": 14,
+              "color": "#e6b575",
               "fontFamily": "Myriad-Pro-Semibold",
               "width": 250
             },
@@ -4792,8 +4855,9 @@
           {
             "key": "date1",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4802,8 +4866,9 @@
           {
             "key": "venue1",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4812,9 +4877,10 @@
           {
             "key": "function2",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 10,
+              "color": "#e6b575",
               "fontFamily": "Myriad-Pro-Semibold",
+              "marginTop": 5,
+              "fontSize": 14,
               "width": 250
             },
             "editable": true,
@@ -4823,8 +4889,9 @@
           {
             "key": "date2",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4833,8 +4900,9 @@
           {
             "key": "venue2",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4843,8 +4911,9 @@
           {
             "key": "function3",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 10,
+              "color": "#e6b575",
+              "marginTop": 5,
+              "fontSize": 14,
               "fontFamily": "Myriad-Pro-Semibold",
               "width": 250
             },
@@ -4854,8 +4923,9 @@
           {
             "key": "date3",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4864,8 +4934,9 @@
           {
             "key": "venue3",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4874,8 +4945,9 @@
           {
             "key": "function4",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 10,
+              "color": "#e6b575",
+              "marginTop": 5,
+              "fontSize": 14,
               "fontFamily": "Myriad-Pro-Semibold",
               "width": 250
             },
@@ -4885,8 +4957,9 @@
           {
             "key": "date4",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4895,8 +4968,9 @@
           {
             "key": "venue4",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4905,8 +4979,9 @@
           {
             "key": "function5",
             "style": {
-              "color": "#f0e594",
-              "marginTop": 10,
+              "color": "#e6b575",
+              "marginTop": 5,
+              "fontSize": 14,
               "fontFamily": "Myriad-Pro-Semibold",
               "width": 250
             },
@@ -4916,8 +4991,9 @@
           {
             "key": "date5",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4926,8 +5002,9 @@
           {
             "key": "venue5",
             "style": {
+              "marginTop": 3,
               "width": 250,
-              "fontSize": 12,
+              "fontSize": 11,
               "lineHeight": 8
             },
             "editable": true,
@@ -4958,10 +5035,20 @@
             "defaultValue": "8:00 PM ONWARDS"
           },
           {
+            "key": "_venue",
+            "style": {
+              "marginTop": 30,
+              "fontSize": 22,
+              "color": "#edbe7f",
+              "fontFamily": "Myriad-Pro-Bold",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "VENUE"
+          },
+          {
             "key": "venue",
             "style": {
-              "marginTop": 50,
-
               "width": 300
             },
             "editable": true,
@@ -4972,7 +5059,7 @@
             "style": {
               "marginTop": 20,
               "fontSize": 22,
-              "color": "#f0e595",
+              "color": "#edbe7f",
               "fontFamily": "Myriad-Pro-Bold",
               "width": 230
             },
@@ -5006,8 +5093,9 @@
       "marginTop": 100
     }
   },
+
   {
-    "id": 77,
+    "id": 71,
     "containerStyle": {
       "flex": 1,
       "justifyContent": "center",
@@ -5018,56 +5106,1871 @@
     "maxCharsPerLine": 40,
     "backgroundImageStyle": {},
 
-    "apiUrl": "/api/card1/weddingcard1",
+    "apiUrl": "/api/card1/weddingcard8",
     "pages": [
       {
-        "page": "Wedding_18_1.png",
+        "page": "Wedding_13_1.png",
         "content": [
           {
             "key": "name1",
             "style": {
-              "marginTop": 180,
-              "fontFamily": "Myriad-Pro-Bold",
-              "color": "#fff",
-              "width": 350,
-              "fontSize": 22
+              "marginTop": 160,
+              "color": "#ffa800",
+              "fontFamily": "GreatVibes-Regular",
+              "width": 300,
+
+              "fontSize": 24,
+              "lineHeight": 24
             },
             "editable": true,
-            "defaultValue": "EMRAAN KHAN"
+            "defaultValue": "Mohit Agrawal"
+          },
+          {
+            "key": "weds",
+            "style": {
+              "marginTop": 25,
+              "color": "#ffa800",
+              "fontFamily": "GreatVibes-Regular",
+              "width": 350,
+              "fontSize": 22,
+              "lineHeight": 22
+            },
+            "editable": false,
+            "defaultValue": "Weds"
           },
 
           {
             "key": "name2",
             "style": {
-              "marginTop": 60,
-              "fontFamily": "Myriad-Pro-Bold",
-              "color": "#fff",
-              "fontSize": 22,
-              "width": 350
+              "marginTop": 20,
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 24,
+              "color": "#ffa800",
+              "lineHeight": 24,
+              "width": 300
             },
             "editable": true,
-            "defaultValue": "AAISHA KHAN"
+            "defaultValue": "Ishita Agrawal"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 18,
+              "color": "#ffa800",
+              "lineHeight": 18,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "12 Nov 2022"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_13_2.png",
+        "content": [
+          {
+            "key": "message",
+            "style": {
+              "marginTop": 60,
+              "fontSize": 10,
+              "color": "#ebd0ab",
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular",
+              "width": 360
+            },
+            "editable": true,
+            "defaultValue": "Mr Anil Ji Agrawal and Mrs Poolki Bai Agrawal request the honour of your presence and blessings on the auspicious occasion of the wedding of their grandson"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 20,
+              "color": "#ff9300",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Mohit Agrawal"
+          },
+          {
+            "key": "sonOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "MinionPro-Regular",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Son Of"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "LSANSD",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajiv Agrawal And Mrs. Rachna Agrawal"
+          },
+          {
+            "key": "grandSonOf",
+            "style": {
+              "width": 300,
+              "fontSize": 10,
+              "color": "#ebd0ab",
+              "fontFamily": "MinionPro-Regular",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "GrandSon Of"
+          },
+
+          {
+            "key": "grandParents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajesh Agrawal And Mrs. Anchal Agrawal"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 20,
+              "color": "#ff9300",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Ishita Agrawal"
+          },
+          {
+            "key": "daughterOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular",
+              "width": 300,
+              "color": "#ebd0ab"
+            },
+            "editable": true,
+            "defaultValue": "Daughter Of"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "fontSize": 12,
+              "width": 300,
+              "lineHeight": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Anil Agrawal and Mrs. Rita Agrawal"
+          },
+          {
+            "key": "grandDaughterOf",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontSize": 10,
+              "color": "#ebd0ab",
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Grand Daughter Of"
+          },
+
+          {
+            "key": "grandParents2",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rahul Agrawal and Mrs. Rema Agrawal"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_13_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "HALDI"
+          },
+          {
+            "key": "date1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "color": "#ebd0ab",
+              "lineHeight": 10,
+              "fontFamily": "MinionPro-Semibold"
+            },
+            "editable": true,
+            "defaultValue": "9  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "fontWeight": "900",
+
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "LAGAN"
+          },
+          {
+            "key": "date2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 10:00 AM"
+          },
+          {
+            "key": "venue2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "SANGEET'"
+          },
+          {
+            "key": "date3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "MEHANDI"
+          },
+          {
+            "key": "date4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "CHAK BHAAT"
+          },
+          {
+            "key": "date5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function6",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "VIDAI"
+          },
+          {
+            "key": "date6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "13  Nov 2022, 5:00 AM"
+          },
+          {
+            "key": "venue6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_13_4.png",
+        "content": [
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 160,
+              "fontFamily": "MinionPro-Regular",
+              "color": "#ebd0ab",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 20,
+              "color": "#ff7800",
+              "fontFamily": "Romelio",
+              "fontSize": 22,
+              "lineHeight": 24,
+              "width": 230
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+          {
+            "key": "_rsvp1",
+            "style": {
+              "marginTop": 5,
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Mr Neerja Agrawal"
+          },
+          {
+            "key": "_rsvp2",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Mrs. Lalita Agrawal"
           },
           {
             "key": "date",
             "style": {
               "marginTop": 20,
-              "fontFamily": "Myriad-Pro-Regular",
-              "fontSize": 18,
+              "color": "#ff7800",
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "12 Nov 2022"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 72,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard11",
+    "pages": [
+      {
+        "page": "Wedding_14_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 150,
+              "color": "#e1cf54",
+              "fontFamily": "GreatVibes-Regular",
+              "width": 300,
+
+              "fontSize": 24,
+              "lineHeight": 24
+            },
+            "editable": true,
+            "defaultValue": "Mohit Agrawal"
+          },
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 25,
+              "color": "#fff",
+              "fontFamily": "GreatVibes-Regular",
+              "width": 350,
+              "fontSize": 22,
+              "lineHeight": 22
+            },
+            "editable": false,
+            "defaultValue": "With"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 20,
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 24,
+              "color": "#e1cf54",
+              "lineHeight": 24,
               "width": 300
             },
             "editable": true,
-            "defaultValue": "21 JULY 2022"
+            "defaultValue": "Ishita Agrawal"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 75,
+              "fontFamily": "MinionPro-Regular",
+              "fontSize": 18,
+              "color": "#ebd0ab",
+              "lineHeight": 18,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "12 Nov 2022"
           }
         ]
       },
       {
-        "page": "Wedding_18_2.png",
+        "page": "Wedding_14_2.png",
+        "content": [
+          {
+            "key": "message",
+            "style": {
+              "marginTop": 60,
+              "fontSize": 12,
+              "color": "#fff",
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular",
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "Mr Anil Ji Agrawal and Mrs Poolki Bai Agrawal request the honour of your presence and blessings on the auspicious occasion of the wedding of their grandson"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 20,
+              "color": "#fef496",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Mohit Agrawal"
+          },
+          {
+            "key": "sonOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "color": "#f5d1ab",
+              "fontFamily": "MinionPro-Regular",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Son Of"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+
+              "fontFamily": "LSANSD",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajiv Agrawal And Mrs. Rachna Agrawal"
+          },
+          {
+            "key": "grandSonOf",
+            "style": {
+              "width": 300,
+              "fontSize": 10,
+              "color": "#f5d1ab",
+              "fontFamily": "MinionPro-Regular",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "GrandSon Of"
+          },
+
+          {
+            "key": "grandParents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajesh Agrawal And Mrs. Anchal Agrawal"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 20,
+              "color": "#fef496",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Ishita Agrawal"
+          },
+          {
+            "key": "daughterOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular",
+              "width": 300,
+              "color": "#f5d1ab"
+            },
+            "editable": true,
+            "defaultValue": "Daughter Of"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "fontSize": 12,
+              "width": 300,
+              "lineHeight": 12,
+
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Anil Agrawal and Mrs. Rita Agrawal"
+          },
+          {
+            "key": "grandDaughterOf",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontSize": 10,
+              "color": "#f5d1ab",
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Grand Daughter Of"
+          },
+
+          {
+            "key": "grandParents2",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rahul Agrawal and Mrs. Rema Agrawal"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_14_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "marginTop": 40,
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#fffca5",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "HALDI"
+          },
+          {
+            "key": "date1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "lineHeight": 10,
+              "fontFamily": "MinionPro-Semibold"
+            },
+            "editable": true,
+            "defaultValue": "9  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#fffca5",
+              "fontFamily": "MinionPro-Semibold",
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "fontWeight": "900",
+
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "LAGAN"
+          },
+          {
+            "key": "date2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 10:00 AM"
+          },
+          {
+            "key": "venue2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#fffca5",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "SANGEET'"
+          },
+          {
+            "key": "date3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#fffca5",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "MEHANDI"
+          },
+          {
+            "key": "date4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#fffca5",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "CHAK BHAAT"
+          },
+          {
+            "key": "date5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function6",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#fffca5",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "VIDAI"
+          },
+          {
+            "key": "date6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "13  Nov 2022, 5:00 AM"
+          },
+          {
+            "key": "venue6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_14_4.png",
+        "content": [
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 160,
+              "fontFamily": "MinionPro-Regular",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 20,
+              "color": "#f9e378",
+              "fontFamily": "Romelio",
+              "fontSize": 22,
+              "lineHeight": 24,
+              "width": 230
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+          {
+            "key": "_rsvp1",
+            "style": {
+              "marginTop": 5,
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Mr Neerja Agrawal"
+          },
+          {
+            "key": "_rsvp2",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Mrs. Lalita Agrawal"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 73,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard12",
+    "pages": [
+      {
+        "page": "Wedding_15_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 145,
+              "color": "#ff9600",
+              "fontFamily": "GreatVibes-Regular",
+              "width": 300,
+
+              "fontSize": 24,
+              "lineHeight": 24
+            },
+            "editable": true,
+            "defaultValue": "Mohit Agrawal"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 90,
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 24,
+              "color": "#ff9600",
+              "lineHeight": 24,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Ishita Agrawal"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "fontFamily": "ntailu",
+              "fontSize": 12,
+              "color": "#fff",
+              "lineHeight": 18,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "12 Nov 2022"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_15_2.png",
+        "content": [
+          {
+            "key": "message",
+            "style": {
+              "marginTop": 20,
+              "fontSize": 10,
+              "color": "#ebd0ab",
+              "lineHeight": 12,
+              "fontFamily": "gadugi",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "Mr Anil Ji Agrawal and Mrs Poolki Bai Agrawal request the honour of your presence and blessings on the auspicious occasion of the wedding of their grandson"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 20,
+              "color": "#ff9300",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Mohit Agrawal"
+          },
+          {
+            "key": "sonOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "MinionPro-Regular",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Son Of"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "LSANSD",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajiv Agrawal And Mrs. Rachna Agrawal"
+          },
+          {
+            "key": "grandSonOf",
+            "style": {
+              "width": 300,
+              "fontSize": 10,
+              "color": "#ebd0ab",
+              "fontFamily": "MinionPro-Regular",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "GrandSon Of"
+          },
+
+          {
+            "key": "grandParents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajesh Agrawal And Mrs. Anchal Agrawal"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 20,
+              "color": "#ff9300",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Ishita Agrawal"
+          },
+          {
+            "key": "daughterOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular",
+              "width": 300,
+              "color": "#ebd0ab"
+            },
+            "editable": true,
+            "defaultValue": "Daughter Of"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "fontSize": 12,
+              "width": 300,
+              "lineHeight": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Anil Agrawal and Mrs. Rita Agrawal"
+          },
+          {
+            "key": "grandDaughterOf",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontSize": 10,
+              "color": "#ebd0ab",
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Grand Daughter Of"
+          },
+
+          {
+            "key": "grandParents2",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "color": "#ebd0ab",
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rahul Agrawal and Mrs. Rema Agrawal"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_15_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "fontWeight": "900",
+              "marginTop": 10,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "HALDI"
+          },
+          {
+            "key": "date1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "color": "#ebd0ab",
+              "lineHeight": 10,
+              "fontFamily": "MinionPro-Semibold"
+            },
+            "editable": true,
+            "defaultValue": "9  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "fontWeight": "900",
+
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "LAGAN"
+          },
+          {
+            "key": "date2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 10:00 AM"
+          },
+          {
+            "key": "venue2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "SANGEET'"
+          },
+          {
+            "key": "date3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "MEHANDI"
+          },
+          {
+            "key": "date4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "CHAK BHAAT"
+          },
+          {
+            "key": "date5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function6",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#ffba00",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "VIDAI"
+          },
+          {
+            "key": "date6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "13  Nov 2022, 5:00 AM"
+          },
+          {
+            "key": "venue6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#ebd0ab",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_15_4.png",
+        "content": [
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 200,
+              "fontFamily": "MinionPro-Regular",
+              "color": "#ebd0ab",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 20,
+              "color": "#ff7800",
+              "fontFamily": "Romelio",
+              "fontSize": 22,
+              "lineHeight": 24,
+              "width": 230
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+          {
+            "key": "_rsvp1",
+            "style": {
+              "marginTop": 5,
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Mr Neerja Agrawal"
+          },
+          {
+            "key": "_rsvp2",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Mrs. Lalita Agrawal"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "color": "#ff7800",
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "12 Nov 2022"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 74,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard9",
+    "pages": [
+      {
+        "page": "Wedding_16_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 120,
+              "color": "#0a0d14",
+              "fontFamily": "Romelio",
+              "width": 300,
+
+              "fontSize": 18,
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "Parul"
+          },
+          {
+            "key": "weds",
+            "style": {
+              "marginTop": 20,
+              "color": "#f0c479",
+              "fontFamily": "Lucida-Handwriting-Italic",
+              "width": 350,
+              "fontSize": 18,
+              "lineHeight": 18
+            },
+            "editable": false,
+            "defaultValue": "Weds"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 8,
+
+              "fontSize": 18,
+              "color": "#0a0d14",
+              "fontFamily": "Romelio",
+              "lineHeight": 18,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Sandeep"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "ArialMT",
+              "fontSize": 14,
+              "color": "#93560e",
+              "lineHeight": 14,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "22 June 2022"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "fontFamily": "ArialMT",
+              "fontSize": 14,
+              "color": "#93560e",
+              "lineHeight": 14,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Hotel Brooklyn Delhi"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_16_2.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 90,
+              "color": "#dfb97c",
+              "fontFamily": "Romelio",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PARUL AGARWAL"
+          },
+          {
+            "key": "daughterOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "color": "#dfb97c",
+              "fontFamily": "Romelio",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Daughter Of"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "color": "#fff",
+
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Mr. Shiv Agarwal And Mrs. Reena Agarwal"
+          },
+          {
+            "key": "grandDaughterOf",
+            "style": {
+              "width": 300,
+              "fontSize": 10,
+              "color": "#dfb97c",
+              "fontFamily": "Romelio",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Grand Daughter Of"
+          },
+
+          {
+            "key": "grandParents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "color": "#fff"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Shiv Agarwal And Mrs. Reena Agarwal"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 20,
+              "color": "#dfb97c",
+              "fontFamily": "Romelio",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "SANDEEP AGARWAL"
+          },
+          {
+            "key": "sonOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "color": "#dfb97c",
+              "fontFamily": "Romelio",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Son Of"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "fontSize": 12,
+              "width": 300,
+              "lineHeight": 12,
+              "color": "#fff"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Shiv Agarwal And Mrs. Reena Agarwal"
+          },
+          {
+            "key": "grandSonOf",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontSize": 10,
+              "color": "#dfb97c",
+              "fontFamily": "Romelio"
+            },
+            "editable": true,
+            "defaultValue": "GrandSon Of"
+          },
+
+          {
+            "key": "grandParents2",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "color": "#fff"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Shiv Agarwal And Mrs. Reena Agarwal"
+          }
+        ]
+      },
+
+      {
+        "page": "Wedding_16_3.png",
+        "content": [
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 180,
+
+              "color": "#f5c27e",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji, Near Magneto Mall, Avanti Vihar, Raipur, Chattisgarh"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 20,
+              "color": "#fff",
+
+              "fontSize": 22,
+              "lineHeight": 24,
+              "width": 230
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+          {
+            "key": "_rsvp1",
+            "style": {
+              "marginTop": 5,
+              "width": 300,
+              "lineHeight": 12,
+              "color": "#ffcb85"
+            },
+            "editable": true,
+            "defaultValue": "Mr Neerja Agrawal"
+          },
+          {
+            "key": "_rsvp2",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "color": "#ffcb85"
+            },
+            "editable": true,
+            "defaultValue": "Mrs. Lalita Agrawal"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 75,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#093003",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard14",
+    "pages": [
+      {
+        "page": "Wedding_17_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 180,
+              "fontFamily": "GreatVibes-Regular",
+              "width": 350,
+              "fontSize": 22,
+              "lineHeight": 22
+            },
+            "editable": true,
+            "defaultValue": "Emraan Khan"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 90,
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 22,
+              "lineHeight": 22,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "Aaisha Khan"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_17_2.png",
         "content": [
           {
             "key": "sonOrDaughter",
             "style": {
-              "marginTop": 60,
+              "marginTop": 130,
               "fontSize": 10,
               "fontFamily": "Myriad-Pro-Bold",
               "width": 300
@@ -5080,18 +6983,18 @@
             "key": "name1",
             "style": {
               "marginTop": 40,
-
-              "width": 340,
-              "color": "#d5bf6c"
+              "fontFamily": "GreatVibes-Regular",
+              "width": 340
             },
             "editable": true,
-            "defaultValue": "EMRAAN KHAN"
+            "defaultValue": "Emraan Khan"
           },
           {
             "key": "parents1",
             "style": {
               "width": 300,
               "fontSize": 12,
+              "fontFamily": "Myriad-Pro-Regular",
               "lineHeight": 12
             },
             "editable": true,
@@ -5103,7 +7006,8 @@
             "style": {
               "width": 300,
               "fontSize": 12,
-              "lineHeight": 12
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
             },
             "editable": true,
             "defaultValue": "GS/O Mr Eqbal Khan & Mrs Aarifa Khan"
@@ -5122,19 +7026,19 @@
             "key": "name2",
             "style": {
               "marginTop": 20,
-
-              "width": 340,
-              "color": "#d5bf6c"
+              "fontFamily": "GreatVibes-Regular",
+              "width": 340
             },
             "editable": true,
-            "defaultValue": "AAISHA KHAN"
+            "defaultValue": "Aaisha Khan"
           },
           {
             "key": "parents2",
             "style": {
               "fontSize": 12,
               "width": 300,
-              "lineHeight": 12
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
             },
             "editable": true,
             "defaultValue": "D/O Mr Salman Khan & Mrs Amina Khan"
@@ -5145,7 +7049,8 @@
             "style": {
               "width": 300,
               "fontSize": 12,
-              "lineHeight": 12
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
             },
             "editable": true,
             "defaultValue": "GD/O Mr Adil Khan & Mrs Aafreen Khan"
@@ -5153,18 +7058,19 @@
         ]
       },
       {
-        "page": "Wedding_18_3.png",
+        "page": "Wedding_17_3.png",
         "content": [
           {
             "key": "function1",
             "style": {
-              "color": "#f0e594",
+              "color": "#ffe2a5",
+              "fontWeight": "900",
               "marginTop": 80,
-              "fontFamily": "Myriad-Pro-Semibold",
+              "fontFamily": "GreatVibes-Regular",
               "width": 250
             },
             "editable": true,
-            "defaultValue": "MEHENDI"
+            "defaultValue": "Mehendi"
           },
           {
             "key": "date1",
@@ -5189,13 +7095,14 @@
           {
             "key": "function2",
             "style": {
-              "color": "#f0e594",
+              "color": "#ffe2a5",
               "marginTop": 10,
-              "fontFamily": "Myriad-Pro-Semibold",
+              "fontWeight": "900",
+              "fontFamily": "GreatVibes-Regular",
               "width": 250
             },
             "editable": true,
-            "defaultValue": "BARAAT"
+            "defaultValue": "Baraat"
           },
           {
             "key": "date2",
@@ -5220,13 +7127,13 @@
           {
             "key": "function3",
             "style": {
-              "color": "#f0e594",
+              "color": "#ffe2a5",
               "marginTop": 10,
-              "fontFamily": "Myriad-Pro-Semibold",
+              "fontFamily": "GreatVibes-Regular",
               "width": 250
             },
             "editable": true,
-            "defaultValue": "NIKAAH"
+            "defaultValue": "Nikaah"
           },
           {
             "key": "date3",
@@ -5251,13 +7158,13 @@
           {
             "key": "function4",
             "style": {
-              "color": "#f0e594",
+              "color": "#ffe2a5",
               "marginTop": 10,
-              "fontFamily": "Myriad-Pro-Semibold",
+              "fontFamily": "GreatVibes-Regular",
               "width": 250
             },
             "editable": true,
-            "defaultValue": "RUKHSAT"
+            "defaultValue": "Rukhsat"
           },
           {
             "key": "date4",
@@ -5282,13 +7189,13 @@
           {
             "key": "function5",
             "style": {
-              "color": "#f0e594",
+              "color": "#ffe2a5",
               "marginTop": 10,
-              "fontFamily": "Myriad-Pro-Semibold",
+              "fontFamily": "GreatVibes-Regular",
               "width": 250
             },
             "editable": true,
-            "defaultValue": "WALIMAH"
+            "defaultValue": "Walimah"
           },
           {
             "key": "date5",
@@ -5313,7 +7220,7 @@
         ]
       },
       {
-        "page": "Wedding_18_4.png",
+        "page": "Wedding_17_4.png",
         "content": [
           {
             "key": "date",
@@ -5335,10 +7242,20 @@
             "defaultValue": "8:00 PM ONWARDS"
           },
           {
-            "key": "venue",
+            "key": "_venue",
             "style": {
               "marginTop": 50,
-
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 24,
+              "lineHeight": 24,
+              "width": 300
+            },
+            "editable": false,
+            "defaultValue": "Venue"
+          },
+          {
+            "key": "venue",
+            "style": {
               "width": 300
             },
             "editable": true,
@@ -5348,13 +7265,13 @@
             "key": "rsvp",
             "style": {
               "marginTop": 20,
-              "fontSize": 22,
-              "color": "#f0e595",
-              "fontFamily": "Myriad-Pro-Bold",
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 24,
+              "lineHeight": 24,
               "width": 230
             },
             "editable": true,
-            "defaultValue": "RSVP"
+            "defaultValue": "Rsvp"
           },
           {
             "key": "_rsvp",
@@ -5363,6 +7280,1406 @@
             },
             "editable": true,
             "defaultValue": "Please Respond By 15 July 2022"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#093003",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 77,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#9a6d18",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard14",
+    "pages": [
+      {
+        "page": "Wedding_18_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 190,
+              "fontFamily": "GreatVibes-Regular",
+              "width": 280,
+              "fontSize": 22,
+              "lineHeight": 22
+            },
+            "editable": true,
+            "defaultValue": "Emraan Khan"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 55,
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 22,
+              "lineHeight": 22,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "Aaisha Khan"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_18_2.png",
+        "content": [
+          {
+            "key": "sonOrDaughter",
+            "style": {
+              "marginTop": 80,
+              "fontSize": 10,
+              "color": "#e1c685",
+              "fontFamily": "Myriad-Pro-Bold",
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "WE INVITE YOU FOR WEDDING OF OUR SON"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 30,
+              "fontFamily": "GreatVibes-Regular",
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "Emraan Khan"
+          },
+          {
+            "key": "parents1",
+            "style": {
+              "width": 280,
+              "fontSize": 12,
+              "fontFamily": "Myriad-Pro-Regular",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "S/O Mr Ahmad Khan & Mrs Nazma Khan"
+          },
+
+          {
+            "key": "grandParents1",
+            "style": {
+              "width": 280,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "GS/O Mr Eqbal Khan & Mrs Aarifa Khan"
+          },
+          {
+            "key": "weds",
+            "style": {
+              "marginTop": 25,
+              "width": 230,
+              "fontFamily": "Lucida-Handwriting-Italic"
+            },
+            "editable": false,
+            "defaultValue": "Weds"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 18,
+              "fontFamily": "GreatVibes-Regular",
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "Aaisha Khan"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "fontSize": 12,
+              "width": 280,
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "D/O Mr Salman Khan & Mrs Amina Khan"
+          },
+
+          {
+            "key": "grandParents2",
+            "style": {
+              "width": 280,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "GD/O Mr Adil Khan & Mrs Aafreen Khan"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_18_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "color": "#9f7634",
+              "fontWeight": "900",
+              "marginTop": 80,
+              "fontFamily": "GreatVibes-Regular",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "Mehendi"
+          },
+          {
+            "key": "date1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "color": "#f7e1a7",
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "19 July 2022, 6:00 PM Onwards"
+          },
+          {
+            "key": "venue1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "color": "#715920",
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "Hotel Brookyln, Malviya Nager, New Delhi"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#9f7634",
+              "marginTop": 10,
+              "fontWeight": "900",
+              "fontFamily": "GreatVibes-Regular",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "Baraat"
+          },
+          {
+            "key": "date2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "color": "#f7e1a7",
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "21 July 2022, 5:00 PM"
+          },
+          {
+            "key": "venue2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "color": "#715920",
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "Hotel Brookyln, Malviya Nager, New Delhi"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "color": "#9f7634",
+              "marginTop": 10,
+              "fontFamily": "GreatVibes-Regular",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "Nikaah"
+          },
+          {
+            "key": "date3",
+            "style": {
+              "width": 250,
+              "color": "#f7e1a7",
+              "fontSize": 12,
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "21 July 2022, 7:00 PM"
+          },
+          {
+            "key": "venue3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "color": "#715920",
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "Hotel Brookyln, Malviya Nager, New Delhi"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "color": "#9f7634",
+              "marginTop": 10,
+              "fontFamily": "GreatVibes-Regular",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "Rukhsat"
+          },
+          {
+            "key": "date4",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "color": "#f7e1a7",
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "22 July 2022, 5:00 AM"
+          },
+          {
+            "key": "venue4",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "color": "#715920",
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "Hotel Brookyln, Malviya Nager, New Delhi"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "color": "#9f7634",
+              "marginTop": 10,
+              "fontFamily": "GreatVibes-Regular",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "Walimah"
+          },
+          {
+            "key": "date5",
+            "style": {
+              "width": 250,
+              "color": "#f7e1a7",
+              "fontSize": 12,
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "22 July 2022, 7:00 PM Onwards"
+          },
+          {
+            "key": "venue5",
+            "style": {
+              "width": 250,
+              "color": "#715920",
+              "fontSize": 12,
+              "lineHeight": 8
+            },
+            "editable": true,
+            "defaultValue": "Hotel Brookyln, Malviya Nager, New Delhi"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_18_4.png",
+        "content": [
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 70,
+              "color": "#9f7634",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "21 JULY 2022"
+          },
+          {
+            "key": "time",
+            "style": {
+              "width": 300,
+              "color": "#9f7634",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "8:00 PM ONWARDS"
+          },
+          {
+            "key": "_venue",
+            "style": {
+              "marginTop": 20,
+              "color": "#9f7634",
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 24,
+              "lineHeight": 28,
+              "width": 300
+            },
+            "editable": false,
+            "defaultValue": "Venue"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "width": 300,
+              "color": "#e1c685"
+            },
+            "editable": true,
+            "defaultValue": "Hotel Brookyln, Malviya Nager, New Delhi"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 20,
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 24,
+              "color": "#9f7634",
+              "lineHeight": 24,
+              "width": 230
+            },
+            "editable": true,
+            "defaultValue": "Rsvp"
+          },
+          {
+            "key": "_rsvp",
+            "style": {
+              "width": 300,
+              "color": "#e1c685"
+            },
+            "editable": true,
+            "defaultValue": "Please Respond By 15 July 2022"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#9a6d18",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 78,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard8",
+    "pages": [
+      {
+        "page": "Wedding_19_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 150,
+              "color": "#d9b476",
+              "fontFamily": "GreatVibes-Regular",
+              "width": 300,
+
+              "fontSize": 24,
+              "lineHeight": 24
+            },
+            "editable": true,
+            "defaultValue": "Mohit Agrawal"
+          },
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 35,
+              "fontFamily": "GreatVibes-Regular",
+              "width": 350,
+              "fontSize": 22,
+              "lineHeight": 22
+            },
+            "editable": false,
+            "defaultValue": "With"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 35,
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 24,
+              "color": "#d9b476",
+              "lineHeight": 24,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Ishita Agrawal"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "fontFamily": "MinionPro-Regular",
+              "fontSize": 18,
+              "lineHeight": 18,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "12 Nov 2022"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_19_2.png",
+        "content": [
+          {
+            "key": "message",
+            "style": {
+              "marginTop": 40,
+              "fontSize": 10,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "width": 230
+            },
+            "editable": true,
+            "defaultValue": "Mr Anil Ji Agrawal and Mrs Poolki Bai Agrawal request the honour of your presence and blessings on the auspicious occasion of the wedding of their grandson"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 20,
+              "color": "#dbb778",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Mohit Agrawal"
+          },
+          {
+            "key": "sonOf",
+            "style": {
+              "fontSize": 10,
+              "fontFamily": "MinionPro-Regular",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Son Of"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "fontFamily": "LSANSD",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajiv Agrawal And Mrs. Rachna Agrawal"
+          },
+          {
+            "key": "grandSonOf",
+            "style": {
+              "width": 300,
+              "fontSize": 10,
+              "fontFamily": "MinionPro-Regular",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "GrandSon Of"
+          },
+
+          {
+            "key": "grandParents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajesh Agrawal And Mrs. Anchal Agrawal"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 20,
+              "color": "#dbb778",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Ishita Agrawal"
+          },
+          {
+            "key": "daughterOf",
+            "style": {
+              "fontSize": 10,
+              "fontFamily": "MinionPro-Regular",
+              "width": 300,
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Daughter Of"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "fontSize": 12,
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Anil Agrawal and Mrs. Rita Agrawal"
+          },
+          {
+            "key": "grandDaughterOf",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontSize": 10,
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Grand Daughter Of"
+          },
+
+          {
+            "key": "grandParents2",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rahul Agrawal and Mrs. Rema Agrawal"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_19_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "fontWeight": "900",
+
+              "color": "#dbb778",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "HALDI"
+          },
+          {
+            "key": "date1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff"
+            },
+            "editable": true,
+            "defaultValue": "9  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#dbb778",
+              "fontFamily": "MinionPro-Semibold",
+              "marginTop": 3,
+              "fontWeight": "900",
+
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "LAGAN"
+          },
+          {
+            "key": "date2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 10:00 AM"
+          },
+          {
+            "key": "venue2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "marginTop": 3,
+              "color": "#dbb778",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "SANGEET'"
+          },
+          {
+            "key": "date3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "marginTop": 3,
+              "color": "#dbb778",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "MEHANDI"
+          },
+          {
+            "key": "date4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "fontSize": 12,
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "fontSize": 12,
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 3,
+              "color": "#dbb778",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "CHAK BHAAT"
+          },
+          {
+            "key": "date5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "fontSize": 12,
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "fontSize": 12,
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function6",
+            "style": {
+              "marginTop": 3,
+              "color": "#dbb778",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "VIDAI"
+          },
+          {
+            "key": "date6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "fontSize": 12,
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "13  Nov 2022, 5:00 AM"
+          },
+          {
+            "key": "venue6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#fff",
+              "fontSize": 12,
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_19_4.png",
+        "content": [
+          {
+            "key": "venue",
+            "style": {
+              "fontFamily": "MinionPro-Regular",
+              "marginTop": 90,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 20,
+              "color": "#fced82",
+              "fontFamily": "Romelio",
+              "fontSize": 24,
+              "lineHeight": 24,
+              "width": 230
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+          {
+            "key": "_rsvp1",
+            "style": {
+              "marginTop": 5,
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Mr Neerja Agrawal"
+          },
+          {
+            "key": "_rsvp2",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "Myriad-Pro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Mrs. Lalita Agrawal"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#fff",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Myriad-Pro-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 100,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#fff",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard8",
+    "pages": [
+      {
+        "page": "Wedding_23_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 110,
+              "color": "#f9e6bd",
+              "fontFamily": "GreatVibes-Regular",
+              "width": 300,
+
+              "fontSize": 24,
+              "lineHeight": 24
+            },
+            "editable": true,
+            "defaultValue": "Mohit Agrawal"
+          },
+          {
+            "key": "weds",
+            "style": {
+              "marginTop": 25,
+              "color": "#f9e6bd",
+              "fontFamily": "GreatVibes-Regular",
+              "width": 350,
+              "fontSize": 22,
+              "lineHeight": 22
+            },
+            "editable": false,
+            "defaultValue": "Weds"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 20,
+              "fontFamily": "GreatVibes-Regular",
+              "fontSize": 24,
+              "color": "#f9e6bd",
+              "lineHeight": 24,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Ishita Agrawal"
+          },
+
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "MinionPro-Regular",
+              "fontSize": 18,
+              "color": "#ebd0ab",
+              "lineHeight": 18,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "12 November 2022"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_23_2.png",
+        "content": [
+          {
+            "key": "message",
+            "style": {
+              "marginTop": 40,
+              "fontSize": 10,
+              "color": "#f9e6bd",
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "width": 230
+            },
+            "editable": true,
+            "defaultValue": "Mr Anil Ji Agrawal and Mrs Poolki Bai Agrawal request the honour of your presence and blessings on the auspicious occasion of the wedding of their grandson"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 20,
+              "color": "#f5d89f",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Mohit Agrawal"
+          },
+          {
+            "key": "sonOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "color": "#fbd88f",
+              "fontFamily": "MinionPro-Regular",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Son Of"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "color": "#503f17",
+              "fontFamily": "LSANSD",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajiv Agrawal And Mrs. Rachna Agrawal"
+          },
+          {
+            "key": "grandSonOf",
+            "style": {
+              "width": 300,
+              "fontSize": 10,
+              "color": "#fbd88f",
+              "fontFamily": "MinionPro-Regular",
+              "lineHeight": 12
+            },
+            "editable": true,
+            "defaultValue": "GrandSon Of"
+          },
+
+          {
+            "key": "grandParents1",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "color": "#503f17",
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rajesh Agrawal And Mrs. Anchal Agrawal"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 20,
+              "color": "#f5d89f",
+              "fontFamily": "LSANSD",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Ishita Agrawal"
+          },
+          {
+            "key": "daughterOf",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular",
+              "width": 300,
+              "color": "#fbd88f"
+            },
+            "editable": true,
+            "defaultValue": "Daughter Of"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "fontSize": 12,
+              "width": 300,
+              "lineHeight": 12,
+              "color": "#503f17",
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Anil Agrawal and Mrs. Rita Agrawal"
+          },
+          {
+            "key": "grandDaughterOf",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontSize": 10,
+              "color": "#fbd88f",
+              "fontFamily": "MinionPro-Regular"
+            },
+            "editable": true,
+            "defaultValue": "Grand Daughter Of"
+          },
+
+          {
+            "key": "grandParents2",
+            "style": {
+              "width": 300,
+              "fontSize": 12,
+              "lineHeight": 12,
+              "color": "#503f17",
+              "fontFamily": "LSANSD"
+            },
+            "editable": true,
+            "defaultValue": "Mr. Rahul Agrawal and Mrs. Rema Agrawal"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_23_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "marginTop": 40,
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#3c2e15",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "HALDI"
+          },
+          {
+            "key": "date1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "lineHeight": 10,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100"
+            },
+            "editable": true,
+            "defaultValue": "9  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue1",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "color": "#3c2e15",
+              "fontFamily": "MinionPro-Semibold",
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "fontWeight": "900",
+
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "LAGAN"
+          },
+          {
+            "key": "date2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 10:00 AM"
+          },
+          {
+            "key": "venue2",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#3c2e15",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "SANGEET'"
+          },
+          {
+            "key": "date3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "10  Nov 2022, 11:00 AM"
+          },
+          {
+            "key": "venue3",
+            "style": {
+              "width": 250,
+              "fontSize": 12,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#3c2e15",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "MEHANDI"
+          },
+          {
+            "key": "date4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue4",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#3c2e15",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "CHAK BHAAT"
+          },
+          {
+            "key": "date5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "11  Nov 2022, 5:00 PM"
+          },
+          {
+            "key": "venue5",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "function6",
+            "style": {
+              "marginTop": 2,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "color": "#3c2e15",
+              "fontFamily": "MinionPro-Semibold",
+              "width": 250
+            },
+            "editable": true,
+            "defaultValue": "VIDAI"
+          },
+          {
+            "key": "date6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "13  Nov 2022, 5:00 AM"
+          },
+          {
+            "key": "venue6",
+            "style": {
+              "width": 250,
+              "fontFamily": "MinionPro-Semibold",
+              "color": "#030100",
+              "fontSize": 12,
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_23_4.png",
+        "content": [
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 130,
+              "fontFamily": "MinionPro-Regular",
+              "color": "#2b210f",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Hotel Sayaji Near Magneto Mall, New Delhi"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 20,
+              "color": "#2b210f",
+              "fontFamily": "Romelio",
+              "fontSize": 24,
+              "lineHeight": 24,
+              "width": 230
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+          {
+            "key": "_rsvp1",
+            "style": {
+              "marginTop": 5,
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular",
+              "color": "#2b210f"
+            },
+            "editable": true,
+            "defaultValue": "Mr Neerja Agrawal"
+          },
+          {
+            "key": "_rsvp2",
+            "style": {
+              "width": 300,
+              "lineHeight": 12,
+              "fontFamily": "MinionPro-Regular",
+              "color": "#2b210f"
+            },
+            "editable": true,
+            "defaultValue": "Mrs. Lalita Agrawal"
           }
         ]
       }
@@ -6445,7 +9762,7 @@
       "justifyContent": "center",
       "alignItems": "center"
     },
-    "fontAwesomeIconColor": "#fff",
+    "fontAwesomeIconColor": "#981c3c",
     "fontFamily": "Lora",
     "categoryId": "8",
     "maxCharsPerLine": 40,
@@ -6461,7 +9778,7 @@
             "style": {
               "marginTop": 110,
               "color": "#981c3c",
-              "width": 350,
+              "width": 230,
               "lineHeight": 24,
               "fontSize": 24
             },
@@ -6480,9 +9797,9 @@
 
               "fontSize": 22,
 
-              "width": 350
+              "width": 300
             },
-            "editable": true,
+            "editable": false,
             "defaultValue": "With"
           },
           {
@@ -6494,7 +9811,7 @@
               "fontSize": 24,
               "color": "#981c3c",
 
-              "width": 300
+              "width": 230
             },
             "editable": true,
             "defaultValue": "MANDEEP"
@@ -6508,7 +9825,7 @@
               "fontFamily": "AGaramondPro-Bold",
               "fontWeight": "900",
               "color": "#b17520",
-              "width": 300
+              "width": 250
             },
             "editable": true,
             "defaultValue": "16 DECEMBER 2022"
@@ -6526,7 +9843,7 @@
               "color": "#b2893b",
               "fontSize": 13,
               "lineHeight": 14,
-              "width": 350
+              "width": 320
             },
             "editable": true,
             "defaultValue": "MR. JASBIR KAUR  &  MRS. SURJEET KAUR"
@@ -6535,8 +9852,8 @@
           {
             "key": "message",
             "style": {
-              "fontSize": 13,
-              "lineHeight": 15,
+              "fontSize": 11,
+              "lineHeight": 13,
               "color": "#e0c264",
               "width": 370,
               "fontFamily": "georgia-bold"
@@ -6561,7 +9878,7 @@
           {
             "key": "parents1",
             "style": {
-              "width": 350,
+              "width": 300,
               "color": "#b48b3c",
               "fontSize": 10,
               "fontFamily": "georgia-bold",
@@ -6573,7 +9890,7 @@
           {
             "key": "_with",
             "style": {
-              "marginTop": 20,
+              "marginTop": 40,
               "width": 300,
               "fontSize": 18,
               "color": "#e1c266",
@@ -6599,7 +9916,7 @@
           {
             "key": "parents2",
             "style": {
-              "width": 380,
+              "width": 350,
               "color": "#b48b3c",
               "fontSize": 10,
               "fontFamily": "georgia-bold",
@@ -6644,7 +9961,7 @@
             "style": {
               "marginTop": 20,
               "color": "#84551b",
-              "width": 350,
+              "width": 280,
               "fontSize": 18
             },
             "editable": true,
@@ -6656,7 +9973,7 @@
             "style": {
               "fontSize": 14,
               "lineHeight": 14,
-              "width": 350
+              "width": 280
             },
             "editable": true,
             "defaultValue": "15 Dec 2022, 10:00 AM"
@@ -6665,7 +9982,7 @@
             "key": "function2",
             "style": {
               "color": "#84551b",
-              "width": 350,
+              "width": 280,
               "marginTop": 5,
               "fontSize": 18
             },
@@ -6678,7 +9995,7 @@
             "style": {
               "fontSize": 14,
               "lineHeight": 14,
-              "width": 350
+              "width": 280
             },
             "editable": true,
             "defaultValue": "16 Dec 2022, 10:00 AM"
@@ -6687,7 +10004,7 @@
             "key": "function3",
             "style": {
               "color": "#84551b",
-              "width": 350,
+              "width": 280,
               "marginTop": 5,
               "fontSize": 18
             },
@@ -6700,7 +10017,7 @@
             "style": {
               "fontSize": 14,
               "lineHeight": 14,
-              "width": 350
+              "width": 280
             },
             "editable": true,
             "defaultValue": "6 Dec 2022, 11:30 AM"
@@ -6709,6 +10026,383 @@
             "key": "function4",
             "style": {
               "color": "#84551b",
+              "width": 280,
+              "marginTop": 5,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Wedding Lunch On"
+          },
+
+          {
+            "key": "date4",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 1: 00 PM"
+          },
+          {
+            "key": "function5",
+            "style": {
+              "marginTop": 5,
+              "fontSize": 18,
+
+              "color": "#84551b",
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "Doli"
+          },
+
+          {
+            "key": "date5",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 5:00PM"
+          },
+          {
+            "key": "rsvp",
+            "style": {
+              "marginTop": 5,
+              "color": "#93540c",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "width": 280,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "RSVP"
+          },
+
+          {
+            "key": "name1",
+            "style": {
+              "lineHeight": 14,
+              "fontSize": 14,
+
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "Mr. Gurdyal Singh"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "Mr.  Simerjeet Singh"
+          },
+          {
+            "key": "name3",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "Mr. KamalJeet Singh"
+          },
+          {
+            "key": "name4",
+            "style": {
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "Mr. Mandeep Singh"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#cba751",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Franklin-Gothic-Medium-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 67,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#981c3c",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard13",
+    "pages": [
+      {
+        "page": "Wedding_10_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 90,
+              "color": "#981c3c",
+              "width": 300,
+              "lineHeight": 24,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "SIMARPREET"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 70,
+              "lineHeight": 24,
+
+              "fontSize": 24,
+              "color": "#981c3c",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "MANDEEP"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 30,
+              "lineHeight": 10,
+              "fontSize": 14,
+              "fontFamily": "AGaramondPro-Bold",
+              "fontWeight": "900",
+              "color": "#981c3c",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_10_2.png",
+        "content": [
+          {
+            "key": "grandParents",
+            "style": {
+              "marginTop": 25,
+              "fontFamily": "georgia-bold",
+              "color": "#911e3e",
+              "fontSize": 12,
+              "lineHeight": 12,
+              "width": 330
+            },
+            "editable": true,
+            "defaultValue": "MR. JASBIR KAUR  &  MRS. SURJEET KAUR"
+          },
+
+          {
+            "key": "message",
+            "style": {
+              "fontSize": 10,
+              "lineHeight": 13,
+              "color": "#a82047",
+              "width": 330,
+              "fontFamily": "georgia-bold"
+            },
+            "editable": true,
+            "defaultValue": "Request The Honor Of  Your Presence  At The Wedding Ceremony Of Their Grand Daughter"
+          },
+          {
+            "key": "brideOrGroomName",
+            "style": {
+              "marginTop": 30,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#7a1537",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "SIMARPREET KAUR"
+          },
+
+          {
+            "key": "parents1",
+            "style": {
+              "width": 300,
+              "color": "#a82047",
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "D /O  Mr Harpreet Kaur  &  Mrs Sunpreet Kaur"
+          },
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 40,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#a82047",
+              "fontFamily": "GreatVibes-Regular",
+              "lineHeight": 18
+            },
+            "editable": false,
+            "defaultValue": "With"
+          },
+          {
+            "key": "groomOrBrideName",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#7a1537",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "MANDEEP KAUR"
+          },
+          {
+            "key": "parents2",
+            "style": {
+              "width": 380,
+              "color": "#a82047",
+              "fontSize": 10,
+              "fontFamily": "georgia-bold",
+
+              "lineHeight": 10
+            },
+            "editable": true,
+            "defaultValue": "S/O MR. AMARJEET KAUR & MRS. KAMALJEET AHLUWALIA"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 20,
+              "width": 300,
+              "fontSize": 13,
+              "lineHeight": 13,
+              "color": "#a82047",
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "16 DECEMBER 2022"
+          },
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 15,
+              "width": 280,
+              "fontSize": 10,
+              "lineHeight": 11,
+              "color": "#a82047",
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT HOTEL BROOKLYN  MALVIYA NAGAR  SOUTH ROAD NEW DELHI"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_10_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "marginTop": 30,
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "fontWeight": "900",
+              "width": 350,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Shagun ( At Home)"
+          },
+
+          {
+            "key": "date1",
+            "style": {
+              "marginTop": 5,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "15 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "fontWeight": "900",
+              "width": 350,
+              "marginTop": 5,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Reception Of Baraat"
+          },
+
+          {
+            "key": "date2",
+            "style": {
+              "marginTop": 5,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "16 Dec 2022, 10:00 AM"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "fontWeight": "900",
+              "width": 350,
+              "marginTop": 5,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "Anand Karaj"
+          },
+
+          {
+            "key": "date3",
+            "style": {
+              "marginTop": 5,
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 350
+            },
+            "editable": true,
+            "defaultValue": "6 Dec 2022, 11:30 AM"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "fontWeight": "900",
               "width": 350,
               "marginTop": 5,
               "fontSize": 18
@@ -6720,6 +10414,7 @@
           {
             "key": "date4",
             "style": {
+              "marginTop": 5,
               "fontSize": 14,
               "lineHeight": 14,
               "width": 350
@@ -6733,7 +10428,8 @@
               "marginTop": 5,
               "fontSize": 18,
 
-              "color": "#84551b",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "fontWeight": "900",
               "width": 350
             },
             "editable": true,
@@ -6743,6 +10439,7 @@
           {
             "key": "date5",
             "style": {
+              "marginTop": 5,
               "fontSize": 14,
               "lineHeight": 14,
               "width": 350
@@ -6753,8 +10450,8 @@
           {
             "key": "rsvp",
             "style": {
-              "marginTop": 5,
-              "color": "#93540c",
+              "marginTop": 8,
+              "fontWeight": "900",
               "fontFamily": "Franklin-Gothic-Medium-Regular",
               "width": 350,
               "fontSize": 18
@@ -6811,7 +10508,7 @@
       "position": "relative",
       "fontSize": 16,
       "textAlign": "center",
-      "color": "#cba751",
+      "color": "#a82047",
       "lineHeight": 20,
       "width": "100%",
       "fontFamily": "Franklin-Gothic-Medium-Regular"
@@ -6823,7 +10520,6 @@
       "marginTop": 100
     }
   },
-
   {
     "id": 69,
     "containerStyle": {
@@ -6831,7 +10527,7 @@
       "justifyContent": "center",
       "alignItems": "center"
     },
-    "fontAwesomeIconColor": "#fff",
+    "fontAwesomeIconColor": "#981c3c",
     "fontFamily": "Lora",
     "categoryId": "8",
     "maxCharsPerLine": 40,
@@ -6847,7 +10543,7 @@
             "style": {
               "marginTop": 110,
               "color": "#981c3c",
-              "width": 350,
+              "width": 300,
               "lineHeight": 24,
               "fontSize": 24
             },
@@ -6866,9 +10562,9 @@
 
               "fontSize": 22,
 
-              "width": 350
+              "width": 300
             },
-            "editable": true,
+            "editable": false,
             "defaultValue": "Weds"
           },
           {
@@ -6912,7 +10608,7 @@
               "color": "#b2893b",
               "fontSize": 13,
               "lineHeight": 14,
-              "width": 350
+              "width": 330
             },
             "editable": true,
             "defaultValue": "MR. JASBIR KAUR  &  MRS. SURJEET KAUR"
@@ -6921,10 +10617,10 @@
           {
             "key": "message",
             "style": {
-              "fontSize": 13,
-              "lineHeight": 15,
+              "fontSize": 11,
+              "lineHeight": 13,
               "color": "#e0c264",
-              "width": 370,
+              "width": 330,
               "fontFamily": "georgia-bold"
             },
             "editable": true,
@@ -6947,7 +10643,7 @@
           {
             "key": "parents1",
             "style": {
-              "width": 350,
+              "width": 300,
               "color": "#b48b3c",
               "fontSize": 10,
               "fontFamily": "georgia-bold",
@@ -6959,14 +10655,14 @@
           {
             "key": "_with",
             "style": {
-              "marginTop": 20,
+              "marginTop": 40,
               "width": 300,
               "fontSize": 18,
               "color": "#e1c266",
               "fontFamily": "GreatVibes-Regular",
               "lineHeight": 18
             },
-            "editable": true,
+            "editable": false,
             "defaultValue": "With"
           },
           {
@@ -7011,8 +10707,8 @@
           {
             "key": "venue",
             "style": {
-              "width": 350,
-              "fontSize": 13,
+              "width": 320,
+              "fontSize": 12,
               "lineHeight": 15,
               "color": "#af8943",
               "fontFamily": "gadugib"
@@ -7211,13 +10907,1155 @@
   },
 
   {
+    "id": 62,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#243330",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard2",
+    "pages": [
+      {
+        "page": "Wedding_5_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 170,
+              "color": "#c49596",
+              "width": 300,
+              "fontFamily": "LCALLIG",
+              "lineHeight": 22,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "PHOEBE ALBERTO"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "lineHeight": 24,
+              "marginTop": 60,
+              "fontSize": 22,
+              "fontFamily": "LCALLIG",
+              "color": "#c49596",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PAUL ALVES"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_5_2.png",
+        "content": [
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 150,
+              "lineHeight": 10,
+              "color": "#9e6c73",
+              "fontSize": 14,
+              "fontFamily": "gadugib",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "ON THE 16TH DEC 2022"
+          },
+          {
+            "key": "time",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "gadugib",
+              "color": "#9e6c73",
+              "fontSize": 13,
+              "lineHeight": 14,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "FROM 6:00 PM ONWARDS"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 10,
+              "color": "#87706c",
+              "fontSize": 13,
+              "lineHeight": 15,
+              "width": 300,
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT ARMOUR HALL YMCA, NEW DELHI"
+          },
+          {
+            "key": "yours",
+            "style": {
+              "marginTop": 30,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#e2c3c3",
+              "fontFamily": "gadugib",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "YOURS"
+          },
+
+          {
+            "key": "family",
+            "style": {
+              "width": 300,
+              "fontSize": 20,
+              "color": "#e2c3c3",
+              "fontFamily": "gadugib",
+              "lineHeight": 20
+            },
+            "editable": true,
+            "defaultValue": "PETER ALBERTO & FAMILY  SAMSON ALVES & FAMILY"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_5_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "marginTop": 100,
+              "fontFamily": "BodoniMT",
+              "color": "#c48d9d",
+              "width": 280,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "EXCHANGE OF VOWS"
+          },
+
+          {
+            "key": "date1",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "arial-mt-bold",
+              "color": "#625857",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "16 DEC 2022 10:00 AM"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "fontFamily": "BodoniMT",
+              "color": "#c48d9d",
+              "width": 280,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "EXCHANGE OF RINGS"
+          },
+
+          {
+            "key": "date2",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "arial-mt-bold",
+              "color": "#625857",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "16 DEC 2022 12:00 AM"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "fontFamily": "BodoniMT",
+              "color": "#c48d9d",
+              "width": 280,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "RECESSIONAL"
+          },
+
+          {
+            "key": "date3",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "arial-mt-bold",
+              "color": "#625857",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "16 DEC 2022 2:00 AM"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "fontFamily": "BodoniMT",
+              "color": "#c48d9d",
+              "width": 280,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "RECEPTION"
+          },
+
+          {
+            "key": "date4",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "arial-mt-bold",
+              "color": "#625857",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "17 DEC 2022 5:00 AM"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#243330",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "GreatVibes-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
+    "id": 63,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#243330",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard2",
+    "pages": [
+      {
+        "page": "Wedding_6_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 240,
+              "color": "#2b2831",
+              "width": 300,
+              "fontFamily": "LCALLIG",
+              "lineHeight": 24,
+              "fontSize": 22
+            },
+            "editable": true,
+            "defaultValue": "PHOEBE ALBERTO"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "lineHeight": 24,
+              "marginTop": 80,
+              "fontSize": 22,
+              "fontFamily": "LCALLIG",
+              "color": "#2b2831",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PAUL ALVES"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_6_2.png",
+        "content": [
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 150,
+              "lineHeight": 10,
+              "color": "#b5cdb5",
+              "fontSize": 14,
+              "fontFamily": "BodoniMT",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "ON THE 16TH DEC 2022"
+          },
+          {
+            "key": "time",
+            "style": {
+              "fontFamily": "BodoniMT",
+              "color": "#b5cdb5",
+              "fontSize": 13,
+              "lineHeight": 14,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "FROM 6:00 PM ONWARDS"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 10,
+              "color": "#394039",
+              "fontSize": 13,
+              "lineHeight": 15,
+              "width": 300,
+              "fontFamily": "BodoniMT"
+            },
+            "editable": true,
+            "defaultValue": "AT ARMOUR HALL YMCA, NEW DELHI"
+          },
+          {
+            "key": "yours",
+            "style": {
+              "marginTop": 30,
+              "width": 300,
+              "fontSize": 18,
+              "color": "#a1b7a1",
+              "fontFamily": "LucidaFaxDemibold",
+              "lineHeight": 18
+            },
+            "editable": true,
+            "defaultValue": "YOURS"
+          },
+
+          {
+            "key": "family",
+            "style": {
+              "width": 300,
+              "fontSize": 20,
+              "color": "#a1b7a1",
+              "fontFamily": "LucidaFaxDemibold",
+              "lineHeight": 20
+            },
+            "editable": true,
+            "defaultValue": "PETER ALBERTO & FAMILY  SAMSON ALVES & FAMILY"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_6_3.png",
+        "content": [
+          {
+            "key": "function1",
+            "style": {
+              "marginTop": 100,
+              "fontFamily": "BodoniMT",
+              "color": "#a3bfa3",
+              "width": 280,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "EXCHANGE OF VOWS"
+          },
+
+          {
+            "key": "date1",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "ArialMT",
+              "color": "#000",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "16 DEC 2022 10:00 AM"
+          },
+          {
+            "key": "function2",
+            "style": {
+              "fontFamily": "BodoniMT",
+              "color": "#a3bfa3",
+              "width": 280,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "EXCHANGE OF RINGS"
+          },
+
+          {
+            "key": "date2",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "ArialMT",
+              "color": "#000",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "16 DEC 2022 12:00 AM"
+          },
+          {
+            "key": "function3",
+            "style": {
+              "fontFamily": "BodoniMT",
+              "color": "#a3bfa3",
+              "width": 280,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "RECESSIONAL"
+          },
+
+          {
+            "key": "date3",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "ArialMT",
+              "color": "#000",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "16 DEC 2022 2:00 AM"
+          },
+          {
+            "key": "function4",
+            "style": {
+              "fontFamily": "BodoniMT",
+              "color": "#a3bfa3",
+              "width": 280,
+              "marginTop": 10,
+              "fontSize": 18
+            },
+            "editable": true,
+            "defaultValue": "RECEPTION"
+          },
+
+          {
+            "key": "date4",
+            "style": {
+              "marginTop": 10,
+              "fontFamily": "ArialMT",
+              "color": "#000",
+              "fontWeight": "900",
+              "fontSize": 14,
+              "lineHeight": 14,
+              "width": 280
+            },
+            "editable": true,
+            "defaultValue": "17 DEC 2022 5:00 AM"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#243330",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "GreatVibes-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 65,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#243330",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard4",
+    "pages": [
+      {
+        "page": "Wedding_8_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 145,
+
+              "width": 300,
+
+              "lineHeight": 20,
+              "fontSize": 20
+            },
+            "editable": true,
+            "defaultValue": "PHOEBE ALBERTO"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "lineHeight": 20,
+              "marginTop": 30,
+              "fontSize": 20,
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PAUL ALVES"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_8_2.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 90,
+              "lineHeight": 16,
+              "color": "#3b4970",
+              "fontSize": 16,
+              "fontFamily": "Monotype-Corsiva",
+
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PHOEBE ALBERTO"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 14,
+              "lineHeight": 16,
+              "color": "#3b4970",
+              "fontSize": 16,
+              "fontFamily": "Monotype-Corsiva",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PAUL ALVES"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 50,
+              "lineHeight": 10,
+
+              "fontSize": 14,
+              "fontFamily": "gadugi",
+              "color": "#4d6189",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "ON THE 16TH DEC 2022"
+          },
+          {
+            "key": "time",
+            "style": {
+              "marginTop": 5,
+              "fontFamily": "gadugi",
+              "color": "#4d6189",
+
+              "fontSize": 13,
+              "lineHeight": 14,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "FROM 6:00 PM ONWARDS"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 10,
+              "color": "#4d6189",
+              "fontSize": 13,
+              "lineHeight": 15,
+              "width": 300,
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT ARMOUR HALL YMCA, NEW DELHI"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#514663",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Georgia"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 64,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#243330",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard3",
+    "pages": [
+      {
+        "page": "Wedding_7_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 145,
+              "fontFamily": "Georgia",
+              "width": 300,
+              "color": "#c3ab32",
+              "lineHeight": 20,
+              "fontSize": 20
+            },
+            "editable": true,
+            "defaultValue": "PHOEBE ALBERTO"
+          },
+
+          {
+            "key": "weds",
+            "style": {
+              "lineHeight": 20,
+              "marginTop": 10,
+              "fontSize": 20,
+              "color": "#000",
+              "fontFamily": "Georgia",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Weds"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "fontFamily": "Georgia",
+              "lineHeight": 20,
+              "marginTop": 10,
+              "fontSize": 20,
+              "color": "#c3ab32",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PAUL ALVES"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_7_2.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 120,
+              "lineHeight": 14,
+              "color": "#ccb53c",
+              "fontSize": 14,
+              "fontFamily": "Monotype-Corsiva",
+
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PHOEBE ALBERTO"
+          },
+
+          {
+            "key": "_with",
+            "style": {
+              "lineHeight": 14,
+              "color": "#ccb53c",
+              "fontSize": 14,
+              "fontFamily": "Monotype-Corsiva",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "With"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "lineHeight": 14,
+              "color": "#ccb53c",
+              "fontSize": 14,
+              "fontFamily": "Monotype-Corsiva",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PAUL ALVES"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 50,
+              "lineHeight": 11,
+
+              "fontSize": 11,
+              "fontFamily": "gadugib",
+              "color": "#d8c349",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "ON THE 16TH DEC 2022"
+          },
+          {
+            "key": "time",
+            "style": {
+              "marginTop": 5,
+              "fontFamily": "gadugib",
+              "color": "#d8c349",
+
+              "fontSize": 11,
+              "lineHeight": 11,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "FROM 6:00 PM ONWARDS"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 5,
+              "color": "#000",
+              "fontSize": 11,
+              "lineHeight": 11,
+              "width": 300,
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT ARMOUR HALL YMCA, NEW DELHI"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#514663",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Georgia"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 80,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#243330",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard15",
+    "pages": [
+      {
+        "page": "Wedding_21_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 145,
+              "fontFamily": "LBRITED",
+              "width": 300,
+              "color": "#6084a8",
+              "lineHeight": 20,
+              "fontSize": 20
+            },
+            "editable": true,
+            "defaultValue": "PHOEBE ALBERTO"
+          },
+
+          {
+            "key": "weds",
+            "style": {
+              "lineHeight": 20,
+              "marginTop": 20,
+              "fontSize": 20,
+              "fontFamily": "Georgia",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Weds"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "fontFamily": "LBRITED",
+              "lineHeight": 20,
+              "marginTop": 20,
+              "fontSize": 20,
+              "color": "#6084a8",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "PAUL ALVES"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_21_2.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 90,
+              "lineHeight": 20,
+              "color": "#87a4b7",
+              "fontSize": 20,
+              "fontFamily": "GreatVibes-Regular",
+
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Phoebe Alberto"
+          },
+
+          {
+            "key": "_with",
+            "style": {
+              "marginTop": 8,
+              "lineHeight": 16,
+              "color": "#657f87",
+              "fontSize": 16,
+              "fontFamily": "Gabriola",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "With"
+          },
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 8,
+              "lineHeight": 20,
+              "color": "#87a4b7",
+              "fontSize": 20,
+              "fontFamily": "GreatVibes-Regular",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Paul Alves"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 25,
+              "lineHeight": 10,
+
+              "fontSize": 14,
+              "fontFamily": "gadugi",
+              "color": "#b5cbda",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "ON THE 16TH DEC 2022"
+          },
+          {
+            "key": "time",
+            "style": {
+              "marginTop": 5,
+              "fontFamily": "gadugi",
+              "color": "#b5cbda",
+
+              "fontSize": 13,
+              "lineHeight": 14,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "FROM 6:00 PM ONWARDS"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 5,
+              "color": "#7597ad",
+              "fontSize": 13,
+              "lineHeight": 15,
+              "width": 300,
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT ARMOUR HALL YMCA, NEW DELHI"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#514663",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "Georgia"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+  {
+    "id": 95,
+    "containerStyle": {
+      "flex": 1,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "fontAwesomeIconColor": "#243330",
+    "fontFamily": "Lora",
+    "categoryId": "8",
+    "maxCharsPerLine": 40,
+    "backgroundImageStyle": {},
+
+    "apiUrl": "/api/card1/weddingcard16",
+    "pages": [
+      {
+        "page": "Wedding_22_1.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 150,
+
+              "width": 300,
+
+              "lineHeight": 24,
+              "fontSize": 24
+            },
+            "editable": true,
+            "defaultValue": "Phoebe Alberto"
+          },
+
+          {
+            "key": "weds",
+            "style": {
+              "lineHeight": 24,
+              "marginTop": 20,
+              "fontSize": 22,
+
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Weds"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "lineHeight": 24,
+              "marginTop": 20,
+              "fontSize": 22,
+
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Paul Alves"
+          }
+        ]
+      },
+      {
+        "page": "Wedding_22_2.png",
+        "content": [
+          {
+            "key": "name1",
+            "style": {
+              "marginTop": 90,
+              "lineHeight": 18,
+              "color": "#be123d",
+              "fontSize": 18,
+
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Phoebe Alberto"
+          },
+
+          {
+            "key": "with",
+            "style": {
+              "marginTop": 10,
+              "lineHeight": 10,
+
+              "fontSize": 14,
+              "fontFamily": "Gabriola",
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "WITH"
+          },
+
+          {
+            "key": "name2",
+            "style": {
+              "marginTop": 2,
+              "lineHeight": 18,
+              "color": "#be123d",
+              "fontSize": 18,
+
+              "fontWeight": "900",
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "Paul Alves"
+          },
+          {
+            "key": "date",
+            "style": {
+              "marginTop": 10,
+              "lineHeight": 10,
+
+              "fontSize": 14,
+              "fontFamily": "gadugi",
+
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "ON THE 16TH DEC 2022"
+          },
+          {
+            "key": "time",
+            "style": {
+              "marginTop": 5,
+              "fontFamily": "gadugi",
+
+              "fontSize": 13,
+              "lineHeight": 14,
+              "width": 300
+            },
+            "editable": true,
+            "defaultValue": "FROM 6:00 PM ONWARDS"
+          },
+
+          {
+            "key": "venue",
+            "style": {
+              "marginTop": 10,
+
+              "fontSize": 13,
+              "lineHeight": 15,
+              "width": 300,
+              "fontFamily": "gadugib"
+            },
+            "editable": true,
+            "defaultValue": "AT ARMOUR HALL YMCA, NEW DELHI"
+          }
+        ]
+      }
+    ],
+    "commonStyle": {
+      "position": "relative",
+      "fontSize": 16,
+      "textAlign": "center",
+      "color": "#be123d",
+      "lineHeight": 20,
+      "width": "100%",
+      "fontFamily": "GreatVibes-Regular"
+    },
+    "contentStyle": {
+      "maxWidth": "67%",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "marginTop": 100
+    }
+  },
+
+  {
     "id": 79,
     "containerStyle": {
       "flex": 1,
       "justifyContent": "center",
       "alignItems": "center"
     },
-    "fontAwesomeIconColor": "#fff",
+    "fontAwesomeIconColor": "#243330",
     "fontFamily": "Lora",
     "categoryId": "8",
     "maxCharsPerLine": 40,
@@ -7233,7 +12071,7 @@
             "style": {
               "marginTop": 200,
 
-              "width": 350,
+              "width": 300,
               "lineHeight": 24,
               "fontSize": 24
             },
@@ -7251,9 +12089,9 @@
               "fontWeight": "900",
               "fontSize": 22,
 
-              "width": 350
+              "width": 300
             },
-            "editable": true,
+            "editable": false,
             "defaultValue": "With"
           },
           {
@@ -7339,7 +12177,7 @@
           {
             "key": "_with",
             "style": {
-              "marginTop": 20,
+              "marginTop": 40,
               "width": 300,
               "fontSize": 18,
               "lineHeight": 18
@@ -7610,88 +12448,62 @@
     }
   },
   {
-    "id": 79,
+    "id": 70,
     "containerStyle": {
       "flex": 1,
       "justifyContent": "center",
       "alignItems": "center"
     },
-    "fontAwesomeIconColor": "#fff",
+    "fontAwesomeIconColor": "#50024B",
     "fontFamily": "Lora",
     "categoryId": "8",
     "maxCharsPerLine": 40,
     "backgroundImageStyle": {},
 
-    "apiUrl": "/api/card1/weddingcard5",
+    "apiUrl": "/api/card1/weddingcard7",
     "pages": [
       {
-        "page": "Wedding_20_1.png",
+        "page": "Wedding_12_1.png",
         "content": [
           {
             "key": "name1",
             "style": {
-              "marginTop": 200,
-
-              "width": 350,
-              "lineHeight": 24,
-              "fontSize": 24
+              "marginTop": 178,
+              "color": "#b58861",
+              "width": 300,
+              "fontFamily": "Georgia",
+              "lineHeight": 18,
+              "fontSize": 20
             },
             "editable": true,
-            "defaultValue": "Simarpreet"
+            "defaultValue": "SIMARPREET"
           },
 
-          {
-            "key": "_with",
-            "style": {
-              "marginTop": 15,
-              "lineHeight": 22,
-
-              "color": "#a1742c",
-              "fontWeight": "900",
-              "fontSize": 22,
-
-              "width": 350
-            },
-            "editable": true,
-            "defaultValue": "With"
-          },
           {
             "key": "name2",
             "style": {
               "lineHeight": 24,
-              "marginTop": 15,
-              "fontSize": 24,
+              "marginTop": 30,
+              "fontSize": 18,
+              "fontFamily": "Georgia",
+              "color": "#b58861",
 
-              "fontWeight": "900",
               "width": 300
             },
             "editable": true,
-            "defaultValue": "Mandeep"
-          },
-          {
-            "key": "date",
-            "style": {
-              "marginTop": 20,
-              "lineHeight": 10,
-              "fontSize": 14,
-              "fontFamily": "AGaramondPro-Bold",
-              "fontWeight": "900",
-              "width": 300
-            },
-            "editable": true,
-            "defaultValue": "16 DECEMBER 2022"
+            "defaultValue": "MANDEEP"
           }
         ]
       },
       {
-        "page": "Wedding_20_2.png",
+        "page": "Wedding_12_2.png",
         "content": [
           {
             "key": "grandParents",
             "style": {
               "marginTop": 25,
-              "fontFamily": "georgia-bold",
-              "color": "#1d302a",
+              "fontFamily": "Georgia",
+              "color": "#a56a5b",
               "fontSize": 13,
               "lineHeight": 14,
               "width": 350
@@ -7703,8 +12515,9 @@
           {
             "key": "message",
             "style": {
-              "fontSize": 13,
-              "lineHeight": 15,
+              "fontSize": 12,
+              "color": "#b27269",
+              "lineHeight": 14,
               "width": 370,
               "fontFamily": "georgia-bold"
             },
@@ -7716,54 +12529,50 @@
             "style": {
               "marginTop": 30,
               "width": 300,
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
               "fontSize": 18,
-
+              "color": "#cd9a85",
               "lineHeight": 18
             },
             "editable": true,
-            "defaultValue": "Simarpreet  Kaur"
+            "defaultValue": "SIMARPREET KAUR"
           },
 
-          {
-            "key": "parents1",
-            "style": {
-              "width": 350,
-              "fontSize": 10,
-              "fontFamily": "georgia-bold",
-              "lineHeight": 10
-            },
-            "editable": true,
-            "defaultValue": "D /O  Mr Harpreet Kaur  &  Mrs Sunpreet Kaur"
-          },
           {
             "key": "_with",
             "style": {
               "marginTop": 20,
               "width": 300,
+              "width": 300,
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
+              "color": "#cd9a85",
               "fontSize": 18,
               "lineHeight": 18
             },
-            "editable": true,
+            "editable": false,
             "defaultValue": "With"
           },
           {
             "key": "groomOrBrideName",
             "style": {
               "marginTop": 20,
-              "width": 300,
-              "fontSize": 18,
 
+              "fontSize": 18,
+              "width": 300,
+              "color": "#cd9a85",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
               "lineHeight": 18
             },
             "editable": true,
-            "defaultValue": "Mandeep Kaur"
+            "defaultValue": "MANDEEP KAUR"
           },
           {
             "key": "parents2",
             "style": {
               "width": 380,
               "fontSize": 10,
-              "fontFamily": "georgia-bold",
+              "fontFamily": "Georgia",
+              "color": "#a76e5f",
               "lineHeight": 10
             },
             "editable": true,
@@ -7772,11 +12581,12 @@
           {
             "key": "date",
             "style": {
-              "marginTop": 20,
+              "marginTop": 30,
               "width": 300,
-              "fontSize": 14,
-              "lineHeight": 14,
-              "fontFamily": "AGaramondPro-Bold"
+              "fontSize": 12,
+              "lineHeight": 12,
+              "color": "#a56a5b",
+              "fontFamily": "gadugib"
             },
             "editable": true,
             "defaultValue": "16 DECEMBER 2022"
@@ -7785,8 +12595,9 @@
             "key": "venue",
             "style": {
               "width": 350,
-              "fontSize": 13,
-              "lineHeight": 15,
+              "fontSize": 10,
+              "lineHeight": 12,
+              "color": "#a56a5b",
               "fontFamily": "gadugib"
             },
             "editable": true,
@@ -7795,13 +12606,13 @@
         ]
       },
       {
-        "page": "Wedding_20_3.png",
+        "page": "Wedding_12_3.png",
         "content": [
           {
             "key": "function1",
             "style": {
-              "marginTop": 65,
-              "color": "#193c32",
+              "marginTop": 20,
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
               "width": 350,
               "fontSize": 18
             },
@@ -7812,9 +12623,6 @@
           {
             "key": "date1",
             "style": {
-              "fontFamily": "gadugib",
-              "color": "#193c32",
-              "fontWeight": "900",
               "fontSize": 14,
               "lineHeight": 14,
               "width": 350
@@ -7825,7 +12633,7 @@
           {
             "key": "function2",
             "style": {
-              "color": "#193c32",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
               "width": 350,
               "marginTop": 10,
               "fontSize": 18
@@ -7837,9 +12645,6 @@
           {
             "key": "date2",
             "style": {
-              "fontFamily": "gadugib",
-              "color": "#193c32",
-              "fontWeight": "900",
               "fontSize": 14,
               "lineHeight": 14,
               "width": 350
@@ -7850,7 +12655,7 @@
           {
             "key": "function3",
             "style": {
-              "color": "#193c32",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
               "width": 350,
               "marginTop": 10,
               "fontSize": 18
@@ -7862,9 +12667,6 @@
           {
             "key": "date3",
             "style": {
-              "fontFamily": "gadugib",
-              "color": "#193c32",
-              "fontWeight": "900",
               "fontSize": 14,
               "lineHeight": 14,
               "width": 350
@@ -7875,7 +12677,7 @@
           {
             "key": "function4",
             "style": {
-              "color": "#193c32",
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
               "width": 350,
               "marginTop": 10,
               "fontSize": 18
@@ -7887,9 +12689,6 @@
           {
             "key": "date4",
             "style": {
-              "fontFamily": "gadugib",
-              "color": "#193c32",
-              "fontWeight": "900",
               "fontSize": 14,
               "lineHeight": 14,
               "width": 350
@@ -7902,8 +12701,8 @@
             "style": {
               "marginTop": 10,
               "fontSize": 18,
+              "fontFamily": "Franklin-Gothic-Medium-Regular",
 
-              "color": "#193c32",
               "width": 350
             },
             "editable": true,
@@ -7913,8 +12712,6 @@
           {
             "key": "date5",
             "style": {
-              "fontFamily": "gadugib",
-              "color": "#193c32",
               "fontWeight": "900",
               "fontSize": 14,
               "lineHeight": 14,
@@ -7927,7 +12724,7 @@
             "key": "rsvp",
             "style": {
               "marginTop": 5,
-              "color": "#93540c",
+
               "fontFamily": "Franklin-Gothic-Medium-Regular",
               "width": 350,
               "fontSize": 18
@@ -7939,9 +12736,6 @@
           {
             "key": "name1",
             "style": {
-              "fontFamily": "gadugib",
-              "color": "#193c32",
-              "fontWeight": "900",
               "lineHeight": 14,
               "fontSize": 14,
 
@@ -7953,9 +12747,6 @@
           {
             "key": "name2",
             "style": {
-              "fontFamily": "gadugib",
-              "color": "#193c32",
-              "fontWeight": "900",
               "fontSize": 14,
               "lineHeight": 14,
               "width": 350
@@ -7966,9 +12757,6 @@
           {
             "key": "name3",
             "style": {
-              "fontFamily": "gadugib",
-              "color": "#193c32",
-              "fontWeight": "900",
               "fontSize": 14,
               "lineHeight": 14,
               "width": 350
@@ -7979,8 +12767,6 @@
           {
             "key": "name4",
             "style": {
-              "fontFamily": "gadugib",
-              "color": "#193c32",
               "fontWeight": "900",
               "fontSize": 14,
               "lineHeight": 14,
@@ -7996,10 +12782,10 @@
       "position": "relative",
       "fontSize": 16,
       "textAlign": "center",
-      "color": "#243330",
+      "color": "#cd9a85",
       "lineHeight": 20,
       "width": "100%",
-      "fontFamily": "GreatVibes-Regular"
+      "fontFamily": "gadugib"
     },
     "contentStyle": {
       "maxWidth": "67%",

@@ -86,6 +86,7 @@ export const CardImage = (props) => {
           marginHorizontal: "10%",
         }}
         source={props.source}
+        key={props.key}
       />
     </View>
   );
